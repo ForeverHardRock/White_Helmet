@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ description_category }} | Белая каска{% endblock %}
+
+
+{% block content %}
+    <div class="ladder-category">
+        <div class="nav-str">
+            <a href="{% url 'home' %}">Главная</a>
+            <span>/</span>
+            <p>{{ description_category }}</p>
+        </div>
+        <h2>{{ description_category }}</h2>
+        <ul>
+            {% for new in news %}
+                <div class="cat-posts">
+                    {% if new.pictures != Null %}
+                        <div class="post-pict">
+                            <img src="{{ 'media/' }}{{ new.pictures }}" alt="{{ new.title }}">
+                        </div><br>
+                    {% endif %}
+                    <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}" class="post-title gl-title">{{ new.title }}</a>
+                    <span class="pop-post-date"><span class="material-symbols-outlined">calendar_month</span>{{ new.pubdate }}</span>
+                    <br><br>
+                    <p>{{ new.description }}</p>
+                </div>
+            {% endfor %}
+            <br><br>
+
+            {% include 'main/three-r-posts.html' %}
+
+        </ul>
+
+        {% include 'main/paginator.html' %}
+
+    </div>
+
+
+{% endblock %}

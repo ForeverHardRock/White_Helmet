@@ -1,0 +1,49 @@
+<div id="mega-menu-wrap-max_mega_menu_1" class="mega-menu-wrap">
+            <div class="mega-menu-toggle">
+                <div class="mega-toggle-blocks-left"></div>
+                <div class="mega-toggle-blocks-center"></div>
+                <div class="mega-toggle-blocks-right">
+                    <div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0" id="mega-toggle-block-0">
+                        <button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                            <span class="mega-toggle-animated-box">
+                                <span class="mega-toggle-animated-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul id="mega-menu-max_mega_menu_1" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="click" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-panel-width="#page" data-panel-inner-width="#header-right-section" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="1" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-hide-arrow mega-has-icon mega-icon-left mega-hide-text mega-close-after-click mega-disable-link mega-menu-item-12317" id="mega-menu-item-12317">
+                    <a class="dashicons-menu-alt3 mega-menu-link" tabindex="0" aria-haspopup="true" aria-expanded="false" role="button" aria-label="≡">
+                        <span class="mega-indicator" tabindex="0" role="button" aria-label="≡ submenu" data-has-click-event="true"></span>
+                    </a>
+                    <ul class="mega-sub-menu" style="width: 1675px; left: 75px;">
+                        <li class="mega-menu-row" id="mega-menu-12317-0">
+                            <ul class="mega-sub-menu">
+                                <li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" id="mega-menu-12317-0-0">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-12843" id="mega-menu-item-12843"><a class="mega-menu-link" href="https://rp9.ru/calc">Калькулятор ипотеки</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-12844" id="mega-menu-item-12844"><a class="mega-menu-link" href="https://rp9.ru/category/stroitelstvo">Строительство</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-12845" id="mega-menu-item-12845"><a class="mega-menu-link" href="https://rp9.ru/category/intervyu">Интервью</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-12842" id="mega-menu-item-12842"><a class="mega-menu-link" href="https://rp9.ru/category/nedvizhimost">Недвижимость</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" id="mega-menu-12317-0-1">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15990" id="mega-menu-item-15990"><a class="mega-menu-link" href="https://rp9.ru/feedback">Обратная связь</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15991" id="mega-menu-item-15991"><a class="mega-menu-link" href="https://rp9.ru/legal-information">Правовая информация</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15992" id="mega-menu-item-15992"><a class="mega-menu-link" href="https://rp9.ru/e-mail-mailing-lists">E-mail рассылки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column mega-menu-columns-4-of-12 mega-hide-on-mobile" id="mega-menu-12317-0-2">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15989" id="mega-menu-item-15989"><a class="mega-menu-link" href="https://rp9.ru/contacts">Контакты</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15993" id="mega-menu-item-15993"><a class="mega-menu-link" href="https://rp9.ru/advertisement">Реклама</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-15994" id="mega-menu-item-15994"><a class="mega-menu-link" href="https://rp9.ru/job">Вакансии</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>

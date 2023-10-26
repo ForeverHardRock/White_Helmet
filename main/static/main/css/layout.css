@@ -1,0 +1,272 @@
+@font-face {
+  font-family: Intro;
+  src: url("/fonts/Intro Regular Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFFFFF;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.up-menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 123px;
+  width: 100%;
+  background-color: #1268FB;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  z-index: 5000;
+}
+.up-menu > div {
+  height: 49.2px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.up-menu .up-menu-logo > svg {
+  width: auto;
+  height: 29.52px;
+  padding-right: 16.4px;
+}
+.up-menu .up-menu-logo p {
+  width: auto;
+  fill: #FFFFFF;
+  margin: 0;
+}
+.up-menu .up-menu-center .up-menu-subs {
+  height: 100%;
+  display: flex;
+  background-color: #3982FF;
+  border-radius: 24.6px;
+  align-items: center;
+  padding-left: 9.84px;
+  padding-right: 14.76px;
+}
+.up-menu .up-menu-center .up-menu-subs a {
+  font-size: 17.712px;
+}
+.up-menu .up-menu-center .up-menu-subs a svg {
+  margin-right: 9.84px;
+}
+.up-menu .up-menu-center > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 19.68px;
+  margin-left: 19.68px;
+  padding-left: 14.76px;
+  padding-right: 14.76px;
+  border-radius: 24.6px;
+  font-size: 17.712px;
+  transition: 0.2s ease;
+}
+.up-menu .up-menu-center > a:hover {
+  background-color: #3982FF;
+}
+.up-menu .up-menu-center .up-menu-categories {
+  display: flex;
+  height: 100%;
+}
+.up-menu .up-menu-center .up-menu-categories button {
+  color: #FFFFFF;
+  background: transparent;
+  border: 0;
+  font-size: 17.712px;
+  padding-left: 14.76px;
+  padding-right: 14.76px;
+  border-radius: 24.6px;
+  transition: 0.2s ease;
+}
+.up-menu .up-menu-center .up-menu-categories button:hover {
+  background-color: #3982FF;
+}
+.up-menu .up-menu-center .up-menu-categories button svg {
+  margin-left: 4.92px;
+  height: 14.76px;
+  width: auto;
+  fill: #FFFFFF;
+  transition: 0.5s ease;
+}
+.up-menu .up-menu-center .rotate {
+  rotate: 180deg;
+}
+.up-menu .up-menu-right .up-menu-vk {
+  width: 49.2px;
+  height: 49.2px;
+  display: flex;
+  align-items: center;
+  background-color: #3982FF;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 19.68px;
+}
+.up-menu .up-menu-right .up-menu-vk svg {
+  height: 50%;
+  width: auto;
+}
+.up-menu .up-menu-right .up-menu-search {
+  height: 100%;
+}
+.up-menu .up-menu-right .up-menu-search form {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.up-menu .up-menu-right .up-menu-search form:hover input {
+  display: block;
+}
+.up-menu .up-menu-right .up-menu-search form input {
+  display: none;
+  height: 49.2px;
+  outline: none;
+  background: #FFFFFF;
+  color: #9E9C9C;
+  border: 2px solid #FFFFFF;
+  border-radius: 24.6px;
+  padding-left: 14.76px;
+  transition: all 0.3s ease-in-out;
+}
+.up-menu .up-menu-right .up-menu-search form .btn-search-cancel {
+  display: none;
+  color: #1268FB;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 29.52px;
+  right: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.up-menu .up-menu-right .up-menu-search form .btn-search-commit {
+  position: absolute;
+  right: -10px;
+  height: 49.2px;
+  width: 49.2px;
+  border: none;
+  cursor: pointer;
+  background-color: #3982FF;
+  border-radius: 24.6px;
+  align-items: center;
+  padding: 0;
+}
+.submenu {
+  position: absolute;
+  top: -492px;
+  z-index: 4000;
+  height: 492px;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  width: 100%;
+  background-color: #1268FB;
+  margin-top: -123px;
+  padding-top: 123px;
+  transition: 0.5s ease;
+}
+.submenu .submenu-content {
+  height: 369px;
+  display: flex;
+}
+.submenu .submenu-content div {
+  height: 90%;
+}
+.submenu .submenu-content .submenu-logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.submenu .submenu-content .submenu-logo svg {
+  height: 100%;
+}
+.submenu .submenu-content .submenu-categories {
+  width: 20%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.submenu .submenu-content .submenu-categories::-webkit-scrollbar {
+  width: 5.904px;
+}
+.submenu .submenu-content .submenu-categories::-webkit-scrollbar-track {
+  background: #3982FF;
+  border-radius: 5.904px;
+}
+.submenu .submenu-content .submenu-categories::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border-radius: 5.904px;
+}
+.submenu .submenu-content .submenu-categories a {
+  padding: 5% 10%;
+  color: #FFFFFF;
+  font-size: 17.712px;
+  display: block;
+  align-items: center;
+  transition: 0.2s ease;
+}
+.submenu .submenu-content .submenu-categories a:hover {
+  background-color: #3982FF;
+}
+.submenu .submenu-content .submenu-descriptions {
+  position: relative;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.submenu .submenu-content .submenu-descriptions > a {
+  position: absolute;
+  bottom: 0;
+}
+
+.show {
+  top: 123px;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.page-body {
+  max-width: 1640px;
+  position: relative;
+  padding-top: 30.75px;
+  margin: 123px auto 0;
+}
+
+#up-btn {
+  background-color: #3982FF;
+  display: flex;
+  position: fixed;
+  width: 61.5px;
+  height: 61.5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  bottom: -100px;
+  right: 30.75px;
+  align-items: center;
+  padding: 0;
+}
+#up-btn:hover {
+  background-color: #5d98fc;
+  transform: scale(1.3);
+  transition: transform 0.2s ease;
+}
+#up-btn .top-btn-svg {
+  font-size: 61.5px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=layout.css.map */

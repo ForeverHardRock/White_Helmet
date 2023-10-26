@@ -1,0 +1,20 @@
+{% block three-r-posts-block %}
+<div class="rand-3-posts js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+    {% for cat_page in three_posts_list %}
+    <div class="puzzle-grid">
+        {% for new in cat_page %}
+            <div class="new-card">
+                {% if new.pictures != Null %}
+                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ '/media/' }}{{ new.pictures }}"></a>
+                {% endif %}
+                <div class="new-card-text">
+                    <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
+                    <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a><br><br>
+                    <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.description }}</div></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

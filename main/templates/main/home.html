@@ -1,0 +1,154 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+
+{% block content %}
+    <div class="latest-news">
+        {% include 'main/latest-news.html' %}
+    </div>
+    <div class="puzzle-news">
+        <div class="puzzle-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+            {% for car_news in car_news_list %}
+                <div class="puzzle-grid">
+                    {% for new in car_news %}
+                        {% if car_news|first == new %}
+                            <div class="new-card first-card">
+                                {% if new.pictures != Null %}
+                                    <a class="first-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                                {% endif %}
+                                <div class="cat-date">
+                                    <a href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a>
+                                    <p>{{ new.pubdate }}</p>
+                                </div>
+                                <a class="first-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.title }}</a>
+                            </div>
+                        {% else %}
+                            <div class="new-card">
+                                {% if new.pictures != Null %}
+                                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                                {% endif %}
+                                <div class="new-card-text">
+                                    <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
+                                    <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a><br><br>
+                                    <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.description }}</div></a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="cat-news">
+        <img class="subs-pict" src="{% static 'main/svg/subscribe.svg' %}">
+        <div class="categories-list">
+            <button id="load-content-last" class="cat_btn active">Последнее</button>
+            {% for cat in car_cat  %}
+                <button id="load-content-{{ cat.cat_en }}" class="cat_btn">{{ cat.cat_ru }}</button>
+            {% endfor %}
+        </div>
+        <div class="puzzle-news-by-cat">
+            <div class="cat-news-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+                <div id="content-1"></div>
+                    cat_news_list_1
+                <div id="content-2"></div>
+                    cat_news_list_2
+                <div id="content-3"></div>
+                    cat_news_list_3
+
+
+
+{#                {% for cat_page in cat_news_list %}#}
+{#                    <div class="puzzle-grid-{{ forloop.counter }}">#}
+{#                        {% for new in cat_page %}#}
+{#                            <div class="new-card">#}
+{#                                {% if new.pictures != Null %}#}
+{#                                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>#}
+{#                                {% endif %}#}
+{#                                <div class="new-card-text">#}
+{#                                    <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>#}
+{#                                    <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.title }}</a><br><br>#}
+{#                                    <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.description }}</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                {% endfor %}#}
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+{#    <div class="slider">#}
+{#        {% for car_new in car_news_k %}#}
+{#            {% if car_news_k|first == car_new %}#}
+{#                <div class="pop-post active">#}
+{#            {% else %}#}
+{#                <div class="pop-post">#}
+{#            {% endif %}#}
+{#        {% if car_new.pictures != Null %}#}
+{#            <div class="post-left">#}
+{#                <a class="pop-post-img" href="{% url 'url_post' cat_slug=car_new.category_en post_slug=car_new.url %}"><img src="{{ 'media/' }}{{ car_new.pictures }}"></a>#}
+{#            </div>#}
+{#        {% endif %}#}
+{#        <div class="post-right">#}
+{#            <a class="pop-post-title gl-title" href="{% url 'url_post' cat_slug=car_new.category_en post_slug=car_new.url %}">{{ car_new.title }}</a>#}
+{#            <span class="pop-post-date"><span class="material-symbols-outlined calendar-icon">calendar_month</span>{{ car_new.pubdate }}</span><br><br>#}
+{#            <p class="pop-post-text">{{ car_new.description }}</p>#}
+{#        </div>#}
+{#        </div>#}
+{#        {% endfor %}#}
+{#        <a class="prev" onclick="prevSlide()"><span class="material-symbols-outlined arrow-right">arrow_circle_right</span></a>#}
+{#        <a class="next" onclick="nextSlide()"><span class="material-symbols-outlined arrow-right">arrow_circle_right</span></a>#}
+{#        </div>#}
+{#    </div>#}
+{#    <br><br>#}
+{#    <h2>Главное</h2>#}
+{#    <div class="main-post">#}
+{#        <div class="main-post-left">#}
+{#            <span><a class="main-post-title gl-title" href="{% url 'url_post' cat_slug=new_2.category_en post_slug=new_2.url %}">{{ new_2.title }}</a></span><br>#}
+{#            <span class="main-post-text">{{ new_2.description }}</span><br><br>#}
+{#            <span class="cat-and-next">#}
+{#                <a class="main-post-read" href="{% url 'url_post' cat_slug=new_2.category_en post_slug=new_2.url %}">Читать далее <span class="material-symbols-outlined arrow-right">arrow_circle_right</span></a>#}
+{#                <a class="main-post-category" href="{% url 'cat_name' cat_slug=new_2.category_en %}">{{ new_2.category}}</a>#}
+{#            </span>#}
+{#        </div>#}
+{#        {% if new_2.pictures != Null %}#}
+{#            <div class="main-post-right">#}
+{#                <a href="{% url 'url_post' cat_slug=new_2.category_en post_slug=new_2.url %}"><img src="{{ 'media/' }}{{ new_2.pictures }}"></a>#}
+{#            </div>#}
+{#        {% endif %}#}
+{#    </div><br><br>#}
+{#    {% include 'main/three-r-posts.html' %}#}
+{#    <div class="main-post-5">#}
+{#        <div class="main-post-5-left">#}
+{#            <a class="main-post-5-title gl-title" href="{% url 'url_post' cat_slug=new_3.category_en post_slug=new_3.url %}">{{ new_3.title }}</a><br><br>#}
+{#            <span class="pop-post-date"><span class="material-symbols-outlined">calendar_month</span>{{ new_3.pubdate }}</span><br>#}
+{#            <p class="main-post-5-text">{{ new_3.description }}</p>#}
+{#            <a class="read-3-posts" href="{% url 'url_post' cat_slug=new_3.category_en post_slug=new_3.url %}">Читать далее<span class="material-symbols-outlined arrow-right">arrow_circle_right</span></a>#}
+{#        </div>#}
+{#        <div class="main-post-5-right">#}
+{#            {% if new_3.pictures != Null %}#}
+{#                <a href="{% url 'url_post' cat_slug=new_3.category_en post_slug=new_3.url %}"><img src="{{ 'media/' }}{{ new_3.pictures }}"></a>#}
+{#            {% endif %}#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="categories">#}
+{#        <h3>Категории</h3><br>#}
+{#        <div class="flickity-viewport js-flickity" data-flickity-options="{ &quot;wrapAround&quot;: true }">#}
+{#            {% for cat in car_cat %}#}
+{#                <div class="gallery-cell"><a href="{% url 'cat_name' cat_slug=cat.cat_en %}"><br>#}
+{#                    <span>{{ cat.cat_ru }}</span></a>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+
+{% endblock %}

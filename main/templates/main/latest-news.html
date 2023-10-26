@@ -1,0 +1,15 @@
+{% block latest-news-block %}
+
+    <div class="latest-title">
+        <p>Последние новости</p>
+    </div>
+    <div class="latest-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+        {% for new in latest_news %}
+            <div class="gallery-cell">
+                <p>{{ new.pubdate }}</p>
+                <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

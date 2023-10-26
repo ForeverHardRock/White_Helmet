@@ -1,0 +1,21 @@
+
+{% for cat_page in cat_news_list %}
+    <div class="puzzle-grid">
+        {% for new in cat_page %}
+            <div class="new-card">
+                {% if new.pictures != Null %}
+                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                {% endif %}
+                <div class="new-card-text">
+                    <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
+                    <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.title }}</a><br><br>
+                    <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.description }}</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+
+
+

@@ -1,0 +1,290 @@
+@import "variables";
+
+a {
+  color: $font-color;
+  text-decoration: none;
+  &:hover {
+    color: $font-color;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.up-menu {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  height: $main-bar-height;
+  width: 100%;
+  background-color: $main-color;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom-left-radius: ($main-bar-height/3);
+  border-bottom-right-radius: ($main-bar-height/3);
+  z-index: 5000;
+
+  > div {
+    height: $main-bar-elements-height;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+
+  .up-menu-logo{
+
+    > svg {
+      width: auto;
+      height: $main-bar-elements-font-size;
+      padding-right: ($main-bar-elements-height/3);
+    }
+    p {
+      width: auto;
+      fill: $font-color;
+      margin: 0;
+    }
+  }
+  .up-menu-center {
+
+    .up-menu-subs {
+      height: 100%;
+      display: flex;
+      background-color: $main-color-light;
+      border-radius: ($main-bar-elements-height*0.5);
+      align-items: center;
+      padding-left: ($main-bar-elements-height*0.2);
+      padding-right: ($main-bar-elements-height*0.3);
+      a {
+        font-size: ($main-bar-elements-font-size*0.6);
+        svg {
+          margin-right: ($main-bar-elements-height*0.2);
+        }
+      }
+    }
+    > a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-right: ($main-bar-elements-height*0.4);
+      margin-left: ($main-bar-elements-height*0.4);
+      padding-left: ($main-bar-elements-height*0.3);
+      padding-right: ($main-bar-elements-height*0.3);
+      border-radius: ($main-bar-elements-height*0.5);
+      font-size: ($main-bar-elements-font-size*0.6);
+      transition: 0.2s ease;
+      &:hover {
+        background-color: $main-color-light;
+      }
+    }
+    .up-menu-categories {
+      display: flex;
+      height: 100%;
+      button {
+        color: $font-color;
+        background: transparent;
+        border: 0;
+        font-size: ($main-bar-elements-font-size*0.6);
+        padding-left: ($main-bar-elements-height*0.3);
+        padding-right: ($main-bar-elements-height*0.3);
+        border-radius: ($main-bar-elements-height*0.5);
+        transition: 0.2s ease;
+        &:hover {
+          background-color: $main-color-light;
+        }
+        svg {
+          margin-left: ($main-bar-elements-height*0.1);
+          height: ($main-bar-elements-height*0.3);
+          width: auto;
+          fill: $font-color;
+          transition: 0.5s ease;
+        }
+      }
+    }
+    .rotate {
+      rotate: 180deg;
+    }
+  }
+  .up-menu-right {
+
+    .up-menu-vk {
+      width: $main-bar-elements-height;
+      height: $main-bar-elements-height;
+      display: flex;
+      align-items: center;
+      background-color: $main-color-light;
+      border-radius: 50%;
+      justify-content: center;
+      margin-right: ($main-bar-elements-height*0.4);
+      svg {
+        height: 50%;
+        width: auto;
+      }
+    }
+  .up-menu-search {
+    height: 100%;
+    form {
+      position: relative;
+      display: flex;
+      height: 100%;
+      &:hover input {
+        display: block;
+      }
+      input{
+        display: none;
+        height: $main-bar-elements-height;
+        outline: none;
+        background: $font-color;
+        color: #9E9C9C;
+        border: 2px solid $font-color;
+        border-radius: ($main-bar-elements-height*0.5);
+        padding-left: ($main-bar-elements-height*0.3);
+        transition: all 0.3s ease-in-out;
+      }
+      .btn-search-cancel {
+        display: none;
+        color: $main-color;
+        position: absolute;
+        background: none;
+        border: none;
+        font-size: $main-bar-elements-font-size;
+        right: 40px;
+        transition: all 0.3s ease-in-out;
+      }
+      .btn-search-commit {
+        position: absolute;
+        right: -10px;
+        height: $main-bar-elements-height;
+        width: $main-bar-elements-height;
+        border: none;
+        cursor: pointer;
+        background-color: $main-color-light;
+        border-radius: ($main-bar-elements-height*0.5);
+        align-items: center;
+        padding: 0;
+        svg {
+
+        }
+      }
+    }
+  }
+  }
+}
+
+.submenu {
+  position: absolute;
+  top: -($main-bar-height*4);
+  z-index: 4000;
+  height: ($main-bar-height*4);
+  border-bottom-left-radius: ($main-bar-height/3);
+  border-bottom-right-radius: ($main-bar-height/3);
+  width: 100%;
+  background-color: $main-color;
+  margin-top: -$main-bar-height;
+  padding-top: $main-bar-height;
+  transition: 0.5s ease;
+  .submenu-content {
+    height: ($main-bar-height*3);
+    display: flex;
+    div {
+      height: 90%;
+    }
+
+    .submenu-logo {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      svg{
+        height: 100%;
+      }
+    }
+    .submenu-categories {
+      width: 20%;
+      overflow: scroll;
+      overflow-x:hidden;
+      &::-webkit-scrollbar {
+        width: ($main-bar-elements-font-size*0.2);
+      }
+      &::-webkit-scrollbar-track {
+        background: $main-color-light;
+        border-radius: ($main-bar-elements-font-size*0.2);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $font-color;
+        border-radius: ($main-bar-elements-font-size*0.2);
+      }
+      a {
+        padding: 5% 10%;
+        color: $font-color;
+        font-size: ($main-bar-elements-font-size*0.6);
+        display: block;
+        align-items: center;
+        transition: 0.2s ease;
+        &:hover {
+          background-color: $main-color-light;
+        }
+      }
+    }
+    .submenu-descriptions {
+      position: relative;
+      width: 50%;
+      padding-left: 5%;
+      padding-right: 5%;
+      p {
+        a {
+
+        }
+      }
+      > a {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+.show {
+  top: $main-bar-height;
+}
+
+body {
+  background-color: $page-background-color;
+}
+
+.page-body {
+  max-width: 1640px;
+  position: relative;
+  padding-top:  $main-bar-height/4;
+  margin: $main-bar-height auto 0;
+}
+
+
+#up-btn {
+  background-color: $main-color-light;
+  display: flex;
+  position: fixed;
+  width: $main-bar-height/2;
+  height: $main-bar-height/2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  bottom: -100px;
+  right: $main-bar-height/4;
+  align-items: center;
+  padding: 0;
+
+  &:hover {
+    background-color: lighten($main-color, 15%);
+    transform: scale(1.3);
+    transition: transform .2s ease;
+  }
+
+  .top-btn-svg {
+    font-size: $main-bar-height/2;
+    color: $font-color;
+  }
+}

@@ -1,0 +1,4324 @@
+<!DOCTYPE html >
+<html lang="ru"><head><link media='print' onload='this.media="all"' rel='stylesheet' type='text/css' href='/served_assets/public/jquery.modal-b7e3fb6a3704c0a2359a33962d371838618774b855128cef059add49182581c0.css'><meta data-config="{&quot;money_with_currency_format&quot;:{&quot;delimiter&quot;:&quot; &quot;,&quot;separator&quot;:&quot;,&quot;,&quot;format&quot;:&quot;%n %u&quot;,&quot;unit&quot;:&quot;\u003ci class=\&quot;shop-currency\&quot;\u003e\u0026#x20BD;\u003c/i\u003e&quot;,&quot;show_price_without_cents&quot;:1},&quot;currency_code&quot;:&quot;RUR&quot;,&quot;default_currency&quot;:{&quot;title&quot;:&quot;Российский рубль&quot;,&quot;code&quot;:&quot;RUR&quot;,&quot;rate&quot;:1.0,&quot;format_string&quot;:&quot;%n %u&quot;,&quot;unit&quot;:&quot;\u003ci class=\&quot;shop-currency\&quot;\u003e\u0026#x20BD;\u003c/i\u003e&quot;,&quot;price_separator&quot;:&quot;,&quot;,&quot;is_default&quot;:true,&quot;price_delimiter&quot;:&quot;&quot;,&quot;show_price_with_delimiter&quot;:true,&quot;show_price_without_cents&quot;:true},&quot;facebook&quot;:{&quot;pixelActive&quot;:false,&quot;currency_code&quot;:&quot;RUB&quot;,&quot;use_variants&quot;:null},&quot;vk&quot;:{&quot;pixel_active&quot;:null,&quot;price_list_id&quot;:null},&quot;new_ya_metrika&quot;:true,&quot;ecommerce_data_container&quot;:&quot;dataLayer&quot;,&quot;common_js_version&quot;:&quot;v2&quot;,&quot;vue_ui_version&quot;:null,&quot;feedback_captcha_enabled&quot;:&quot;1&quot;,&quot;is_minisite&quot;:null,&quot;account_id&quot;:417981,&quot;hide_items_out_of_stock&quot;:false,&quot;forbid_order_over_existing&quot;:false,&quot;minimum_items_price&quot;:null,&quot;enable_comparison&quot;:true,&quot;locale&quot;:&quot;ru&quot;,&quot;client_group&quot;:null,&quot;consent_to_personal_data&quot;:{&quot;active&quot;:true,&quot;obligatory&quot;:true,&quot;description&quot;:&quot;Настоящим подтверждаю, что я ознакомлен и согласен с условиями \u003ca href=&#39;/page/oferta&#39; target=&#39;blank&#39;\u003eоферты и политики конфиденциальности\u003c/a\u003e.&quot;},&quot;recaptcha_key&quot;:&quot;6LfXhUEmAAAAAOGNQm5_a2Ach-HWlFKD3Sq7vfFj&quot;,&quot;checkout_float_order_content_block&quot;:true,&quot;sber_id_app_id&quot;:&quot;5b5a3c11-72e5-4871-8649-4cdbab3ba9a4&quot;,&quot;theme_generation&quot;:2,&quot;quick_checkout_captcha_enabled&quot;:false,&quot;max_order_lines_count&quot;:500,&quot;sber_bnpl_min_amount&quot;:1000,&quot;sber_bnpl_max_amount&quot;:30000}" name="shop-config" content="" /><meta name='js-evnvironment' content='production' /><meta name='default-locale' content='ru' /><meta name='insales-redefined-api-methods' content="[]" /><script src="/packs/js/shop_bundle-7a0927f287895aca5c72.js"></script><script type="text/javascript" src="https://static.insales-cdn.com/assets/static-versioned/v3.72/static/libs/lodash/4.17.21/lodash.min.js"></script>
+        <!--InsalesCounter -->
+        <script type="text/javascript">
+        if (typeof(__id) == 'undefined') {
+          var __id=417981;
+
+          (function() {
+            var ic = document.createElement('script'); ic.type = 'text/javascript'; ic.async = true;
+            ic.src = '/javascripts/insales_counter.js?6';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ic, s);
+          })();
+        }
+        </script>
+        <!-- /InsalesCounter -->
+      <script>gtmDataLayer = []; </script>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','gtmDataLayer','GTM-5X7RZZN');
+      </script>
+      <!-- End Google Tag Manager -->
+
+<meta charset="utf-8" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V91SNLVCNS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V91SNLVCNS');
+</script>
+<script type="text/javascript">window.dataLayer=window.dataLayer || []; window.dataLayer.push({});</script>
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><title>Ледниковый период - магазин снаряжения для горных путешествий и высотных работ</title><meta content="ie=edge" http-equiv="x-ua-compatible" />
+<meta name="keywords" content="Ледниковый период - магазин снаряжения для горных путешествий и высотных работ" />
+<meta name="description" content="Ледниковый период - магазин снаряжения для горных путешествий и высотных работ" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no"><meta property="og:type" content="website">
+<meta property="og:site_name" content="Ледниковый период - магазин снаряжения для горных путешествий и высотных работ"><meta property="og:image" content="https://static.insales-cdn.com/r/cknsCMKH4OE/rs:fit:1024:1024:1/plain/files/1/6759/19331687/original/banner_index__image_1.jpg@webp">
+    <meta property="og:url" content="https://ice-age.ru">
+    <meta property="og:title" content="Ледниковый период - магазин снаряжения для горных путешествий и высотных работ"><link href="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta content="320" name="MobileOptimized" />
+<link type="text/css" rel="stylesheet" media="all" href="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/theme.css" async /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" async />
+
+<meta name="cmsmagazine" content="b94f4d0ae496829bd82ccb4beceee9bd" />
+<meta name="cmsmagazine" content="03b9f20d5a0a68b89dd71b7e315d2dcf" />
+<meta name="cmsmagazine" content="11e74cdc0b23fc411063e4f8b9d668be" />
+<meta name="google-site-verification" content="7tU0nmZtrx7egI531yzOxrOEvWA3sXQyiU4_txBUHuM" />
+</head>
+<body class="layout-common view-index " data-layout="layout" data-template="index" itemscope="" itemtype="http://schema.org/WebPage">
+<header class="header">
+		<div class="header-menu">
+		<div class="wrapper row">
+			<div class="header-menu__inner">
+				<ul class="header-menu__list">
+					
+						
+						
+						
+					<li class="header-menu__item has-children drop-down__parent drop-down__parent_on-hover">
+						<div class="header-menu__item-block">
+							
+							<span class="header-menu__item-link">
+								Ледниковый период
+							</span>
+							
+						</div>
+							
+								<ul class="header-menu__drop-list drop-down__block">
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/o-kompanii" class="header-menu__drop-item-link">
+											Экипировочный центр
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/verevochnye-parki" class="header-menu__drop-item-link">
+											Веревочные парки
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/brands" class="header-menu__drop-item-link">
+											Бренды
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/blogs/tehnicheskie-sovety" class="header-menu__drop-item-link">
+											Технические советы
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/product/otzyvy" class="header-menu__drop-item-link">
+											Отзывы
+										</a>
+									</li>
+									
+
+								</ul>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item has-children drop-down__parent drop-down__parent_on-hover">
+						<div class="header-menu__item-block">
+							
+							<span class="header-menu__item-link">
+								Информация
+							</span>
+							
+						</div>
+							
+								<ul class="header-menu__drop-list drop-down__block">
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/rekvizity" class="header-menu__drop-item-link">
+											Реквизиты
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/delivery" class="header-menu__drop-item-link">
+											Доставка
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/payment" class="header-menu__drop-item-link">
+											Оплата
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/garantiya-i-vozvrat" class="header-menu__drop-item-link">
+											Гарантия и возврат
+										</a>
+									</li>
+									
+									<li class="header-menu__drop-item">
+										<a href="/page/skidki-i-aktsii" class="header-menu__drop-item-link">
+											Скидки и акции
+										</a>
+									</li>
+									
+
+								</ul>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="/page/opt" class="header-menu__item-link">
+								Опт
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="/page/servisy" class="header-menu__item-link">
+								Сервисы
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="http://life.ice-age.ru/" class="header-menu__item-link">
+								Блог
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="/page/kontakty" class="header-menu__item-link">
+								Контакты
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="/page/delivery" class="header-menu__item-link">
+								Доставка
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+						
+						
+						
+					<li class="header-menu__item ">
+						<div class="header-menu__item-block">
+							
+							<a href="/page/payment" class="header-menu__item-link">
+								Оплата
+							</a>
+							
+						</div>
+							
+	
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header__main">
+		<div class="wrapper row">
+			<div class="header__logo">
+				<a href="/" class="header__logo-link">
+					<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/logo.png" alt="">
+				</a>
+			</div>
+			<div class="header__group-right">
+				<div class="header__panel">
+					
+
+
+<div class="header-search in-header">
+	<form action="/collection/catalog" class="header-search__form"  method="get" data-search-form>
+		<input type="hidden" name="lang" value="ru">
+		<input class="header-search__input js-product-search" name="q" placeholder="Найти снаряжение..." type="text" autocomplete="off" data-search-input data-required>
+		<button type="submit" class="header-search__button">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__search_white.png" alt="">
+		</button>
+		<div class="header-search__results" data-search-results></div>
+	</form>
+</div>
+					<div class="header__contacts">
+                        <div class="header-email">
+                          <a href="mailto:shop@ice-age.ru">shop@ice-age.ru</a>
+                        </div>
+						<span class="ico">
+							<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__phone_white.png" alt="">
+						</span>
+						<a class="phone phone_one" href="tel:+79168888332">
+							8 916 888 83 32
+						</a>
+						<a class="phone phone_two" href="tel:+74957270633">
+							8 495 727 06 33
+						</a>
+					</div>
+					<div class="header-login drop-down__parent drop-down__parent_on-click " data-drop-parent="login">
+						<span class="header-login__button" data-drop-trigger="login">
+							<span class="text">
+								
+									Войти
+								
+							</span>
+							<span class="ico">
+								<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__user.png" alt="">
+							</span>
+						</span>
+						
+						<div class="header-login__dropdown drop-down__block" data-drop-block="login">
+							<div class="header-login__header drop-down__header">
+								<span class="header-login__text" data-element="header-text">
+									Вход в личный кабинет
+								</span>
+								<span class="header-login__close drop-down__close" data-drop-close="login"></span>
+							</div>
+							<div class="header-login__body" data-login-form-place></div>
+							<div class="header-login__messages" data-login-form-messages></div>
+						</div>
+						
+
+					</div>
+					<div class="header__cart drop-down__parent drop-down__parent_on-click" data-drop-parent="minicart">
+	<a class="header__cart-panel" href="/cart_items" data-drop-trigger="minicart">
+		<span class="header__cart-ico">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__cart.png" alt="">
+		</span>
+		<span class="header__cart-number" data-shopcart-items-count="0">
+			0
+		</span>
+	</a>
+	<div class="minicart minicart_header drop-down__block empty" data-shopcart-minicart data-drop-block="minicart" data-tabs >
+
+		<div class="minicart__header drop-down__header">
+			<span class="minicart__text-tab active" data-tabs-tab="minicart-items">
+				В корзине
+			</span>
+
+			<span class="minicart__text-tab" data-tabs-tab="minicart-wishlist">
+				Отложенные
+			</span>
+
+			<span class="minicart__close drop-down__close" data-drop-close="minicart"></span>
+		</div>
+		<div class="minicart__body">
+			<div class="minicart__block active" data-tabs-block="minicart-items">
+				<ul class="minicart__items" data-panel="minicart-items"></ul>
+				<div class="minicart__footer">
+					<div class="minicart__amount row" data-shopcart-minicart-amount>
+
+					</div>
+					<a href="/cart_items" class="minicart__submit button button_black no_highlight">
+						Перейти в корзину
+					</a>
+				</div>
+			</div>
+			<div class="minicart__block" data-tabs-block="minicart-wishlist">
+				<ul class="minicart__items" data-panel="minicart-wishlist"></ul>
+				<div class="minicart__footer">
+					<div class="minicart__amount row">
+						<span class="minicart__amount-number" data-wishlist-count></span>
+					</div>
+					<a href="/cart_items#tab-wishlist_items" class="minicart__submit_wishlist button button_black no_highlight">
+					Посмотреть отложенные
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="minicart__empty">
+			В корзине нет товаров
+		</div>
+
+
+	</div>
+</div>
+				</div>
+				<div class="menu-catalog-place">
+					<div class="menu-catalog-trigger" data-slide-trigger="header-catalog">
+						<i class="line"></i><i class="line"></i><i class="line"></i>
+					</div>
+					<nav class="header-catalog" data-menu-catalog data-slide-block="header-catalog" data-menu-panel itemscope itemtype="https://schema.org/SiteNavigationElement">
+	
+
+
+<div class="header-search in-menu-catalog">
+	<form action="/collection/catalog" class="header-search__form"  method="get" data-search-form>
+		<input type="hidden" name="lang" value="ru">
+		<input class="header-search__input js-product-search" name="q" placeholder="Найти снаряжение..." type="text" autocomplete="off" data-search-input data-required>
+		<button type="submit" class="header-search__button">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__search_white.png" alt="">
+		</button>
+		<div class="header-search__results" data-search-results></div>
+	</form>
+</div>
+<ul class="lvl0__list" itemscope itemtype="https://schema.org/ItemList">
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Альпинизм</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/alpinizm">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Альпинизм
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Страховочное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/gornye-lyzhi">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/veryovki-i-repshnury/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Веревки, репшнуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/alpinism">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/karabiny/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/alpinism">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Зажимы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/strahovochniye-spuskovye-ustroystva/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные, спусковые устройства</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/alpinism">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/besedki-i-obvyazki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные системы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/besedki-i-obvyazki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/kaski/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Каски</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kaski/alpinism">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/bloki-i-blok-zazhimy/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Блочки, блок-зажимы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/alpinism">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ottyazhki-petli-deyzicheyny-razgruzkiyo" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Оттяжки, петли, дэйзичейны</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ottyazhki-petli-deyzicheyny-razgruzkiyo">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/samostrahovki-i-amortizatory/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Самостраховки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/alpinism">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Скальное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/skalnoe-snaryazhenie">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/razgruzki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Разгрузки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/razgruzki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/magneziya-i-meshochki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Магнезия и мешки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/magneziya-i-meshochki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="http://ice-age.ru/collection/kryuchya-ledobury-zakladki/" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Крючья, ледобуры, закладки, френды, экстракторы</span>
+											<link itemprop="url" href="http://ice-age.ru/collection/kryuchya-ledobury-zakladki/">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/ito" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Скайхуки, скальные фифы, камхуки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ito">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/lesenki-klify-kryukonogi-kryukopuzy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Лесенки, клифы, крюконоги, крюкопузы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/lesenki-klify-kryukonogi-kryukopuzy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/shlyamburnoe-oborudovanie/" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Шлямбурное оборудование</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/shlyamburnoe-oborudovanie/">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/molotki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Скальные молотки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/molotki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/takelazhnye-plastiny-i-vertlyugi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Такелажные пластины, вертлюги</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/takelazhnye-plastiny-i-vertlyugi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/perchatki-dlya-raboty-s-verevkoy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Перчатки для работы с веревкой</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/perchatki-dlya-raboty-s-verevkoy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/meshki-i-sumki-dlya-instrumenta" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Вспомогательные мешки и сумки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Ледово-снежное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/prochee-2">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/koshki-i-ledostupy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Кошки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/koshki-i-ledostupy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/ledoruby-ledovye-instrumenty " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Ледорубы, ледовые инструменты, айс-фифи</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ledoruby-ledovye-instrumenty ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kryuchya-ledobury-zakladki/ledobury" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Ледобуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kryuchya-ledobury-zakladki/ledobury">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/snezhnye-lopaty-i-pily/lopaty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Снежные лопаты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snezhnye-lopaty-i-pily/lopaty">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/snegostupy/alpinism" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Снегоступы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snegostupy/alpinism">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Тренировочное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/trenirovochnoe-snaryazhenie">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/sleklayn" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Слэклайны</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/sleklayn">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura/koltsa-i-shary" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Кольца и шары</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura/koltsa-i-shary">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura/fingerboard" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Фингерборды</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura/fingerboard">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/skalolaznye-zatsepki-i-furnitura" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Скалолазные зацепки и фурнитура</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Одежда для альпинизма</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/odezhda-dlya-alpinizma">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/puhovka" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пуховики</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/puhovka">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/termonoski" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Носки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/termonoski">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/perchatki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рукавицы и перчатки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/perchatki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/gamashi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Бахилы и гамаши</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/gamashi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/chuni" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Чуни</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/chuni">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						
+<a href="/collection/catalog">Весь каталог</a>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Промальп</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/promalp">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Промальп
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Страховочные веревки (канаты)</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/strahovochnye-verevki-kanaty">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/static_ropes" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Статические веревки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/static_ropes">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/dinamica" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Динамические веревки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/dinamica">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/repshnury" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Репшнуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/repshnury">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/protektory" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Протекторы для веревки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/protektory">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/gibkie-ankernye-linii" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Гибкие анкерные линии</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/gibkie-ankernye-linii">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/shnur-dlya-kablinga" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Шнур для каблинга</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/shnur-dlya-kablinga">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/tros-v-opletke" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Трос в оплетке</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/tros-v-opletke">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Привязи</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/strahovochnye-privyazi">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/universalnye-privyazi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Универсальные привязи</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/universalnye-privyazi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/strahovochnye-i-uderzhivayuschie-privyazi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Привязи удерживающие и для позиционирования</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/strahovochnye-i-uderzhivayuschie-privyazi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/privyazi-dlya-polozheniya-sidya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Привязи для положения сидя</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/privyazi-dlya-polozheniya-sidya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/naplechnye-remni" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Наплечные ремни</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/naplechnye-remni">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/sidushki " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Сидушки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/sidushki ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi/aksessuary-dlya-privyazey" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi/aksessuary-dlya-privyazey">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/privyazi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Все привязи</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/privyazi">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Соединительные элементы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/soedinitelnye-elementy">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/karabiny/promalp" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/promalp">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/rapidy-i-delty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рапиды и дельты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/rapidy-i-delty">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/takelazhnye-plastiny-i-vertlyugi/vertlyugi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Вертлюги и разъемные кольца</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/takelazhnye-plastiny-i-vertlyugi/vertlyugi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/takelazhnye-plastiny-i-vertlyugi/takelazhnye-plastiny" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Такелажные пластины</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/takelazhnye-plastiny-i-vertlyugi/takelazhnye-plastiny">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/shakly" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Шаклы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/shakly">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Устройства для страховки, спуска и подъема</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/ustroystva-dlya-strahovki-spuska-i-podema">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/spuskovye" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Спусковые устройства</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/spuskovye">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/strahovochniye" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные устройства</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/strahovochniye">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy/kanatnye-zazhimy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Зажимы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy/kanatnye-zazhimy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy/aksessuary-dlya-zazhimov" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары для зажимов</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy/aksessuary-dlya-zazhimov">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/amortizatory-ryvka" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Амортизаторы рывка</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/amortizatory-ryvka">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/avtomaticheskie-spuskovye-i-strahovochnye-ustroystva" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">СИЗ втягивающего типа</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/avtomaticheskie-spuskovye-i-strahovochnye-ustroystva">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Средства для защиты головы и тела</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/sredstva-dlya-zaschity-golovy-i-tela">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/kaski/promalp" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Каски защитные</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kaski/promalp">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/perchatki-dlya-raboty-s-verevkoy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Перчатки для работы с веревкой</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/perchatki-dlya-raboty-s-verevkoy">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Стропы и усы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/stropy-i-usy">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/strakhovochnye-stropy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные стропы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/strakhovochnye-stropy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/stropy-dlya-pozitsionirovaniya-i-uderzhaniya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Стропы для позиционирования и удержания</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/stropy-dlya-pozitsionirovaniya-i-uderzhaniya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/promalp" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Усы самостраховки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/promalp">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Блоки и полиспасты</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-polispasty">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blok-roliki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Блок-ролики</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blok-roliki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blok-roliki-s-zazhimom" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Блоки-ролики с зажимом</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blok-roliki-s-zazhimom">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/polispasty-v-sbore" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Полиспасты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/polispasty-v-sbore">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Петли, охватки и анкерные стропы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/petli-ohvatki-i-ankernye-stropy">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-tekstilnye" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Петли текстильные</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-tekstilnye">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/stropy-ankernye" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Стропы анкерные</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/stropy-ankernye">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/ohvatki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Охватки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/ohvatki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-dlya-arboristiki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Петли для арбористики</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-dlya-arboristiki">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Комплекты</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/podborki">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/komplekty-dlya-promalpa" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Комплекты для промальпа</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/komplekty-dlya-promalpa">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Вспомогательное оборудование</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/prochee-3">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/shlyamburnoe-oborudovanie/" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Шлямбурное оборудование</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/shlyamburnoe-oborudovanie/">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/karabiny-dlya-razveski-snaryazheniya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины для развески</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/karabiny-dlya-razveski-snaryazheniya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href=" https://ice-age.ru/collection/karabiny/vspomogatelnye-karabiny " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Вспомогательные карабины</span>
+											<link itemprop="url" href=" https://ice-age.ru/collection/karabiny/vspomogatelnye-karabiny ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/strahovka-dlya-instrumenta" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховка для инструмента</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/strahovka-dlya-instrumenta">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/magnity-dlya-instrumenta" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Магниты для инструмента</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/magnity-dlya-instrumenta">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/stroporezy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Стропорезы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/meshki-i-sumki-dlya-instrumenta/stroporezy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/ryukzaki-sumki-upakovka/promalp" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Транспортные баулы и мешки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ryukzaki-sumki-upakovka/promalp">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/shlyamburnoe-oborudovanie/ankernye-koltsa" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Кольца анкерные</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/shlyamburnoe-oborudovanie/ankernye-koltsa">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Прочее</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/prochee-56497a">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/spasatelnoe-oborudovanie" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Спасательное оборудование</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/spasatelnoe-oborudovanie">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/arboporty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Арбопорты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/arboporty">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						
+<ul>
+<li><span data-style="color: #ff0000;"><a data-style="color: #ff0000;" href="/collection/catalog">Весь каталог</a></span>
+<br /><br /><br /><br /><em>Работаем с юридическими лицами. Выставляем счета <strong>с НДС</strong>.</em>
+</li>
+<li>
+<br /><br /><br /><br /><em><strong>Почему с нами удобно</strong>:</em>&nbsp;
+</li>
+<li>
+<br /><br /><em>За 2 рабочих дня выдаем или доставляем по Москве заказы на снаряжение Camp, Vento, Kong, Орион Альп</em>
+</li>
+<li>
+<br /><br /><em>Регулярные поставки веревок Коломенского завода, экспресс-поставки в течение 2х дней после заказа</em>
+</li>
+<li>
+<br /><br /><em>Доставляем заказы по России до ПВЗ СДЕК и другими ТК (а также Почтой России)</em>
+</li>
+</ul>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Спелео</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/drugoe">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Спелео
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Индивидуальное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/obvyazki">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/besedki-i-obvyazki/speleo-obvyazki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Обвязки, верхние и нижние</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/besedki-i-obvyazki/speleo-obvyazki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy/podderzhki-krolya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Поддержки кроля</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy/podderzhki-krolya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/speleo-usy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные усы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/speleo-usy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/spuskovye-ustroystva-dlya-speleologii" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Спусковые устройства</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/spuskovye-ustroystva-dlya-speleologii">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy/zazhimy-dlya-speleologii" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Зажимы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy/zazhimy-dlya-speleologii">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/zazhimy/pedali-dlya-zhumara " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Педали</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/zazhimy/pedali-dlya-zhumara ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/alyuminievye-karabiny" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/alyuminievye-karabiny">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/delty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Дельты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/delty">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Навесочное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/verevki-i-repshnury">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/speleo-verevki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Веревки статика 9-11 мм</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/speleo-verevki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/repshnury" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Репшнуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/repshnury">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/karabiny-alyuminievye-dlya-naveski " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины алюминиевые</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/karabiny-alyuminievye-dlya-naveski ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/karabiny-stalnye-dlya-naveski" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины стальные</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/karabiny-stalnye-dlya-naveski">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/rapidy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рапиды</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/rapidy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/shlyamburnoe-oborudovanie/" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Шлямбурное оборудование</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/shlyamburnoe-oborudovanie/">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/molotki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Скальные молотки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/molotki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-tekstilnye " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Петли</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/stropy-petli-ohvatki-2/petli-tekstilnye ">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						
+<a href="/collection/catalog">Весь каталог</a>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Туризм</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/turizm">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Туризм
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Одежда</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/odezhda-742af6">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/puhovka" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пуховики</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/puhovka">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/puhovye-shtany-i-shorty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пуховые штаны и шорты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/puhovye-shtany-i-shorty">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/perchatki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рукавицы и перчатки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/perchatki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/termonoski " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Термоноски</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/termonoski ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/gamashi" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Бахилы и гамаши</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/gamashi">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/chuni " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пуховые чуни</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/chuni ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/odezhda/aksessuary" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/odezhda/aksessuary">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Спальные мешки</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/spalnye-meshki-01f40d">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/spalnye-meshki/zimnie-spalniki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Зимние</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/spalnye-meshki/zimnie-spalniki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/spalnye-meshki/letnie-i-3h-sezonnye-spalniki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Трехсезонные и летние</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/spalnye-meshki/letnie-i-3h-sezonnye-spalniki">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Рюкзаки, трансы, гермы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/ryukzaki-transy-germy">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ryukzaki-i-bauly/ryukzaki " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рюкзаки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ryukzaki-i-bauly/ryukzaki ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ryukzaki-i-bauly/transportnye-meshki-i-bauly " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Транспортные мешки и баулы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ryukzaki-i-bauly/transportnye-meshki-i-bauly ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ryukzaki-i-bauly/sumki-dlya-instrumentov" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Сумки для инструментов</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ryukzaki-i-bauly/sumki-dlya-instrumentov">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href=" https://ice-age.ru/collection/ryukzaki-i-bauly/aksessuary-k-ryukzakam-i-upakovke" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары к рюкзакам и упаковке</span>
+											<link itemprop="url" href=" https://ice-age.ru/collection/ryukzaki-i-bauly/aksessuary-k-ryukzakam-i-upakovke">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Телескопические палки</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki-3">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/teleskopicheskie-palki/trekkingovye-palki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Для треккинга и походов</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki/trekkingovye-palki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/teleskopicheskie-palki/dlya-treyla-i-multisporta" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Для трейла и мультиспорта</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki/dlya-treyla-i-multisporta">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/teleskopicheskie-palki/dlya-frirayda-i-ski-tura" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Для фрирайда и ски-тура</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki/dlya-frirayda-i-ski-tura">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/teleskopicheskie-palki/aksessuary" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki/aksessuary">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Походная кухня</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/pohodnaya-kuhnya">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/toplivo" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Газ</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/toplivo">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/posudy-termosy/termosy-i-flyagi " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Термосы и фляги</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/posudy-termosy/termosy-i-flyagi ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/posudy-termosy/posuda" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Посуда</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/posudy-termosy/posuda">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/gorelki/gorelki-i-plitki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Горелки и плитки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/gorelki/gorelki-i-plitki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/gorelki/zapchasti-k-gorelkam" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Запчасти к горелкам</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/gorelki/zapchasti-k-gorelkam">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/gorelki/aksessuary" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары для горелок</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/gorelki/aksessuary">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/lampy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Лампы и сеточки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/lampy">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Компасы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/kompasy-df2ca1">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kompasy/kolby " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Колбы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kompasy/kolby ">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kompasy/platy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Платы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kompasy/platy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kompasy/aksessuary-dlya-kompasov" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары для компасов</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kompasy/aksessuary-dlya-kompasov">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Прочее</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/prochee">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/ochki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Очки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ochki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/fonari" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Фонари</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/fonari">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/spasatelnoe-oborudovanie" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Спасательное оборудование</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/spasatelnoe-oborudovanie">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/prokat-snaryazheniya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Прокат снаряжения</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/prokat-snaryazheniya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/literatura" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Книги, карты, открытки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/literatura">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/pobryakushki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Побрякушки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/pobryakushki">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Бивак</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/bivak">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/palatki-i-ukrytiya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Палатки и укрытия</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/palatki-i-ukrytiya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kovriki-i-penki/aksessuary" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kovriki-i-penki/aksessuary">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						
+<a href="/collection/catalog">Весь каталог</a>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Снег</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/sneg">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Снег
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Камус</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/kamus-3">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/kit" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Наборы для лыж и сплитов</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/kit">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/naotrez" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Камус на отрез</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/naotrez">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/krepleniya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Крепления для камуса</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/krepleniya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/glue" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Клей для камуса</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/glue">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/accessory" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Аксессуары для камуса</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/accessory">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/kamus/impregnation" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Воск и пропитки для камуса</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/kamus/impregnation">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Лавинное снаряжение</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/lavinnoe-snaryazhenie-2">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/lavinnye-komplekty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Лавинные комплекты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/lavinnye-komplekty">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/lavinnye-bipery" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Биперы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/lavinnye-bipery">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/lavinnye-schupy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Щупы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/lavinnye-schupy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/snezhnye-lopaty-i-pily/lopaty" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Лопаты</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snezhnye-lopaty-i-pily/lopaty">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/snezhnye-lopaty-i-pily/snezhnye-pily" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пилы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snezhnye-lopaty-i-pily/snezhnye-pily">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/spasatelnoe-oborudovanie/poleznye-melochi " class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Полезные мелочи</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/spasatelnoe-oborudovanie/poleznye-melochi ">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Снегоступы</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/snegostupy-4b5fca">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/snegostupy/ramnye" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рамные (алюминий)</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snegostupy/ramnye">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/snegostupy/plastic" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Пластиковые</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/snegostupy/plastic">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Прокат снаряжения</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/prokat-snaryazheniya-3">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/prokat-snaryazheniya/snegostupy-v-prokat" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Снегоступы в прокат</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/prokat-snaryazheniya/snegostupy-v-prokat">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/prokat-snaryazheniya/lavinnoe-snaryazhenie-v-prokat" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Лавинное снаряжение в прокат</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/prokat-snaryazheniya/lavinnoe-snaryazhenie-v-prokat">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Железо и веревки</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/zhelezo-i-verevki">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/verevki-i-shnury-dlya-zimnego-turizma" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Веревки и шнуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/verevki-i-shnury-dlya-zimnego-turizma">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/koshki-i-ledostupy/koshki-i-ledostupy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Кошки и ледоступы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/koshki-i-ledostupy/koshki-i-ledostupy">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ledoruby-ledovye-instrumenty/ledoruby" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Ледорубы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ledoruby-ledovye-instrumenty/ledoruby">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/besedki-i-obvyazki/ski-tour" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Беседки для скитура</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/besedki-i-obvyazki/ski-tour">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Прочее</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/drugoe-2">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/teleskopicheskie-palki/freeridnye-palki" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Фрирайдные палки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/teleskopicheskie-palki/freeridnye-palki">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="http://ice-age.ru/collection/ryukzaki-sumki-upakovka/freeride" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Рюкзаки для фрирайда</span>
+											<link itemprop="url" href="http://ice-age.ru/collection/ryukzaki-sumki-upakovka/freeride">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/literatura" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Книги, карты, открытки</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/literatura">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						
+<ul>
+<li><a href="/collection/catalog">Весь каталог</a></li>
+</ul>
+<br /><br /><br /><br /><em>Мы сдаем в <a href="https://ice-age.ru/collection/prokat-snaryazheniya">прокат</a> лавинное снаряжение и снегоступы.</em>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+		<li
+			class="lvl0__item has-children"
+			data-has-children="true"
+			data-menu-block="lvl0"
+			>
+			
+			<span class="lvl0__state drop-state" data-menu-state="lvl0">
+				<i class="st st_1"></i><i class="st st_2"></i>
+			</span>
+			
+			<div class="lvl0__block" data-menu-trigger="lvl0" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<span class="lvl0__link" itemprop="name">Веревочные парки</span>
+				<link itemprop="url" href="https://ice-age.ru/collection/verevochnye-parki-2">
+			</div>
+			
+			<div class="lvl0__dropdown">
+				<div class="lvl0__dropdown-header">
+					Веревочные парки
+					<div class="lvl0__dropdown-close" data-menu-close></div>
+				</div>
+				<div class="lvl0__children">
+					<ul class="lvl1__list lvl0__children-body">
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Строительство</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/stroitelstvo">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/tros-v-opletke" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Трос в оплетке</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/tros-v-opletke">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/veryovki-i-repshnury/pe-shnury" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">ПЭ шнуры</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/veryovki-i-repshnury/pe-shnury">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/sleklayn" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Слеклайны</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/sleklayn">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Скалолазные зацепы</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/product/sidenie-krug-dlya-trolleya" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Сиденье для троллея</span>
+											<link itemprop="url" href="https://ice-age.ru/product/sidenie-krug-dlya-trolleya">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/ropeparks_gear/sistema-nepreryvnoy-strahovki-orion-alp" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Система непрерывной страховки Орион Альп</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/ropeparks_gear/sistema-nepreryvnoy-strahovki-orion-alp">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Снаряжение для клиентов</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/snaryazhenie-dlya-klientov">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href=" https://ice-age.ru/collection/besedki-i-obvyazki/rope_park" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Страховочные системы</span>
+											<link itemprop="url" href=" https://ice-age.ru/collection/besedki-i-obvyazki/rope_park">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href=" https://ice-age.ru/collection/kaski/kaski-dlya-verevochnyh-parkov" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Каски</span>
+											<link itemprop="url" href=" https://ice-age.ru/collection/kaski/kaski-dlya-verevochnyh-parkov">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/usy-samostrahovki-dlya-verevochnyh-parkov" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Усы (Самостраховки)</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/usy-samostrahovki-dlya-verevochnyh-parkov">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/karabiny/ropepark" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Карабины</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/karabiny/ropepark">
+										</a>
+									</div>
+								</li>
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blochki-dlya-trolleev" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Блочки для троллеев</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/bloki-i-blok-zazhimy/blochki-dlya-trolleev">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+						<li class="lvl1__item has-children" data-menu-block="lvl1" data-has-children="true">
+							
+							<span class="lvl1__state drop-state_lvl1" data-menu-state="lvl1">
+								<i class="st st_1"></i><i class="st st_2"></i>
+							</span>
+							
+							<div class="lvl1__block" data-menu-trigger="lvl1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<span class="lvl1__link" itemprop="name">Снаряжение для инструкторов и эвакуации</span>
+								<link itemprop="url" href="https://ice-age.ru/collection/snaryazhenie-dlya-instruktorov-i-evakuatsii">
+							</div>
+							
+							<ul class="lvl2__list lvl1__dropdown">
+								
+								<li class="lvl2__item">
+									<div class="lvl2__block">
+										<a href="/collection/perchatki-dlya-raboty-s-verevkoy" class="lvl2__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Перчатки для работы с веревкой</span>
+											<link itemprop="url" href="https://ice-age.ru/collection/perchatki-dlya-raboty-s-verevkoy">
+										</a>
+									</div>
+								</li>
+								
+
+							</ul>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				
+
+				<div class="lvl0__information">
+				
+					<div class="lvl0__banner">
+						
+						
+						<span class="lvl0__banner-img">
+							<img src="https://static.insales-cdn.com/r/uYn8yLlrDKM/rs:fit:300:300:1/plain/images/collections/1/3252/16059572/large_IMG_1276.jpg@webp" alt="">
+						</span>
+						
+
+						
+							<span class="lvl0__banner-text">
+								
+ 
+ 
+							</span>
+						
+
+						
+					</div>
+					<div class="lvl0__infolinks">
+						
+						<a href="/collection/catalog"></a>
+<ul>
+<li><em><a href="http://ropepark.ice-age.ru/"><span data-style="color: #0099ff;">Архитектурное бюро ICE AGE</span></a> </em></li>
+</ul>
+проектирует и строит веревочные парки, троллеи, горные приюты, малые формы для детских площадок.
+&nbsp;
+<ul>
+<li><a href="http://ropepark.ice-age.ru/">Посмотреть проекты&gt;&gt;&gt;</a></li>
+</ul>
+
+						
+					</div>
+				
+				</div>
+			</div>
+			
+		</li>
+		
+	</ul><div class="header-catalog__special">
+		<a href="/collection/catalog/sale" class="header-catalog__special-link no_highlight">
+			Скидки до 50%
+		</a>
+	</div>
+
+	<ul>
+		<li class="lvl0__item menu_catalog__all-btn">
+			<div class="lvl0__block">
+				<a class="lvl0__link" href="/collection/catalog">Весь каталог</a>
+			</div>
+		</li>
+	</ul>
+
+	<div class="header-menu-mobile">
+		<ul class="header-menu-mobile__list" data-menu-panel>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item has-children" data-has-children="true" data-menu-block>
+				
+				<span class="header-menu-mobile__state drop-state" data-menu-state="lvl0">
+					<i class="st st_1"></i><i class="st st_2"></i>
+				</span>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<span class="header-menu-mobile__item-link" data-menu-trigger="lvl0">
+						Ледниковый период
+					</span>
+					
+				</div>
+				
+				<ul class="header-menu-mobile__drop-list">
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/o-kompanii" class="header-menu-mobile__drop-item-link">
+							Экипировочный центр
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/verevochnye-parki" class="header-menu-mobile__drop-item-link">
+							Веревочные парки
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/brands" class="header-menu-mobile__drop-item-link">
+							Бренды
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/blogs/tehnicheskie-sovety" class="header-menu-mobile__drop-item-link">
+							Технические советы
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/product/otzyvy" class="header-menu-mobile__drop-item-link">
+							Отзывы
+						</a>
+					</li>
+					
+
+				</ul>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item has-children" data-has-children="true" data-menu-block>
+				
+				<span class="header-menu-mobile__state drop-state" data-menu-state="lvl0">
+					<i class="st st_1"></i><i class="st st_2"></i>
+				</span>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<span class="header-menu-mobile__item-link" data-menu-trigger="lvl0">
+						Информация
+					</span>
+					
+				</div>
+				
+				<ul class="header-menu-mobile__drop-list">
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/rekvizity" class="header-menu-mobile__drop-item-link">
+							Реквизиты
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/delivery" class="header-menu-mobile__drop-item-link">
+							Доставка
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/payment" class="header-menu-mobile__drop-item-link">
+							Оплата
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/garantiya-i-vozvrat" class="header-menu-mobile__drop-item-link">
+							Гарантия и возврат
+						</a>
+					</li>
+					
+					<li class="header-menu-mobile__drop-item">
+						<a href="/page/skidki-i-aktsii" class="header-menu-mobile__drop-item-link">
+							Скидки и акции
+						</a>
+					</li>
+					
+
+				</ul>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="/page/opt" class="header-menu-mobile__item-link">
+						Опт
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="/page/servisy" class="header-menu-mobile__item-link">
+						Сервисы
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="http://life.ice-age.ru/" class="header-menu-mobile__item-link">
+						Блог
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="/page/kontakty" class="header-menu-mobile__item-link">
+						Контакты
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="/page/delivery" class="header-menu-mobile__item-link">
+						Доставка
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+			
+			
+			
+			<li class="header-menu-mobile__item " data-has-children="" data-menu-block>
+				
+				<div class="header-menu-mobile__item-block" >
+					
+					<a href="/page/payment" class="header-menu-mobile__item-link">
+						Оплата
+					</a>
+					
+				</div>
+				
+
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</header><section class="index-page" data-ui="indexpage-content">
+	
+<section class="banners-index">
+	<div class="banners-index__wrapper row" data-ui-banners-index-wrapper><div class="banners-index__element banners-index__element_1" data-banner="1" ><div class="banners-index__element-in" style="background-image: url(https://static.insales-cdn.com/r/cknsCMKH4OE/rs:fit:1024:1024:1/plain/files/1/6759/19331687/original/banner_index__image_1.jpg@webp)"><a href="/collection/komplekty-dlya-promalpa" class="banners-index__element-link no_highlight"><img class="banners-index__element-image" src="https://static.insales-cdn.com/r/cknsCMKH4OE/rs:fit:1024:1024:1/plain/files/1/6759/19331687/original/banner_index__image_1.jpg@webp" alt="" loading="lazy">
+				<span class="banners-index__element-in-row"></span></a></div>
+		</div><div class="banners-index__element banners-index__element_2" data-banner="2" ><div class="banners-index__element-in" style="background-image: url(https://static.insales-cdn.com/r/9l_htu1b5w4/rs:fit:500:500:1/plain/files/1/6319/17602735/original/banner_index__image_3.jpg@webp)"><a href="/collection/kamus" class="banners-index__element-link no_highlight"><img class="banners-index__element-image" src="https://static.insales-cdn.com/r/9l_htu1b5w4/rs:fit:500:500:1/plain/files/1/6319/17602735/original/banner_index__image_3.jpg@webp" alt="Камус и комплектующие" loading="lazy">
+				<span class="banners-index__element-in-row"><span class="banners-index__element-title align-center" style="">
+						Камус и комплектующие
+					</span></span></a></div>
+		</div><div class="banners-index__element banners-index__element_3" data-banner="3" ><div class="banners-index__element-in" style="background-image: url(https://static.insales-cdn.com/r/eFlHLGbNcbg/rs:fit:500:500:1/plain/files/1/6320/17602736/original/banner_index__image_2.jpg@webp)"><a href="/collection/lavinnoe-snaryazhenie" class="banners-index__element-link no_highlight"><img class="banners-index__element-image" src="https://static.insales-cdn.com/r/eFlHLGbNcbg/rs:fit:500:500:1/plain/files/1/6320/17602736/original/banner_index__image_2.jpg@webp" alt="Лавинное снаряжение" loading="lazy">
+				<span class="banners-index__element-in-row"><span class="banners-index__element-title align-center" style="">
+						Лавинное снаряжение
+					</span></span></a></div>
+		</div><div class="banners-index__element banners-index__element_4" data-banner="4" ><div class="banners-index__element-in" style="background-image: url(https://static.insales-cdn.com/r/V38mq1ezt6Y/rs:fit:500:500:1/plain/files/1/3969/20115329/original/banner_index__image_4.webp)"><a href="https://ice-age.ru/collection/veryovki-i-repshnury/static_ropes" class="banners-index__element-link no_highlight"><img class="banners-index__element-image" src="https://static.insales-cdn.com/r/V38mq1ezt6Y/rs:fit:500:500:1/plain/files/1/3969/20115329/original/banner_index__image_4.webp" alt="Экипировка BVN travel" loading="lazy">
+				<span class="banners-index__element-in-row"><span class="banners-index__element-title align-center" style="">
+						Экипировка BVN travel
+					</span></span></a></div>
+		</div><div class="banners-index__element banners-index__element_5" data-banner="5" ><div class="banners-index__element-in" style="background-image: url(https://static.insales-cdn.com/r/gPePMeDg_Mg/rs:fit:500:500:1/plain/files/1/6321/17602737/original/banner_index__image_5.jpg@webp)"><a href="/collection/skalolaznye-zatsepki-i-furnitura" class="banners-index__element-link no_highlight"><img class="banners-index__element-image" src="https://static.insales-cdn.com/r/gPePMeDg_Mg/rs:fit:500:500:1/plain/files/1/6321/17602737/original/banner_index__image_5.jpg@webp" alt="Зацепы и доски" loading="lazy">
+				<span class="banners-index__element-in-row"><span class="banners-index__element-title align-center" style="">
+						Зацепы и доски
+					</span></span></a></div>
+		</div></div>
+</section>
+
+
+	<section class="index-page__block">
+		<div class="index-page__block-header">
+			Советуем посмотреть
+		</div>
+		<div class="index-page__block-body">
+			<section class="products-carousel products-carousel-index products-carousel_in-index with-pagination" data-swiper-wrapper="index_products"><div class="products-carousel__side-fade products-carousel__side-fade_left" data-swiper-fade="left"></div><div class="products-carousel__body" data-swiper-body="index_products"><div class="products-carousel__wrapper"><div class="products-carousel__list" data-swiper="index_products" data-swiper-type="products_index" data-items-count="6" data-swiper-nav="arrows,dots" data-swiper-view="6" data-swiper-group="6" data-swiper-autoplay="0" data-swiper-speed="1000" ><div class="swiper-wrapper"><div class="product-short swiper-slide product-short_carousel" data-product-short="460247336" data-product-id="267439355"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/strahovochnaya-privyaz-professional-s-plechami" style="background-image: url(https://static.insales-cdn.com/r/O7ReEuLszs0/rs:fit:240:240:1/plain/images/products/1/5797/483169957/medium_0812-pered.jpeg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">Вертикаль</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/strahovochnaya-privyaz-professional-s-plechami"><span class="product-short__title-wrap">Страховочная привязь "Профессионал с плечами" (ЕАС)</span></a></div></div><div class="product-short__prices"><span class="product-short__price-badge">sale</span><span class="product-short__price-actual">5290<i class="shop-currency">&#x20BD;</i></span><span class="product-short__price-old">5750<i class="shop-currency">&#x20BD;</i></span></div></div></div><div class="product-short swiper-slide product-short_carousel" data-product-short="433662857" data-product-id="253900520"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/ottyazhka-fixe-kyros-638-qs4" style="background-image: url(https://static.insales-cdn.com/r/wgDtYMEaL0I/rs:fit:240:240:1/plain/images/products/1/5301/456684725/medium_fixe_express_orion-dyneema_1.jpg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">Fixe</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/ottyazhka-fixe-kyros-638-qs4"><span class="product-short__title-wrap">Оттяжка с карабинами Fixe Orion-638-QS4  (UIAA)</span></a></div></div><div class="product-short__prices"><span class="product-short__price-actual">1340<i class="shop-currency">&#x20BD;</i></span></div></div></div><div class="product-short swiper-slide product-short_carousel" data-product-short="200572575" data-product-id="117501356"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/skala-s-10" style="background-image: url(https://static.insales-cdn.com/r/5lmF7nZmNPA/rs:fit:240:240:1/plain/images/products/1/5904/275379984/medium_IMG-8411.jpg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">Шнур</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/skala-s-10"><span class="product-short__title-wrap">Веревка страховочная статическая 10 мм "Т" "Скала S 10" (EAC)</span></a></div></div><div class="product-short__prices"><span class="product-short__price-actual">54<i class="shop-currency">&#x20BD;</i></span><span class="product-short__price-divider">-</span><span class="product-short__price-actual">60<i class="shop-currency">&#x20BD;</i></span></div></div></div><div class="product-short swiper-slide product-short_carousel" data-product-short="393604374" data-product-id="230392284"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/cpalnyy-meshok-meridian-3" style="background-image: url(https://static.insales-cdn.com/r/dN8RJSOCRdE/rs:fit:240:240:1/plain/images/products/1/5580/406762956/medium_%D0%9C%D0%B5%D1%80%D0%B8%D0%B4%D0%B8%D0%B0%D0%BD3.jpg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">BVN</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/cpalnyy-meshok-meridian-3"><span class="product-short__title-wrap">Cпальный мешок Меридиан-3</span></a></div></div><div class="product-short__prices"><span class="product-short__price-actual">34990<i class="shop-currency">&#x20BD;</i></span></div></div></div><div class="product-short swiper-slide product-short_carousel" data-product-short="345724269" data-product-id="124955780"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/noski-run-merino" style="background-image: url(https://static.insales-cdn.com/r/OT_JqfVpfkU/rs:fit:240:240:1/plain/images/products/1/8014/193068878/medium_Run-merino-gray-wh-1.5.jpg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">Moretan</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/noski-run-merino"><span class="product-short__title-wrap">Носки Run Merino</span></a></div></div><div class="product-short__prices"><span class="product-short__price-actual">780<i class="shop-currency">&#x20BD;</i></span></div></div></div><div class="product-short swiper-slide product-short_carousel" data-product-short="439503051" data-product-id="257198311"><div class="product-short__wrapper"><div class="product-short__image"><div class="product-short__image-in"><a class="product-short__image-link" href="https://ice-age.ru/product/puhovye-bryuki-samosbrosy" style="background-image: url(https://static.insales-cdn.com/r/eD22Ag-b5X4/rs:fit:240:240:1/plain/images/products/1/2620/463694396/medium_902154174_w640_h640_902154174.jpeg@webp)" data-product-link></a></div></div><div class="product-short__content"><div class="product-short__brand">BVN</div><div class="product-short__title"><a class="product-short__title-link" href="https://ice-age.ru/product/puhovye-bryuki-samosbrosy"><span class="product-short__title-wrap">Пуховые брюки-самосбросы</span></a></div></div><div class="product-short__prices"><span class="product-short__price-actual">10990<i class="shop-currency">&#x20BD;</i></span></div></div></div></div></div></div><div class="products-carousel__navigation"><div class="products-carousel__arrow products-carousel__arrow-prev js-index_products-prev"><span class="ico"></span></div><div class="products-carousel__arrow products-carousel__arrow-next js-index_products-next"><span class="ico"></span></div><div class="products-carousel__dots js-index_products-pagination"></div></div></div><div class="products-carousel__side-fade products-carousel__side-fade_right" data-swiper-fade="right"></div></section>
+		</div>
+	</section>
+
+	<section class="index-page__block">
+		<div class="index-page__block-header">
+			В ледниковом периоде
+		</div>
+		<div class="index-page__block-body">
+			<div class="wrapper">
+			<ul class="advantages-big">
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__tests.png " alt="Тесты" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Тесты
+		</div>
+		<div class="advantages-big__element-text">
+			Надеть, походить, встегнуться, зависнуть можно в магазине до покупки
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__advices.png " alt="Консультации" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Консультации
+		</div>
+		<div class="advantages-big__element-text">
+			Подбор под каждую задачу. <br>Знаем, умеем <br> и пользуемся самии
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__delivery.png " alt="Доставка" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Доставка
+		</div>
+		<div class="advantages-big__element-text">
+			По Москве, России и миру. <br>Любой транспортной компанией
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__unic-brands.png " alt="Уникальные бренды" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Уникальные бренды
+		</div>
+		<div class="advantages-big__element-text">
+			Свои поставки новых брендов в Россию. <br>Производим приспособы для тренировок
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__fit-repair.png " alt="Подгонка и ремонт" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Подгонка и ремонт
+		</div>
+		<div class="advantages-big__element-text">
+			Чиним, режем, клеим, формуем, крутим, <br>точим и другие сервисы
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__lection-courses.png " alt="Лекции и курсы" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Лекции и курсы
+		</div>
+		<div class="advantages-big__element-text">
+			По туризму, лавинной безопасности, <br>путешествиям и не только
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__parking.png " alt="Парковка" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Парковка
+		</div>
+		<div class="advantages-big__element-text">
+			Бесплатно каждый день
+		</div>
+	</li>
+
+<li class="advantages-big__element">
+		<div class="advantages-big__element-ico">
+			
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/advantages__rental.png " alt="Прокат снаряжения" loading="lazy">
+		</div>
+		<div class="advantages-big__element-title">
+			Прокат снаряжения
+		</div>
+		<div class="advantages-big__element-text">
+			Биперы, щупы, лопаты,<br>снегоступы
+		</div>
+	</li>
+
+</ul>
+			</div>
+		</div>
+	</section>
+	<section class="index-page__block">
+		<div class="index-page__block-header">
+			Друзья о Ледниковом периоде
+		</div>
+		<div class="index-page__block-body">
+			<div class="wrapper">
+				<ul class="friends-about-us">
+					
+					<li class="friends-about-us__element">
+						<div class="friends-about-us__element-image">
+							<img src="https://static.insales-cdn.com/r/6YgEKUxG3b8/rs:fit:123:123:1/plain/files/1/5217/4248673/original/Abramov.jpg@webp" alt="Андрей Абрамов">
+						</div>
+						<div class="friends-about-us__element-name">
+							Андрей Абрамов
+						</div>
+						<div class="friends-about-us__element-desc">
+							 Геокриолог, исследователь
+						</div>
+						<div class="friends-about-us__element-text">
+							ЛП ценен людьми - поэтому здесь комфортно и интересно, и всегда найдется необходимая железочка и кружка.
+						</div>
+					</li>
+					
+					<li class="friends-about-us__element">
+						<div class="friends-about-us__element-image">
+							<img src="https://static.insales-cdn.com/r/BihJ2V7wDJs/rs:fit:123:123:1/plain/files/1/5219/4248675/original/Urubko.jpg@webp" alt="Денис Урубко">
+						</div>
+						<div class="friends-about-us__element-name">
+							Денис Урубко
+						</div>
+						<div class="friends-about-us__element-desc">
+							Альпинист
+						</div>
+						<div class="friends-about-us__element-text">
+							Решение проблем возможно двумя путями: собственно РЕШЕНИЕ, или создание дополнительных вопросов на заданную тему. Специализация Ледникового Периода в том и состоит, что здесь всегда находят наиболее эргономичный способ "закрыть" возникающие сложности. Что, собственно, удивляет и радует.
+						</div>
+					</li>
+					
+					<li class="friends-about-us__element">
+						<div class="friends-about-us__element-image">
+							<img src="https://static.insales-cdn.com/r/ExltX1LWJYM/rs:fit:123:123:1/plain/files/1/5218/4248674/original/Bogdanov.jpg@webp" alt="Александр Богданов">
+						</div>
+						<div class="friends-about-us__element-name">
+							Александр Богданов
+						</div>
+						<div class="friends-about-us__element-desc">
+							Мотопарапланерист
+						</div>
+						<div class="friends-about-us__element-text">
+							ЛП - это какая-то ассоциативная нить с эволюцией и естественным отбором. У меня во всяком случае.
+Все ЛП-шные штучки-дрючки, каким-то магическим образом проходят процесс естественного отбора в моей жизни.
+Все мои неудачные покупки аутдорных прибамбасов в других магазах - потихоньку вымирают, давая повод еще раз заглянуть к друзьям на Тульскую.
+						</div>
+					</li>
+					
+				</ul>
+
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="index-page__block index-page__block_nomargin">
+		<div class="big-contacts">
+
+			<div class="big-contacts__map" id="map__index"></div>
+			<div class="big-contacts__main row">
+
+				<div class="index-page__block-header">
+					Контакты
+				</div>
+
+				
+
+
+
+
+
+
+
+
+
+<ul class="shop-contacts shop-contacts_index">
+
+	
+	
+	
+	<li class="shop-contacts__element shop-contacts__element_addr">
+		<span class="ico ico_black">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__point_black.png" alt="">
+		</span>
+		<span class="content">
+			119619, Москва, <br/>магазин «Ледниковый период»
+		</span>
+	</li>
+
+ 
+	<li class="shop-contacts__element shop-contacts__element_email">
+		<span class="ico ico_black">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__email_black.png" alt="">
+		</span>
+		<span class="content">
+			<a href="mailto:shop@ice-age.ru">
+				shop@ice-age.ru
+			</a>
+		</span>
+	</li>
+ 
+	<li class="shop-contacts__element shop-contacts__element_phones">
+		<span class="ico ico_black">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__phone_black.png" alt="">
+		</span>
+		<span class="content">
+			<a href="tel:+79168888332">
+				8 916 888 83 32
+			</a>
+			<br>
+			<a href="tel:+74957270633">
+				8 495 727 06 33
+			</a>
+		</span>
+	</li>
+
+	<li class="shop-contacts__element shop-contacts__element_socials">
+		<div class="content">
+			
+<div class="socials-links">
+	
+	
+	<a href="http://ice-age-gear.livejournal.com/" class="socials-links__item ico_livejournal"></a>
+
+	
+	<a href="https://www.facebook.com/gearshopIceage/" class="socials-links__item ico_facebook"></a>
+
+	
+	<a href="https://vk.com/gear_shop" class="socials-links__item ico_vk"></a>
+
+	
+	<a href="https://www.instagram.com/lednikovyi.period/" class="socials-links__item ico_instagram"></a>
+</div>
+		</div>
+	</li>
+	
+
+
+</ul>
+
+				<div class="big-contacts__form">
+
+					<form action="/client_account/feedback" method="post" accept-charset="utf-8" data-form="feedback-index">
+						<input type="hidden" data-name="success_msg" value="Ваше сообшение отправлено">
+
+						<div class="big-contacts__form-title">
+							Напишите нам
+							<div class="big-contacts__form-notifications notifications"></div>
+						</div>
+						<div class="big-contacts__form-body row">
+
+							<div class="big-contacts__form-col big-contacts__form-col_one">
+								<div class="big-contacts__form-row">
+									<input type="text" name="name" placeholder="Имя" class="input input_text big-contacts__form-input" value="">
+								</div>
+								<div class="big-contacts__form-row">
+									<input type="tel" name="phone" placeholder="Телефон" class="input input_text big-contacts__form-input" value="">
+								</div>
+								<div class="big-contacts__form-row">
+									<input type="Email" name="email" placeholder="Email" class="input input_email big-contacts__form-input" value="">
+								</div>
+							</div>
+
+							<div class="big-contacts__form-col big-contacts__form-col_two">
+
+								<div class="big-contacts__form-row">
+
+									<textarea name="message"  placeholder="Сообщение" class="input input_textarea big-contacts__form-textarea"></textarea>
+
+								</div>
+
+								<div class="big-contacts__form-row big-contacts__form-row_text">
+
+									<div class="big-contacts__form-attention">
+										Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и принимаете условия <a href="/page/offer">публичной оферты</a>.
+									</div>
+
+								</div>
+
+								<div class="big-contacts__form-row big-contacts__form-row_btn">
+
+                                  <div data-feedback-form-recaptcha></div>
+
+									<button type="submit"  class="button button_black big-contacts__form-button">
+										Отправить
+									</button>
+
+
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+</section>
+<footer class="footer">
+	<div class="wrapper">
+
+		<div class="footer__main row">
+
+
+			<div class="footer__navigation footer__navigation_one">
+
+				<div class="footer__navigation-column">
+					<ul class="footer__navigation-list">
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/o-kompanii" class="footer__navigation-link">
+								Экипировочный центр
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/verevochnye-parki" class="footer__navigation-link">
+								Веревочные парки
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/brands" class="footer__navigation-link">
+								Бренды
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/blogs/tehnicheskie-sovety" class="footer__navigation-link">
+								Технические советы
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/product/otzyvy" class="footer__navigation-link">
+								Отзывы
+							</a>
+						</li>
+						
+
+					</ul>
+				</div>
+
+				<div class="footer__navigation-column">
+					<ul class="footer__navigation-list">
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/rekvizity" class="footer__navigation-link">
+								Реквизиты
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/delivery" class="footer__navigation-link">
+								Доставка
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/payment" class="footer__navigation-link">
+								Оплата
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/garantiya-i-vozvrat" class="footer__navigation-link">
+								Гарантия и возврат
+							</a>
+						</li>
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/skidki-i-aktsii" class="footer__navigation-link">
+								Скидки и акции
+							</a>
+						</li>
+						
+
+					</ul>
+				</div>
+
+				<div class="footer__navigation-column footer__navigation-column_last">
+					<ul class="footer__navigation-list">
+						
+						
+
+						
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/opt" class="footer__navigation-link">
+								Опт
+							</a>
+						</li>
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/servisy" class="footer__navigation-link">
+								Сервисы
+							</a>
+						</li>
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="http://life.ice-age.ru/" class="footer__navigation-link">
+								Блог
+							</a>
+						</li>
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/kontakty" class="footer__navigation-link">
+								Контакты
+							</a>
+						</li>
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/delivery" class="footer__navigation-link">
+								Доставка
+							</a>
+						</li>
+						
+
+						
+						
+						<li class="footer__navigation-element">
+							<a  href="/page/payment" class="footer__navigation-link">
+								Оплата
+							</a>
+						</li>
+						
+
+						
+
+					</ul>
+				</div>
+
+
+
+			</div>
+
+
+
+
+			<div class="footer__logo">
+				<div class="footer__logo-block">
+					<a href="/" class="footer__logo-link">
+						<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/logo.png" alt="">
+					</a>
+				</div>
+				<div class="footer__socials">
+					
+<div class="socials-links">
+	
+	
+	<a href="http://ice-age-gear.livejournal.com/" class="socials-links__item ico_livejournal"></a>
+
+	
+	<a href="https://www.facebook.com/gearshopIceage/" class="socials-links__item ico_facebook"></a>
+
+	
+	<a href="https://vk.com/gear_shop" class="socials-links__item ico_vk"></a>
+
+	
+	<a href="https://www.instagram.com/lednikovyi.period/" class="socials-links__item ico_instagram"></a>
+</div>
+				</div>
+			</div>
+
+			<div class="footer__spell-errors">
+				Нашли ошибку? <br>
+				Выделите текст и нажмите «ctrl+enter» — мы исправим <br>
+				её в ближайшее время<br>
+			</div>
+
+
+		</div>
+
+		<nav class="footer-catalog" data-menu-panel>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Альпинизм</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="/collection/veryovki-i-repshnury/alpinism" class="lvl0__link">
+								Веревки, репшнуры
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="/collection/karabiny/alpinism" class="lvl0__link">
+								Карабины
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/zazhimy" class="lvl0__link">
+								Зажимы
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="/collection/strahovochniye-spuskovye-ustroystva/alpinism" class="lvl0__link">
+								Страховочные, спусковые устройства
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/besedki-i-obvyazki" class="lvl0__link">
+								Страховочные системы
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="/collection/kaski/alpinism" class="lvl0__link">
+								Каски
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Промальп</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/static_ropes" class="lvl0__link">
+								Статические веревки
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/dinamica" class="lvl0__link">
+								Динамические веревки
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/repshnury" class="lvl0__link">
+								Репшнуры
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/protektory" class="lvl0__link">
+								Протекторы для веревки
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/gibkie-ankernye-linii" class="lvl0__link">
+								Гибкие анкерные линии
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/shnur-dlya-kablinga" class="lvl0__link">
+								Шнур для каблинга
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Спелео</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/besedki-i-obvyazki/speleo-obvyazki" class="lvl0__link">
+								Обвязки, верхние и нижние
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/zazhimy/podderzhki-krolya" class="lvl0__link">
+								Поддержки кроля
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/samostrahovki-i-amortizatory/speleo-usy" class="lvl0__link">
+								Страховочные усы
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/strahovochniye-spuskovye-ustroystva/spuskovye-ustroystva-dlya-speleologii" class="lvl0__link">
+								Спусковые устройства
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/zazhimy/zazhimy-dlya-speleologii" class="lvl0__link">
+								Зажимы
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/zazhimy/pedali-dlya-zhumara " class="lvl0__link">
+								Педали
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Туризм</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/puhovka" class="lvl0__link">
+								Пуховики
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/puhovye-shtany-i-shorty" class="lvl0__link">
+								Пуховые штаны и шорты
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/perchatki" class="lvl0__link">
+								Рукавицы и перчатки
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/termonoski " class="lvl0__link">
+								Термоноски
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/gamashi" class="lvl0__link">
+								Бахилы и гамаши
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/odezhda/chuni " class="lvl0__link">
+								Пуховые чуни
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Снег</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/kit" class="lvl0__link">
+								Наборы для лыж и сплитов
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/naotrez" class="lvl0__link">
+								Камус на отрез
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/krepleniya" class="lvl0__link">
+								Крепления для камуса
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/glue" class="lvl0__link">
+								Клей для камуса
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/accessory" class="lvl0__link">
+								Аксессуары для камуса
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/kamus/impregnation" class="lvl0__link">
+								Воск и пропитки для камуса
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="lvl0__column has-children" data-has-children="true" data-menu-block="lvl0">
+		<div class="lvl0__header" data-menu-trigger="lvl0">Веревочные парки</div>
+		<ul class="lvl0__list">
+			
+          		
+				
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/tros-v-opletke" class="lvl0__link">
+								Трос в оплетке
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/veryovki-i-repshnury/pe-shnury" class="lvl0__link">
+								ПЭ шнуры
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/sleklayn" class="lvl0__link">
+								Слеклайны
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/skalolaznye-zatsepki-i-furnitura" class="lvl0__link">
+								Скалолазные зацепы
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/product/sidenie-krug-dlya-trolleya" class="lvl0__link">
+								Сиденье для троллея
+							</a>
+						</div>
+					</li>
+          			
+					
+					<li class="lvl0">
+						<div class="lvl0__block">
+							<a  href="https://ice-age.ru/collection/ropeparks_gear/sistema-nepreryvnoy-strahovki-orion-alp" class="lvl0__link">
+								Система непрерывной страховки Орион Альп
+							</a>
+						</div>
+					</li>
+          			
+					
+				
+					
+				
+					
+				
+					<li><a href="https://ice-age.ru/collection/catalog">Весь каталог ></a></li>
+			
+		</ul>
+	</div>
+	
+	<div class="footer-catalog__special">
+		<a href="/collection/catalog/sale" class="footer-catalog__special-sale no_highlight">
+			Скидки до 50%
+		</a>
+		<a href="/collection/archive" class="footer-catalog__special-archive">
+			Архивные товары
+		</a>
+	</div>
+</nav>
+
+		<div class="footer__contacts">
+			
+
+
+
+
+
+
+
+
+
+<ul class="shop-contacts shop-contacts_footer">
+
+	
+		
+	<li class="shop-contacts__element shop-contacts__element_addr">
+		<span class="ico ico_white">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__point_white.png" alt="">
+		</span>
+		<span class="content">
+			119619, Москва, <br/>магазин «Ледниковый период»
+		</span>
+	</li>
+
+ 
+	<li class="shop-contacts__element shop-contacts__element_phones">
+		<span class="ico ico_white">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__phone_white.png" alt="">
+		</span>
+		<span class="content">
+			<a href="tel:+79168888332">
+				8 916 888 83 32
+			</a>
+			<br>
+			<a href="tel:+74957270633">
+				8 495 727 06 33
+			</a>
+		</span>
+	</li>
+ 
+	<li class="shop-contacts__element shop-contacts__element_email">
+		<span class="ico ico_white">
+			<img src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/ico__email_white.png" alt="">
+		</span>
+		<span class="content">
+			<a href="mailto:shop@ice-age.ru">
+				shop@ice-age.ru
+			</a>
+		</span>
+	</li>
+
+	
+	
+
+
+</ul>
+		</div>
+
+		<div class="footer__subscribe">
+			<div class="footer__subscribe-header">
+				<div class="footer__subscribe-title">Новости по почте</div>
+				<div class="footer__subscribe-title2">пишем редко и по делу</div>
+			</div>
+			<div class="footer__subscribe-body">
+
+              <!-- SendinBlue Signup Form HTML Code -->
+<link rel="stylesheet" href="https://my.sendinblue.com/public/theme/version4/assets/styles/style.css" /> <div id="sib_embed_signup" style="padding: 10px;"> <div class="forms-builder-wrapper" style="position:relative;margin-left: auto;margin-right: auto;"> <input type="hidden" id="sib_embed_signup_lang" value="en"> <input type="hidden" id="sib_embed_invalid_email_message" value="Введенный адрес не соответствует формату e-mail (adress@site.com). Попробуйте еще раз"> <input type="hidden" name="primary_type" id="primary_type" value="email"> <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;"> <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" alt="" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;"> </div> <form class="description" id="theform" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/330et/id/1" onsubmit="return false;"> <input type="hidden" name="js_id" id="js_id" value="330et"><input type="hidden" name="listid" id="listid" value="8"><input type="hidden" name="from_url" id="from_url" value="yes"><input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value=""> <div class="sib-container rounded ui-sortable" style="border-radius: 4px; position: relative; margin: 0px; text-align: left; background: rgba(255, 0, 0, 0); padding: 25px 15px 15px; border-width: 0px !important; border-color: transparent !important;"> <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px;"> <div class="header" style="padding: 0px 10px;"> <div class="title editable" data-editfield="newsletter_name" style="font-weight: normal; text-align: left; font-size: 40px; margin-bottom: 2px; padding: 0px; margin-top: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(35, 35, 35); display: none;">новости ice-age.ru</div> <div id="company-name" style="font-weight: normal; text-align: left; font-size: 20px; margin-bottom: 12px; padding: 0px; margin-top: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); display: none;">новости ice-age.ru</div> </div> <div class="description editable" data-editfield="newsletter_description" style="padding: 10px 15px; border-bottom: 1px solid rgb(204, 204, 204); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(52, 52, 52); font-size: 15px; display: none;">Свежие новости о поставках,
+скидках,
+распродажах,
+лекциях и жизни проекта ice-age gearshop</div> <div class="view-messages" style=" margin:5px 0;"> </div> <div style="position: relative;"><!-- an email as primary --> <div class="primary-group email-group forms-builder-group ui-sortable" style=""> <div class="row mandatory-email" style="padding: 10px; position: relative; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); font-size: 15px; left: 0px; top: 0px;"> <div class="lbl-tinyltr" style="clear: both; float: none; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;"></div> <input type="text" name="email" id="email" placeholder="Ваш e-mail" value="" style="padding: 8px 4px; width: 85%; min-width: auto;"> <div style="clear:both;"></div> <div class="hidden-btns"> <a class="btn move" href="#"><i class="fa fa-arrows"></i></a><br> <!--<a class="btn btn-danger delete" href="#"><i class="fa fa-trash-o fa-inverse"></i></a>--> </div> </div> </div> <div class="captcha forms-builder-group" style="display: none;"><div class="row" style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); font-size: 15px; padding: 10px;"><div id="gcaptcha" style="transform: scale(0.85); margin-left: -23px;"></div></div></div> <!-- end of primary --> <div class="byline" style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); font-weight: bold; font-size: 16px; text-align: center; display: block;"> <button class="button editable " type="submit" data-editfield="subscribe" style=""><i class="ln1" style="
+"></i><i class="ln2"></i></button></div></div> <div style="clear:both;"></div> </div> </form> </div> </div> <script>var sib_prefix='sib';
+var sib_dateformat='dd-mm-yyyy';
+</script> <script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1537883582'></script> <!-- End: SendinBlue Signup Form HTML Code -->
+				<script src="//static-login.sendpulse.com/apps/fc3/build/default-handler.js?1512049669179"></script>
+
+
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			При использовании материалов сайта Ice-Age.ru ссылка на источник обязательна. <br>
+			Вся представленная на сайте информация носит информационный характер и не является публичной офертой, определяемой<br>
+			положениями Статьи 437(2) Гражданского кодекса РФ. Ознакомиться с полной версией публичной оферты можно <a href="/page/offer">на этой странице</a>
+
+			<div class="footer__copyright-name">
+				© 2017, «Ледниковый период»
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	
+</footer>
+<div class="scroll-to-top">
+	<div class="wrapper">
+		<div class="scroll-to-top__button" data-ui-scroll-to-top>
+			<div class="ico"></div>
+			<div class="text">Вверх</div>
+		</div>
+	</div>
+</div><script type="text/javascript" src="https://static.insales-cdn.com/assets/common-js/common.v2.24.05.js"></script><div class="modal-wrapper" data-modal-wrapper></div>
+<!-- OPTION SELECT TEMPLATE -->
+
+<script type="text/template" data-template-id="option-span2">
+  <div class="<%= classes.option %> is-span" data-option-group="<%= option.id %>">
+    <label class="<%= classes.label %>">
+    	<%= title %>
+    	<span class="option-label__selected-value" data-option-selected-label=""></span>
+    </label>
+    <div class="<%= classes.values %>">
+      <% _.forEach(values, function (value){ %>
+        <button class="<%= value.classes.all %> is-zero is-span"
+          <%= value.controls %>
+          <%= value.state %>
+          data-value-title="<%= value.title %>"
+           <% if (option.selected == value.position & initOption) { %>data-state="selected"<% } %>
+        >
+          <%= value.title %>
+        </button>
+      <% }) %>
+    </div>
+  </div>
+</script>
+
+
+
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
+
+<script>cv_currency_format = '{\"delimiter\":\" \",\"separator\":\",\",\"format\":\"%n %u\",\"unit\":\"\\u003ci class=\\\"shop-currency\\\"\\u003e\\u0026#x20BD;\\u003c/i\\u003e\",\"show_price_without_cents\":1}';Site = {colors: '',templates: {},template: 'index',modals: {next: '',prev: '',opened: ''},client: {login: 0,geodata: {},data: {}},product_status : 'hide',account: {id: '417981',work_times : 'пн.-вс. 10.00 - 20.00',},theme: {asset_url: 'https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/'},layout: 'main',messages: {productAddedToComparison: 'Товар добавлен к сравнению',productRemovedFromComparison: 'Товар удален из сравнения',productAddedToWishlist: 'Товар отложен<br><a href="/cart_items#tab-wishlist_items">Посмотреть отложенные товары</a>',productAddedToWishlistInCart: 'Товар отложен',productRemovedFromWishlist: 'Удалено<br><a href="/cart_items#tab-wishlist_items">Посмотреть отложенные товары</a>',productRemovedFromWishlistInCart: 'Удален',productClearWishlist: 'Все отложенные товары удалены',ClearComparison: 'Все товары удалены из сравнения',maximumNumberOfComparable: 'Вы добавили к сравнению максимальное количество товаров',select_before_add: 'Пожалуйста выберите из представленных выше опций',variant_zero_quantity: 'К сожалению данного варианта нет в наличии'},properties: {brand: '5227395',status: '5226979',weight: '11435348'},options: {color: '1097408'}};Products.setConfig({  initOption: false,  filtered: false,  showVariants: true,  useMax: false,  decimal: {  kgm: 1,  dmt: 1  },  options: {    'default': 'option-span2'  }});</script>
+
+<script src="/served_assets/empty.js"></script>
+<script src="/served_assets/public/jquery.cookie.js?1693921991"></script>
+<script src="/served_assets/public/shop/cart.js?1693921991"></script>
+<script src="https://static.insales-cdn.com/assets/1/6590/1358270/1646037431/template.js"></script>      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X7RZZN"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Analytics Enhanced Code -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-6393241-1');
+      
+      ga('send', 'pageview');
+    </script>
+      <!-- Yandex.Metrika counter -->
+      <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(46904712, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            ecommerce:"dataLayer"
+       });
+      </script>
+      <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({});
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/46904712" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <!-- /Yandex.Metrika counter -->
+<div class="m-modal m-modal--checkout" data-auto-activate="" id="insales-quick-checkout-dialog"><div class="m-modal-wrapper"><form id="quick_checkout_form" data-address-autocomplete="https://kladr.insales.ru" action="/orders/create_with_quick_checkout.json" accept-charset="UTF-8" method="post"><button class="m-modal-close" data-modal="close"></button><div class="m-modal-heading">Заказ в один клик</div><div class="m-modal-errors"></div><input id="shipping_address_country" type="hidden" value="RU" /><div class="m-input m-input--required "><label for="client_name" class="m-input-label">Имя:</label><input class="m-input-field" placeholder="Как к вам обращаться?" type="text" id="client_name" name="client[name]" value="" /></div><div class="m-input m-input--required "><label for="client_phone" class="m-input-label">Телефон:</label><input class="m-input-field" placeholder="" type="tel" id="client_phone" name="client[phone]" value="" /></div><div class="m-input  "><label for="client_email" class="m-input-label">E-mail:</label><input class="m-input-field" placeholder="К e-mail привязана накопительная скидка" type="text" id="client_email" name="client[email]" value="" /></div><div class="m-input  "><label for="shipping_address_city" class="m-input-label">Город/Район:</label><input class="m-input-field" placeholder="" type="text" id="shipping_address_city" name="shipping_address[city]" value="" /></div><div class="m-input"><label class="m-input-label" for="order_comment">Комментарий:</label><textarea rows="2" class="m-input-field" autocomplete="off" name="order[comment]" id="order_comment">
+</textarea></div><div class="m-modal-footer"><button class="m-modal-button m-modal-button--checkout button--checkout" type="submit">Купить в один клик</button></div></form></div></div></body>
+</html>
+
+

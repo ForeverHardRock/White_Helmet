@@ -1,0 +1,39 @@
+{% block paginator-block %}
+    {% if news.paginator.num_pages > 1 %}
+        <br>
+        <div class="pagination">
+            <div class="pag-btns">
+                <span class="next-links">
+                    {% if news.has_previous %}
+                        <ul>
+                            <li><a href="?page=1{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Первая</a></li>
+                            <li><a href="?page={{ news.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&laquo;</a></li>
+                        </ul>
+                    {% endif %}
+                </span>
+                <span class="current-page">
+                    <ul>
+                        {% for p in news.paginator.page_range %}
+                            {% if news.number == p %}
+                                <span class="page-num-selected">{{ p }}</span>
+                            {% elif p >= news.number|add:-5 and p <= news.number|add:5  %}
+                                <li class="page-num">
+                                    <a href="?page={{ p }}{% if request.GET.search_query %}&q={{ request.GET.search_query }}{% endif %}">{{ p }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </span>
+                <span class="next-links">
+                    {% if news.has_next %}
+                        <ul>
+                            <li><a href="?page={{ news.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&raquo;</a></li>
+                            <li><a href="?page={{ news.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Последняя</a></li>
+                        </ul>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+        <br>
+    {% endif %}
+{% endblock %}

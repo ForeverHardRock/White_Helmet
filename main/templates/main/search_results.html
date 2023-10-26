@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="nav-str">
+        <a href="{% url 'home' %}">Главная</a>
+        <span>/</span>
+        <p>Резульаты поиска: {{ search_query }}</p>
+    </div>
+    <br>
+    {% if news != None %}
+        <ul>
+            {% for new in news %}
+                <div class="cat-posts">
+                    {% if new.pictures != Null %}
+                        <div class="post-pict">
+                            <img src="{{ '/media/' }}{{ new.pictures }}" alt="{{ new.title }}">
+                        </div><br>
+                    {% endif %}
+                    <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}" class="post-title gl-title">{{ new.title }}</a>
+                    <span class="pop-post-date"><span class="material-symbols-outlined">calendar_month</span>{{ new.pubdate }}</span>
+                    <br><br>
+                    <p>{{ new.description }}</p>
+                </div>
+            {% endfor %}
+            <br><br>
+        </ul>
+
+        {% include 'main/paginator.html' %}
+
+    {% else %}
+        <h2>По вашему запросу ничего не найдено</h2>
+    {% endif %}
+{% endblock %}
