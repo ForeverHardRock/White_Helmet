@@ -32,12 +32,12 @@ ul {
     height: $main-bar-elements-height;
     display: flex;
     align-items: center;
-    width: auto;
+    width: 33%;
   }
 
 
   .up-menu-logo{
-
+    justify-content: left;
     > svg {
       width: auto;
       height: $main-bar-elements-font-size;
@@ -50,7 +50,7 @@ ul {
     }
   }
   .up-menu-center {
-
+    justify-content: center;
     .up-menu-subs {
       height: 100%;
       display: flex;
@@ -110,7 +110,8 @@ ul {
     }
   }
   .up-menu-right {
-
+    display: flex;
+    justify-content: right;
     .up-menu-vk {
       width: $main-bar-elements-height;
       height: $main-bar-elements-height;
@@ -119,59 +120,88 @@ ul {
       background-color: $main-color-light;
       border-radius: 50%;
       justify-content: center;
-      margin-right: ($main-bar-elements-height*0.4);
+      margin-right: $main-bar-elements-height*0.5;
       svg {
         height: 50%;
         width: auto;
       }
     }
-  .up-menu-search {
-    height: 100%;
-    form {
-      position: relative;
+    .up-menu-search {
+      background: $main-color;
       display: flex;
-      height: 100%;
-      &:hover input {
-        display: block;
-      }
-      input{
-        display: none;
-        height: $main-bar-elements-height;
-        outline: none;
-        background: $font-color;
-        color: #9E9C9C;
-        border: 2px solid $font-color;
+      justify-content: center;
+      align-items: center;
+      .search {
+        display: flex;
+        height: 100%;
+        background: $card-background-color;
         border-radius: ($main-bar-elements-height*0.5);
-        padding-left: ($main-bar-elements-height*0.3);
-        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-search-commit {
+        width: $main-bar-elements-height;
+        height: $main-bar-elements-height;
+        border-radius: 50%;
+        box-shadow: 0 0 1px 2px $main-color;
+        background: $main-color-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-color;
+        cursor: pointer;
+        border: none;
+        svg {
+          transition: all 0.2s ease-in-out;
+        }
       }
       .btn-search-cancel {
-        display: none;
-        color: $main-color;
-        position: absolute;
-        background: none;
         border: none;
-        font-size: $main-bar-elements-font-size;
-        right: 40px;
-        transition: all 0.3s ease-in-out;
       }
-      .btn-search-commit {
-        position: absolute;
-        right: -10px;
-        height: $main-bar-elements-height;
-        width: $main-bar-elements-height;
-        border: none;
-        cursor: pointer;
-        background-color: $main-color-light;
-        border-radius: ($main-bar-elements-height*0.5);
-        align-items: center;
-        padding: 0;
-        svg {
 
+      .search:hover > .searchText {
+        width: 240px;
+        padding: 0 6px;
+      }
+      .searchText:focus {
+        width: 240px;
+        padding: 0 6px;
+      }
+
+      .search:hover > .btn-search-cancel {
+        width: auto;
+      }
+      //.btn-search-cancel:focus {
+      //  display: none;
+      //}
+
+      .searchText {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: $main-color;
+        font-size: $main-bar-elements-font-size*0.6;
+        transition: 0.4s;
+        width: 0;
+        font-weight: 600;
+
+        &::placeholder {
+          color: $font-color-light;
+        }
+      }
+
+      .search:hover > .btn-search-commit {
+        svg {
+          transform: scale(1.5);
+        }
+      }
+
+      .search:hover > .btn-search-commit:hover {
+        svg {
+          transform: scale(1.5);
         }
       }
     }
-  }
   }
 }
 

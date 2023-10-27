@@ -36,7 +36,10 @@ ul {
   height: 49.2px;
   display: flex;
   align-items: center;
-  width: auto;
+  width: 33%;
+}
+.up-menu .up-menu-logo {
+  justify-content: left;
 }
 .up-menu .up-menu-logo > svg {
   width: auto;
@@ -47,6 +50,9 @@ ul {
   width: auto;
   fill: #FFFFFF;
   margin: 0;
+}
+.up-menu .up-menu-center {
+  justify-content: center;
 }
 .up-menu .up-menu-center .up-menu-subs {
   height: 100%;
@@ -105,6 +111,10 @@ ul {
 .up-menu .up-menu-center .rotate {
   rotate: 180deg;
 }
+.up-menu .up-menu-right {
+  display: flex;
+  justify-content: right;
+}
 .up-menu .up-menu-right .up-menu-vk {
   width: 49.2px;
   height: 49.2px;
@@ -113,56 +123,75 @@ ul {
   background-color: #3982FF;
   border-radius: 50%;
   justify-content: center;
-  margin-right: 19.68px;
+  margin-right: 24.6px;
 }
 .up-menu .up-menu-right .up-menu-vk svg {
   height: 50%;
   width: auto;
 }
 .up-menu .up-menu-right .up-menu-search {
-  height: 100%;
+  background: #1268FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.up-menu .up-menu-right .up-menu-search form {
-  position: relative;
+.up-menu .up-menu-right .up-menu-search .search {
   display: flex;
   height: 100%;
-}
-.up-menu .up-menu-right .up-menu-search form:hover input {
-  display: block;
-}
-.up-menu .up-menu-right .up-menu-search form input {
-  display: none;
-  height: 49.2px;
-  outline: none;
-  background: #FFFFFF;
-  color: #9E9C9C;
-  border: 2px solid #FFFFFF;
+  background: #FFFFFFFF;
   border-radius: 24.6px;
-  padding-left: 14.76px;
-  transition: all 0.3s ease-in-out;
 }
-.up-menu .up-menu-right .up-menu-search form .btn-search-cancel {
-  display: none;
-  color: #1268FB;
-  position: absolute;
-  background: none;
-  border: none;
-  font-size: 29.52px;
-  right: 40px;
-  transition: all 0.3s ease-in-out;
-}
-.up-menu .up-menu-right .up-menu-search form .btn-search-commit {
-  position: absolute;
-  right: -10px;
-  height: 49.2px;
+.up-menu .up-menu-right .up-menu-search .btn-search-commit {
   width: 49.2px;
-  border: none;
-  cursor: pointer;
-  background-color: #3982FF;
-  border-radius: 24.6px;
+  height: 49.2px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 2px #1268FB;
+  background: #3982FF;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
 }
+.up-menu .up-menu-right .up-menu-search .btn-search-commit svg {
+  transition: all 0.2s ease-in-out;
+}
+.up-menu .up-menu-right .up-menu-search .btn-search-cancel {
+  border: none;
+}
+.up-menu .up-menu-right .up-menu-search .search:hover > .searchText {
+  width: 240px;
+  padding: 0 6px;
+}
+.up-menu .up-menu-right .up-menu-search .searchText:focus {
+  width: 240px;
+  padding: 0 6px;
+}
+.up-menu .up-menu-right .up-menu-search .search:hover > .btn-search-cancel {
+  width: auto;
+}
+.up-menu .up-menu-right .up-menu-search .searchText {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #1268FB;
+  font-size: 17.712px;
+  transition: 0.4s;
+  width: 0;
+  font-weight: 600;
+}
+.up-menu .up-menu-right .up-menu-search .searchText::placeholder {
+  color: #C0C0C0;
+}
+.up-menu .up-menu-right .up-menu-search .search:hover > .btn-search-commit svg {
+  transform: scale(1.5);
+}
+.up-menu .up-menu-right .up-menu-search .search:hover > .btn-search-commit:hover svg {
+  transform: scale(1.5);
+}
+
 .submenu {
   position: absolute;
   top: -492px;
