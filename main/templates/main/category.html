@@ -5,36 +5,52 @@
 
 
 {% block content %}
-    <div class="ladder-category">
-        <div class="nav-str">
-            <a href="{% url 'home' %}">Главная</a>
-            <span>/</span>
-            <p>{{ description_category }}</p>
+    <div class="category-body">
+        <div class="category-left">
+
+            <h2>{{ description_category }}</h2>
+
+            <div class="puzzle-grid">
+                {% for new in news %}
+
+                    <div class="new-card">
+                        {% if new.pictures != Null %}
+                            <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                        {% endif %}
+                        <div class="new-card-text">
+                            <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
+                            <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a><br><br>
+                            <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.description }}</div></a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+                <br><br>
+
+    {#            {% include 'main/three-r-posts.html' %}#}
+
+{#            {% include 'main/paginator.html' %}#}
+            </div>
         </div>
-        <h2>{{ description_category }}</h2>
-        <ul>
-            {% for new in news %}
-                <div class="cat-posts">
-                    {% if new.pictures != Null %}
-                        <div class="post-pict">
-                            <img src="{{ 'media/' }}{{ new.pictures }}" alt="{{ new.title }}">
-                        </div><br>
-                    {% endif %}
-                    <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}" class="post-title gl-title">{{ new.title }}</a>
-                    <span class="pop-post-date"><span class="material-symbols-outlined">calendar_month</span>{{ new.pubdate }}</span>
-                    <br><br>
-                    <p>{{ new.description }}</p>
-                </div>
-            {% endfor %}
-            <br><br>
-
-            {% include 'main/three-r-posts.html' %}
-
-        </ul>
-
-        {% include 'main/paginator.html' %}
-
+        <div class="category-right">
+            <h2>Интересное</h2>
+            <div class="next-card">
+                {% for new_col in news_for_column %}
+                    <div class="next-new-card">
+                        <p>{{ new_col.pubdate }}</p>
+                        <a href="{% url 'url_post' cat_slug=new_col.category_en post_slug=new_col.url %}"><div>{{ new_col.title }}</div></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-
+    <div class="latest-news-in-post">
+        {% include 'main/latest-news.html' %}
+    </div>
+    {% include 'main/three-r-posts.html' %}
+    <div class="post-bottom">
+        <img class="subs-pict" src="{% static 'main/svg/subscribe.svg' %}">
+        {% include 'main/bottom.html' %}
+    </div>
 
 {% endblock %}

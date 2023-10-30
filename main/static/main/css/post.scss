@@ -58,44 +58,7 @@
 
 
   .news-column {
-    position: absolute;
-    right: 0;
-    height: 90%;
-
-    width: 20%;
-    margin-right: 10%;
-    .next-card {
-      height: 100%;
-      overflow: scroll;
-      overflow-x:hidden;
-      &::-webkit-scrollbar {
-        width: 0;
-      }
-      .next-new-card {
-        height: auto;
-        padding-top: $main-bar-height/4;
-        padding-bottom: $main-bar-height/4;
-        border-bottom: 1px solid $font-color-light;
-        &:nth-last-child(-n+1) {
-          border-bottom: none;
-        }
-        p {
-          color: $font-color-light;
-          font-size: $main-bar-elements-font-size*0.6;
-        }
-
-        div {
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          height: auto;
-          color: $dark-font-color;
-          font-size: $main-bar-elements-font-size*0.7;
-          line-height: $main-bar-elements-font-size;
-        }
-      }
-    }
+    @include news-column()
   }
 }
 
@@ -113,11 +76,12 @@
   width: auto;
   margin-right: 9%;
   margin-left: 9%;
-  height: auto;
+  height: $main-bar-height*4;
   .puzzle-grid {
+    height: 100%;
     width: 100%;
     .new-card {
-      @include news-cards($news-in-puzzle, $margin-in-puzzle);
+      @include news-cards($news-in-puzzle, 1, $margin-in-puzzle, even);
     }
   }
   .flickity-page-dots {
@@ -135,8 +99,9 @@
   background-color: $card-background-color;
   border-top-left-radius: ($main-bar-height/3);
   border-top-right-radius: ($main-bar-height/3);
-  padding: $main-bar-height 10%;
+  padding: $main-bar-height 10% 5%;
   margin-top: $main-bar-height;
+  box-shadow: 0 0 50px 10px $font-color-light;
 
 
   > img {
@@ -145,116 +110,5 @@
     height: auto;
     object-fit: cover;
   }
-
-  .bottom-menu {
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-    .bottom-left {
-      padding-top: $main-bar-height/6;
-      justify-content: space-between;
-      border-top: solid $font-color-light 1px;
-      width: 45%;
-      margin-right: 5%;
-      display: flex;
-
-      h5 {
-        font-weight: 700;
-      }
-
-      li {
-        margin-bottom: 10%;
-
-        a {
-          font-size: $main-bar-elements-font-size*0.5;
-          color: $font-color-light;
-        }
-      }
-    }
-
-    .subs-mail {
-      position: absolute;
-      height: 100%;
-      border-radius: $main-bar-height*0.1;
-      right: 0;
-      width: 45%;
-      background: linear-gradient(to left, $main-color, $main-color-light);
-
-      .bottom-content {
-        width: 100%;
-        height: 100%;
-        padding: 3% 5%;
-        p {
-          color: $font-color;
-          font-size: $main-bar-elements-font-size*0.5;
-        }
-        form {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          padding-bottom: 5%;
-          input {
-            outline: none;
-            width: 60%;
-            border: none;
-            padding: 2% 5%;
-            background-color: lighten($main-color, 25%);
-            border-radius: $main-bar-height*0.5;
-          }
-          button {
-            width: 35%;
-            border: none;
-            color: $main-color;
-            font-weight: 700;
-            background-color: $font-color;
-            border-radius: $main-bar-height*0.5;
-          }
-        }
-        .subs-icons {
-          position: absolute;
-          width: 90%;
-          display: flex;
-          justify-content: space-between;
-          height: 40%;
-          bottom: 5%;
-
-          .subs-left {
-            height: auto;
-            p {
-              width: auto;
-            }
-
-            .subs-btns {
-              width: auto;
-              display: flex;
-              justify-content: space-between;
-              height: auto;
-
-              a {
-                display: flex;
-                height: $main-bar-height*0.4;
-                width: $main-bar-height*0.4;
-                color: $main-color;
-                background-color: $font-color;
-                border-radius: 50%;
-                justify-content: center;
-
-                svg {
-                  height: 100%;
-                }
-
-              }
-            }
-          }
-          img {
-            height: 100%;
-            width: auto;
-          }
-        }
-      }
-    }
-  }
+  @include bottom-menu()
 }

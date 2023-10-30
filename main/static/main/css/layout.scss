@@ -32,7 +32,6 @@ ul {
     height: $main-bar-elements-height;
     display: flex;
     align-items: center;
-    width: 33%;
   }
 
 
@@ -50,6 +49,10 @@ ul {
     }
   }
   .up-menu-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     .up-menu-subs {
       height: 100%;

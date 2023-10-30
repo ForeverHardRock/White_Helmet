@@ -108,30 +108,59 @@ def load_content(request, button_id):
 
 
 def show_category(request, cat_slug: str):
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:12]
     description = get_object_or_404(Categories, cat_en=cat_slug)
-    news = News.objects.filter(category=description, active=1).order_by('-post_id')
-    paginator = Paginator(news, 10)
-    page_number = request.GET.get('page', 1)
-    news = paginator.get_page(page_number)
+    # news = News.objects.filter(category=description, active=1).order_by('-post_id')
+    # paginator = Paginator(news, 12)
+    # page_number = request.GET.get('page', 1)
+    # news = paginator.get_page(page_number)
+    news = News.objects.filter(category=description, active=1).order_by('-post_id')[:12]
+
+    news_for_column = News.objects.filter(active=1, car_active=1).order_by('-post_id')
+    # news_for_column = News.objects.filter(category=description, active=1).order_by('-post_id')[12:32]
+
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
 
+    news_for_column = News.objects.filter(active=1, category__lt=description).order_by('-post_id')[:12]
+
+
+    # three_posts = []
+    # while len(three_posts) != 3:
+    #     one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
+    #     try:
+    #         one_post = News.objects.filter(active=1, category=one_of_three_cat).order_by('-post_id')[:1][0]
+    #     except:
+    #         one_post = None
+    #     if one_post in news or one_post in three_posts or one_of_three_cat == description or one_post == None:
+    #         continue
+    #     else:
+    #         three_posts.append(one_post)
+    #
     three_posts = []
-    while len(three_posts) != 3:
-        one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
+    three_posts_list = []
+    while len(three_posts_list) < 3:
+        one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.filter(active=1, cat_en__lt=description)], 1)[0]
         try:
-            one_post = News.objects.filter(active=1, category=one_of_three_cat).order_by('-post_id')[:1][0]
+            one_post = \
+            News.objects.filter(active=1, category=one_of_three_cat, pictures__isnull=False).order_by('-post_id')[:1][0]
         except:
-            one_post = None
-        if one_post in news or one_post in three_posts or one_of_three_cat == description or one_post == None:
+            continue
+        if one_post in three_posts or one_of_three_cat == description or one_post.category == description:
             continue
         else:
             three_posts.append(one_post)
+        if len(three_posts) == 3:
+            three_posts_list.append(three_posts)
+            three_posts = []
 
     desc_data = {
         'description_category': description,
         'news': news,
-        'three_posts': three_posts,
+        'news_for_column': news_for_column,
+        'three_posts_list': three_posts_list,
+        # 'three_posts': three_posts,
         'sub_cat': sub_cat,
+        'latest_news': latest_news,
         'bottom': 'relative'
     }
     return render(request, 'main/category.html', context=desc_data)

@@ -157,9 +157,10 @@
   width: auto;
   margin-right: 9%;
   margin-left: 9%;
-  height: auto;
+  height: 492px;
 }
 .rand-3-posts .puzzle-grid {
+  height: 100%;
   width: 100%;
 }
 .rand-3-posts .puzzle-grid .new-card {
@@ -168,7 +169,7 @@
   background-color: #FFFFFFFF;
   border-radius: 24.6px;
   margin: 1%;
-  height: 492px;
+  height: 96%;
   width: 31.3333333333%;
   box-shadow: 0 0 10px 2px #C0C0C0;
 }
@@ -205,23 +206,23 @@
 .rand-3-posts .puzzle-grid .new-card .new-card-text .new-card-description {
   display: none;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) {
   background: linear-gradient(to left, #1268FB, #3982FF);
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) img {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) img {
   display: none;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text {
   top: 0;
   height: 100%;
   width: auto;
   position: relative;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-category {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-category {
   color: #FFFFFF;
   font-size: 20.664px;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title {
   position: absolute;
   padding-top: 5%;
   color: #FFFFFF;
@@ -229,21 +230,21 @@
   font-size: 29.52px;
   bottom: 60%;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title > div {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description {
   position: absolute;
   top: 50%;
   display: block;
   color: #FFFFFF;
   width: 90%;
 }
-.rand-3-posts .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description > div {
+.rand-3-posts .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -262,8 +263,9 @@
   background-color: #FFFFFFFF;
   border-top-left-radius: 41px;
   border-top-right-radius: 41px;
-  padding: 123px 10%;
+  padding: 123px 10% 5%;
   margin-top: 123px;
+  box-shadow: 0 0 50px 10px #C0C0C0;
 }
 .post-bottom > img {
   padding-bottom: 123px;

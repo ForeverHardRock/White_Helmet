@@ -75,20 +75,25 @@
   margin: 61.5px 9%;
   height: 1599px;
 }
-.puzzle-news .puzzle-grid {
+.puzzle-news .puzzle-carousel {
+  width: 100%;
+  height: 100%;
+}
+.puzzle-news .puzzle-carousel .puzzle-grid {
+  height: 100%;
   width: 100%;
 }
-.puzzle-news .puzzle-grid .new-card {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card {
   position: relative;
   float: left;
   background-color: #FFFFFFFF;
   border-radius: 24.6px;
   margin: 1%;
-  height: 492px;
+  height: 30.6666666667%;
   width: 31.3333333333%;
   box-shadow: 0 0 10px 2px #C0C0C0;
 }
-.puzzle-news .puzzle-grid .new-card img {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card img {
   position: absolute;
   height: 50%;
   border-top-left-radius: 24.6px;
@@ -96,48 +101,48 @@
   width: 100%;
   object-fit: cover;
 }
-.puzzle-news .puzzle-grid .new-card .new-card-text {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card .new-card-text {
   top: 50%;
   position: absolute;
   padding: 5%;
 }
-.puzzle-news .puzzle-grid .new-card .new-card-text .new-card-category {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card .new-card-text .new-card-category {
   color: #1268FB;
   font-size: 20.664px;
   line-height: 29.52px;
 }
-.puzzle-news .puzzle-grid .new-card .new-card-text .new-card-title {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card .new-card-text .new-card-title {
   color: black;
   font-size: 20.664px;
   line-height: 29.52px;
 }
-.puzzle-news .puzzle-grid .new-card .new-card-text .new-card-title > div {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.puzzle-news .puzzle-grid .new-card .new-card-text .new-card-description {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card .new-card-text .new-card-description {
   display: none;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) {
   background: linear-gradient(to left, #1268FB, #3982FF);
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) img {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) img {
   display: none;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text {
   top: 0;
   height: 100%;
   width: auto;
   position: relative;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-category {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-category {
   color: #FFFFFF;
   font-size: 20.664px;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title {
   position: absolute;
   padding-top: 5%;
   color: #FFFFFF;
@@ -145,68 +150,68 @@
   font-size: 29.52px;
   bottom: 60%;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title > div {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description {
   position: absolute;
   top: 50%;
   display: block;
   color: #FFFFFF;
   width: 90%;
 }
-.puzzle-news .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description > div {
+.puzzle-news .puzzle-carousel .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.puzzle-news .puzzle-grid .first-card {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card {
   display: flex;
   align-items: center;
   position: relative;
   width: 64.6666666667%;
 }
-.puzzle-news .puzzle-grid .first-card .first-card-img {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .first-card-img {
   display: flex;
   height: 100%;
   width: 100%;
   background: black;
   border-radius: 24.6px;
 }
-.puzzle-news .puzzle-grid .first-card .first-card-img img {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .first-card-img img {
   height: 100%;
   border-radius: 24.6px;
   object-fit: cover;
   width: 100%;
   opacity: 40%;
 }
-.puzzle-news .puzzle-grid .first-card .cat-date {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .cat-date {
   position: absolute;
   top: 5%;
   width: 100%;
   display: flex;
 }
-.puzzle-news .puzzle-grid .first-card .cat-date a {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .cat-date a {
   position: absolute;
   right: 50%;
   font-size: 20.664px;
   color: #1268FB;
   padding-right: 5%;
 }
-.puzzle-news .puzzle-grid .first-card .cat-date p {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .cat-date p {
   position: absolute;
   left: 50%;
   padding-left: 5%;
   font-size: 20.664px;
   color: #C0C0C0;
 }
-.puzzle-news .puzzle-grid .first-card .first-card-title {
+.puzzle-news .puzzle-carousel .puzzle-grid .first-card .first-card-title {
   padding-left: 5%;
   padding-right: 5%;
   width: 100%;
@@ -251,6 +256,8 @@
   padding-right: 5%;
 }
 .cat-news .puzzle-news-by-cat {
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
   height: auto;
 }
@@ -263,7 +270,7 @@
   background-color: #FFFFFFFF;
   border-radius: 24.6px;
   margin: 1%;
-  height: 492px;
+  height: 30.6666666667%;
   width: 31.3333333333%;
   box-shadow: 0 0 10px 2px #C0C0C0;
 }
@@ -300,23 +307,23 @@
 .cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text .new-card-description {
   display: none;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) {
   background: linear-gradient(to left, #1268FB, #3982FF);
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) img {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) img {
   display: none;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text {
   top: 0;
   height: 100%;
   width: auto;
   position: relative;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-category {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-category {
   color: #FFFFFF;
   font-size: 20.664px;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title {
   position: absolute;
   padding-top: 5%;
   color: #FFFFFF;
@@ -324,26 +331,126 @@
   font-size: 29.52px;
   bottom: 60%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-title > div {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description {
   position: absolute;
   top: 50%;
   display: block;
   color: #FFFFFF;
   width: 90%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-of-type(even) .new-card-text .new-card-description > div {
+.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   height: auto;
+}
+.cat-news .bottom-menu {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cat-news .bottom-menu .bottom-left {
+  padding-top: 20.5px;
+  justify-content: space-between;
+  border-top: solid #C0C0C0 1px;
+  width: 45%;
+  margin-right: 5%;
+  display: flex;
+}
+.cat-news .bottom-menu .bottom-left h5 {
+  font-weight: 700;
+}
+.cat-news .bottom-menu .bottom-left li {
+  margin-bottom: 10%;
+}
+.cat-news .bottom-menu .bottom-left li a {
+  font-size: 14.76px;
+  color: #C0C0C0;
+}
+.cat-news .bottom-menu .subs-mail {
+  position: absolute;
+  height: 100%;
+  border-radius: 12.3px;
+  right: 0;
+  width: 45%;
+  background: linear-gradient(to left, #1268FB, #3982FF);
+}
+.cat-news .bottom-menu .subs-mail .bottom-content {
+  width: 100%;
+  height: 100%;
+  padding: 3% 5%;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content p {
+  color: #FFFFFF;
+  font-size: 14.76px;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 5%;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content form input {
+  outline: none;
+  width: 60%;
+  border: none;
+  padding: 2% 5%;
+  background-color: #8fb8fd;
+  border-radius: 61.5px;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content form button {
+  width: 35%;
+  border: none;
+  color: #1268FB;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  border-radius: 61.5px;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+  bottom: 5%;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons .subs-left {
+  height: auto;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons .subs-left p {
+  width: auto;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons .subs-left .subs-btns {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons .subs-left .subs-btns a {
+  display: flex;
+  height: 49.2px;
+  width: 49.2px;
+  color: #1268FB;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  justify-content: center;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons .subs-left .subs-btns a svg {
+  height: 100%;
+}
+.cat-news .bottom-menu .subs-mail .bottom-content .subs-icons img {
+  height: 100%;
+  width: auto;
 }
 
 /*# sourceMappingURL=home.css.map */

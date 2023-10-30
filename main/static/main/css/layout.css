@@ -36,7 +36,6 @@ ul {
   height: 49.2px;
   display: flex;
   align-items: center;
-  width: 33%;
 }
 .up-menu .up-menu-logo {
   justify-content: left;
@@ -52,6 +51,10 @@ ul {
   margin: 0;
 }
 .up-menu .up-menu-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
 }
 .up-menu .up-menu-center .up-menu-subs {
