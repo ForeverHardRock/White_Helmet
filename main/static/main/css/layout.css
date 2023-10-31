@@ -4,6 +4,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: Intro;
+  src: url("/fonts/Intro Regular Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
 a {
   color: #FFFFFF;
   text-decoration: none;
@@ -38,6 +44,7 @@ ul {
   align-items: center;
 }
 .up-menu .up-menu-logo {
+  display: flex;
   justify-content: left;
 }
 .up-menu .up-menu-logo > svg {
@@ -196,7 +203,7 @@ ul {
 }
 
 .submenu {
-  position: absolute;
+  position: fixed;
   top: -492px;
   z-index: 4000;
   height: 492px;

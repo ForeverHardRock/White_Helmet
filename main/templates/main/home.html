@@ -52,15 +52,13 @@
         </div>
         <div class="puzzle-news-by-cat">
             <div class="cat-news-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
-                <div id="content-1"></div>
-                    cat_news_list_1
-                <div id="content-2"></div>
-                    cat_news_list_2
-                <div id="content-3"></div>
-                    cat_news_list_3
-
-
-
+                <div class="puzzle-grid" id="content-1"></div>
+                <div class="puzzle-grid" id="content-2"></div>
+                <div class="puzzle-grid" id="content-3"></div>
+            </div>
+        </div>
+    {% include 'main/bottom.html' %}
+    </div>
 {#                {% for cat_page in cat_news_list %}#}
 {#                    <div class="puzzle-grid-{{ forloop.counter }}">#}
 {#                        {% for new in cat_page %}#}
@@ -78,12 +76,6 @@
 {#                    </div>#}
 {#                {% endfor %}#}
 
-
-
-            </div>
-        </div>
-        {% include 'main/bottom.html' %}
-    </div>
 
 
 

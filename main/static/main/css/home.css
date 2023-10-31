@@ -229,42 +229,64 @@
 }
 
 .cat-news {
-  height: auto;
   justify-content: center;
   width: 100%;
-  padding: 61.5px 9%;
+  height: auto;
+  padding-top: 61.5px;
+  padding-bottom: 61.5px;
   background-color: #FFFFFFFF;
   border-top-right-radius: 41px;
   border-top-left-radius: 41px;
   box-shadow: 0 0 50px 10px #C0C0C0;
 }
 .cat-news .subs-pict {
-  padding-right: 1%;
-  padding-left: 1%;
+  padding-right: 10%;
+  padding-left: 10%;
   width: 100%;
   height: auto;
   object-fit: cover;
   padding-bottom: 5%;
 }
 .cat-news .categories-list {
-  padding-right: 15%;
-  padding-left: 15%;
+  height: 100%;
+  width: 100%;
+  padding-right: 25%;
+  padding-left: 25%;
 }
-.cat-news .categories-list a {
-  font-size: 23.616px;
+.cat-news .categories-list .cat_btn {
+  font-size: 14.76px;
   color: black;
   padding-right: 5%;
+  background: none;
+  border: none;
+}
+.cat-news .categories-list .active {
+  font-weight: 700;
 }
 .cat-news .puzzle-news-by-cat {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 100%;
-  height: auto;
+  height: 1599px;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid {
+.cat-news .puzzle-news-by-cat .flickity-page-dots .dot {
+  background: #3982FF;
+}
+.cat-news .puzzle-news-by-cat .flickity-page-dots .dot.is-selected {
+  background: #1268FB;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel {
   width: 100%;
+  height: 100%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid {
+  padding-left: 9%;
+  padding-right: 9%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card {
   position: relative;
   float: left;
   background-color: #FFFFFFFF;
@@ -274,7 +296,7 @@
   width: 31.3333333333%;
   box-shadow: 0 0 10px 2px #C0C0C0;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card img {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card img {
   position: absolute;
   height: 50%;
   border-top-left-radius: 24.6px;
@@ -282,48 +304,48 @@
   width: 100%;
   object-fit: cover;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card .new-card-text {
   top: 50%;
   position: absolute;
   padding: 5%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text .new-card-category {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card .new-card-text .new-card-category {
   color: #1268FB;
   font-size: 20.664px;
   line-height: 29.52px;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text .new-card-title {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card .new-card-text .new-card-title {
   color: black;
   font-size: 20.664px;
   line-height: 29.52px;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text .new-card-title > div {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card .new-card-text .new-card-description {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card .new-card-text .new-card-description {
   display: none;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) {
   background: linear-gradient(to left, #1268FB, #3982FF);
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) img {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) img {
   display: none;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text {
   top: 0;
   height: 100%;
   width: auto;
   position: relative;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-category {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text .new-card-category {
   color: #FFFFFF;
   font-size: 20.664px;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text .new-card-title {
   position: absolute;
   padding-top: 5%;
   color: #FFFFFF;
@@ -331,26 +353,137 @@
   font-size: 29.52px;
   bottom: 60%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-title > div {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text .new-card-title > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: auto;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text .new-card-description {
   position: absolute;
   top: 50%;
   display: block;
   color: #FFFFFF;
   width: 90%;
 }
-.cat-news .puzzle-news-by-cat .puzzle-grid .new-card:nth-child(even) .new-card-text .new-card-description > div {
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(0) .new-card-text .new-card-description > div {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   height: auto;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1), .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4), .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) {
+  background: linear-gradient(to left, #1268FB, #3982FF);
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) img, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) img, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) img {
+  display: none;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text {
+  top: 0;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text .new-card-category, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text .new-card-category, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text .new-card-category {
+  color: #FFFFFF;
+  font-size: 20.664px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text .new-card-title, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text .new-card-title, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text .new-card-title {
+  position: absolute;
+  padding-top: 5%;
+  color: #FFFFFF;
+  width: 90%;
+  font-size: 29.52px;
+  bottom: 60%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text .new-card-title > div, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text .new-card-title > div, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text .new-card-title > div {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: auto;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text .new-card-description, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text .new-card-description, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text .new-card-description {
+  position: absolute;
+  top: 50%;
+  display: block;
+  color: #FFFFFF;
+  width: 90%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(1) .new-card-text .new-card-description > div, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(4) .new-card-text .new-card-description > div, .cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(5) .new-card-text .new-card-description > div {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: auto;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .new-card:nth-child(2n):not(:nth-child(6)) {
+  margin-right: 4%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right {
+  position: absolute;
+  right: 0;
+  height: 90%;
+  width: 20%;
+  margin-right: 10%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right h4 {
+  height: 5%;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card {
+  height: 95%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card::-webkit-scrollbar {
+  width: 5.904px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card::-webkit-scrollbar-track {
+  background: #f3f3f3;
+  border-radius: 5.904px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card::-webkit-scrollbar-thumb {
+  background-color: #dadada;
+  border-radius: 5.904px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card {
+  height: auto;
+  margin-right: 30.75px;
+  padding-top: 30.75px;
+  padding-bottom: 30.75px;
+  border-bottom: 1px solid #C0C0C0;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card:nth-last-child(-n+1) {
+  border-bottom: none;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card p {
+  color: #C0C0C0;
+  font-size: 17.712px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card div {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: auto;
+  color: black;
+  font-size: 20.664px;
+  line-height: 29.52px;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card {
+  padding-top: 2%;
+  height: auto;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card {
+  margin-right: 0;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card .next-new-card:nth-child(1) {
+  padding-top: 0;
+}
+.cat-news .puzzle-news-by-cat .cat-news-carousel .puzzle-grid .puzzle-right .next-card::-webkit-scrollbar {
+  width: 0;
 }
 .cat-news .bottom-menu {
   position: relative;
@@ -451,6 +584,11 @@
 .cat-news .bottom-menu .subs-mail .bottom-content .subs-icons img {
   height: 100%;
   width: auto;
+}
+.cat-news .bottom-menu {
+  width: auto;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 /*# sourceMappingURL=home.css.map */

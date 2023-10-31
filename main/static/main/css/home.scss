@@ -88,6 +88,55 @@
     }
   }
   .flickity-page-dots {
+    .dot {
+      background: $main-color-light;
+    }
+    .dot.is-selected {
+      background: $main-color;
+    }
+  }
+}
+
+.cat-news {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: $main-bar-height/2;
+  padding-bottom: $main-bar-height/2;
+  background-color: $card-background-color;
+  border-top-right-radius: $main-bar-height/3;
+  border-top-left-radius: $main-bar-height/3;
+  box-shadow:0 0 50px 10px $font-color-light;
+  .subs-pict {
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 5%;
+  }
+  .categories-list {
+    height: 100%;
+    width: 100%;
+    padding-right: 25%;
+    padding-left: 25%;
+    .cat_btn {
+      font-size: $main-bar-elements-font-size*0.5;
+      color: $dark-font-color;
+      padding-right: 5%;
+      background: none;
+      border: none;
+    }
+    .active {
+      font-weight: 700;
+    }
+  }
+  .puzzle-news-by-cat {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: $main-bar-height*13;
+    .flickity-page-dots {
       .dot {
         background: $main-color-light;
       }
@@ -95,48 +144,51 @@
         background: $main-color;
       }
     }
-}
-
-.cat-news {
-  height: auto;
-  justify-content: center;
-  width: 100%;
-  padding: $main-bar-height/2 9%;
-  background-color: $card-background-color;
-  border-top-right-radius: $main-bar-height/3;
-  border-top-left-radius: $main-bar-height/3;
-  box-shadow:0 0 50px 10px $font-color-light;
-  .subs-pict {
-    padding-right: 1%;
-    padding-left: 1%;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding-bottom: 5%;
-  }
-  .categories-list {
-    padding-right: 15%;
-    padding-left: 15%;
-    a {
-      font-size: $main-bar-elements-font-size*0.8;
-      color: $dark-font-color;
-      padding-right: 5%;
-    }
-  }
-  .puzzle-news-by-cat {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 100%;
-    height: auto;
-    .puzzle-grid {
+    .cat-news-carousel {
       width: 100%;
-      .new-card {
-      @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, even)
+      height: 100%;
+      .puzzle-grid {
+        padding-left: 9%;
+        padding-right: 9%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .new-card {
+          @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0);
+          &:nth-child(1),&:nth-child(4),&:nth-child(5) {
+            @include bluecard()
+          }
+          &:nth-child(2n):not(:nth-child(6)) {
+            margin-right: $margin-in-puzzle*2;
+          }
+        }
+        .puzzle-right {
+          @include news-column();
+          .next-card {
+
+            padding-top: $margin-in-puzzle;
+            height: auto;
+
+            .next-new-card {
+              margin-right: 0;
+              &:nth-child(1) {
+                padding-top: 0;
+              }
+            }
+            &::-webkit-scrollbar {
+              width: 0;
+            }
+          }
+        }
       }
     }
   }
-
-  @include bottom-menu()
+  @include bottom-menu();
+  .bottom-menu {
+    width: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 

@@ -25,8 +25,8 @@
       .new-card {
         @include news-cards($news-in-puzzle, $news-in-puzzle+1, $margin-in-puzzle, 0);
         &:nth-child(1),&:nth-child(4),&:nth-child(6),&:nth-child(9) {
-        @include bluecard()
-      }
+          @include bluecard()
+        }
       }
     }
   }
