@@ -4,7 +4,7 @@ from .models import News, Categories
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ['post_id', 'active', 'car_active', 'title', 'pubdate', 'creator', 'category', 'pictures']
+    list_display = ['post_id', 'active', 'car_active', 'title', 'post_views', 'pubdate', 'creator', 'category', 'pictures']
     list_editable = ['category', 'active', 'car_active']
     ordering = ['-post_id']
     list_per_page = 20

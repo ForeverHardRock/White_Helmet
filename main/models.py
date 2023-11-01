@@ -34,6 +34,7 @@ class News(models.Model):
     pictures = models.ImageField(upload_to='images/',  verbose_name='Картинка')
     active = models.BooleanField(default=True, verbose_name='Активно')
     car_active = models.BooleanField(default=False, verbose_name='Карусель')
+    post_views = models.IntegerField('Просмотры')
 
     class Meta:
         managed = False
