@@ -68,7 +68,7 @@ for (var ii = 0; ii < cat_buttons.length; ii++) {
 
 
 window.addEventListener("load", function() {
-  document.getElementById("cat_first").click();
+  document.querySelector(".cat-btn-active").click();
 });
 
 

@@ -1,7 +1,9 @@
 
-
+<div class="pre-titles">
 {% for sub_pre_new in sub_pre_news %}
-    <p><a href="{% url 'url_post' cat_slug=sub_pre_new.category_en post_slug=sub_pre_new.url %}">{{ sub_pre_new.title }}</a></p>
+    <a href="{% url 'url_post' cat_slug=sub_pre_new.category_en post_slug=sub_pre_new.url %}" class="sub-title">
+        <div>{{ sub_pre_new.title }}</div>
+    </a>
 {% endfor %}
-
-<a href="{% url 'cat_name' cat_slug=view_category %}">Перейти в рубрику</a>
+</div>
+<a href="{% url 'cat_name' cat_slug=view_category %}" class="to-cat">Перейти в рубрику ></a>
