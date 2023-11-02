@@ -72,6 +72,12 @@ def home(request):
     return render(request, 'main/home.html', context=home_data)
 
 
+def load_categories(request, button_id):
+    sub_pre_news = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:3]
+    return render(request, 'main/sub-preload.html',
+                  {'sub_pre_news': sub_pre_news, 'view_category': button_id})
+
+
 def load_content_1(request, button_id):
     if button_id == 'last':
         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[:7]
@@ -221,7 +227,6 @@ def show_post(request, post_slug: str, cat_slug: str):
             'post': post,
             'three_posts_list': three_posts_list,
             'sub_cat': sub_cat,
-            'bottom': 'relative',
             'latest_news': latest_news,
             'news_for_column': news_for_column,
             'car_cat': car_cat,
@@ -234,30 +239,50 @@ def about(request):
 
 
 def search_results(request):
-    search_query = request.GET.get('search', '')
-
-    print('!!!!!', search_query)
+    search_query = request.GET.get('search')
+    print('!!!!!!', search_query)
     if search_query:
-        posts = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query)).order_by(
-            '-post_id')
-        if len(posts) > 0:
+        result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query)).order_by('-post_id')
+        if len(result) > 0:
 
-            bottom = 'relative'
-            paginator = Paginator(posts, 10)
-            page_number = request.GET.get('page', 1)
+            paginator = Paginator(result, 9)
+            page_number = request.GET.get('page')
             posts = paginator.get_page(page_number)
         else:
-            bottom = 'fixed'
             posts = None
     else:
-        bottom = 'fixed'
         posts = None
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
+
+
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:12]
+    three_posts = []
+    three_posts_list = []
+    while len(three_posts_list) < 3:
+        one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
+        try:
+            one_post = \
+                News.objects.filter(active=1, category=one_of_three_cat, pictures__isnull=False).order_by('-post_id')[
+                :1][0]
+        except:
+            continue
+        if one_post in three_posts or one_of_three_cat == search_query or one_post.category == search_query:
+            continue
+        else:
+            three_posts.append(one_post)
+        if len(three_posts) == 3:
+            three_posts_list.append(three_posts)
+            three_posts = []
+
+
+
+
     search_data = {
         'news': posts,
         'search_query': search_query,
-        'bottom': bottom,
         'sub_cat': sub_cat,
+        'three_posts_list': three_posts_list,
+        'latest_news': latest_news,
     }
 
     return render(request, 'main/search_results.html', context=search_data)

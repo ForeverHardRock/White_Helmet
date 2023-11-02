@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+
+.search-body {
+  position: relative;
+  height: $main-bar-height*15;
+  width: 100%;
+  background-color: $card-background-color;
+  border-radius: $main-bar-height/3;
+  box-shadow: 0 0 50px 10px $font-color-light;
+  padding: $main-bar-height/2 9%;
+  .search-title {
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .puzzle-grid {
+    height: $main-bar-height*13;
+
+    .new-card {
+      @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0);
+      &:nth-child(1),&:nth-child(4),&:nth-child(6),&:nth-child(9) {
+        @include bluecard()
+      }
+    }
+  }
+}
+.no-res {
+  position: relative;
+  width: 100%;
+  background-color: $card-background-color;
+  border-radius: $main-bar-height/3;
+  box-shadow: 0 0 50px 10px $font-color-light;
+  padding: $main-bar-height/2 9%;
+}

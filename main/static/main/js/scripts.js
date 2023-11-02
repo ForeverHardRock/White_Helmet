@@ -1,6 +1,7 @@
 function submenu_fnc() {
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("rotateFunc").classList.toggle("rotate");
+  document.getElementById("backFunc").classList.toggle("show-back");
 }
 
 window.onscroll = function() {scrollFunction()};
@@ -30,9 +31,46 @@ function checkEmail(input) {
   }
 }
 
-window.addEventListener("load", function() {
-  document.getElementById("load-content-last").click();
+
+
+
+
+
+const buttons_sub_active = document.querySelectorAll('.cat-btn');
+buttons_sub_active.forEach(button => {button.addEventListener('click', () => {
+    buttons_sub_active.forEach(btn => btn.classList.remove('cat-btn-active'));
+    button.classList.add('cat-btn-active');
 });
+});
+
+
+var cat_buttons = document.querySelectorAll('button[id^="load-categories"]');
+for (var ii = 0; ii < cat_buttons.length; ii++) {
+  cat_buttons[ii].addEventListener('click', function() {
+    var buttonId = this.id.replace('load-categories-', '');
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', '/load-categories/' + buttonId + '/', true);
+
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        // Обновляем контент на странице
+
+        document.getElementById('content_categories').innerHTML = xhr.responseText;
+
+      }
+    };
+  });
+}
+
+
+window.addEventListener("load", function() {
+  document.getElementById("cat_first").click();
+});
+
 
 
 
@@ -140,6 +178,9 @@ for (var i = 0; i < buttons.length; i++) {
   });
 }
 
+window.addEventListener("load", function() {
+  document.getElementById("load-content-last").click();
+});
 
 
 
@@ -150,4 +191,15 @@ buttons_active.forEach(button => {button.addEventListener('click', () => {
 });
 });
 
+
+
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+
+searchForm.addEventListener('submit', (event) => {
+  if (searchInput.value.trim() === '') {
+    event.preventDefault();
+    alert('Введите поисковый запрос');
+  }
+});
 

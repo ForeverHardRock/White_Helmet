@@ -102,13 +102,16 @@
   padding: $main-bar-height 10% 5%;
   margin-top: $main-bar-height;
   box-shadow: 0 0 50px 10px $font-color-light;
-
-
-  > img {
-    padding-bottom: $main-bar-height;
-    width: 100%;
+  > a {
+    display: flex;
     height: auto;
-    object-fit: cover;
+    padding-bottom: $main-bar-height;
+    > img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
+
   @include bottom-menu()
 }

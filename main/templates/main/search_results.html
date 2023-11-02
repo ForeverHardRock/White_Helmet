@@ -2,33 +2,49 @@
 {% load static %}
 
 {% block content %}
-    <div class="nav-str">
-        <a href="{% url 'home' %}">Главная</a>
-        <span>/</span>
-        <p>Резульаты поиска: {{ search_query }}</p>
-    </div>
-    <br>
     {% if news != None %}
-        <ul>
-            {% for new in news %}
-                <div class="cat-posts">
-                    {% if new.pictures != Null %}
-                        <div class="post-pict">
-                            <img src="{{ '/media/' }}{{ new.pictures }}" alt="{{ new.title }}">
-                        </div><br>
-                    {% endif %}
-                    <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}" class="post-title gl-title">{{ new.title }}</a>
-                    <span class="pop-post-date"><span class="material-symbols-outlined">calendar_month</span>{{ new.pubdate }}</span>
-                    <br><br>
-                    <p>{{ new.description }}</p>
-                </div>
-            {% endfor %}
-            <br><br>
-        </ul>
+        <div class="search-body">
+            <div class="search-title">
+                <h2>Результаты поиска: {{ search_query }}</h2>
+                {% if news.paginator.num_pages > 1 %}
+                    <h2>Страница: {{ news.number }}</h2>
+                {% endif %}
+            </div>
+            <div class="puzzle-grid">
+                {% for new in news %}
 
+                    <div class="new-card">
+                        {% if new.pictures != Null %}
+                            <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ '/media/' }}{{ new.pictures }}"></a>
+                        {% endif %}
+                        <div class="new-card-text">
+                            <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
+                            <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a><br><br>
+                            <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.description }}</div></a>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+                <br><br>
+
+            </div>
         {% include 'main/paginator.html' %}
-
-    {% else %}
-        <h2>По вашему запросу ничего не найдено</h2>
+        </div>
+        {% else %}
+            <div class="no-res">
+                <h2>По вашему запросу ничего не найдено</h2>
+            </div>
     {% endif %}
+
+    <div class="latest-news-in-post">
+        {% include 'main/latest-news.html' %}
+    </div>
+    {% include 'main/three-r-posts.html' %}
+
+    <div class="post-bottom">
+        <a href="https://t.me/belaya_kaska"><img class="subs-pict" src="{% static 'main/svg/subscribe.svg' %}"></a>
+        {% include 'main/bottom.html' %}
+    </div>
+
 {% endblock %}

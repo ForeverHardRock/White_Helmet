@@ -6,8 +6,8 @@
                 <span class="next-links">
                     {% if news.has_previous %}
                         <ul>
-                            <li><a href="?page=1{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Первая</a></li>
-                            <li><a href="?page={{ news.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&laquo;</a></li>
+                            <li class="first-last"><a href="?page=1&search={{ search_query }}">Первая</a></li>
+                            <li class="page-num"><a href="?page={{ news.previous_page_number }}&search={{ search_query }}">&laquo;</a></li>
                         </ul>
                     {% endif %}
                 </span>
@@ -15,10 +15,10 @@
                     <ul>
                         {% for p in news.paginator.page_range %}
                             {% if news.number == p %}
-                                <span class="page-num-selected">{{ p }}</span>
+                                <span class="page-num-selected page-num">{{ p }}</span>
                             {% elif p >= news.number|add:-5 and p <= news.number|add:5  %}
                                 <li class="page-num">
-                                    <a href="?page={{ p }}{% if request.GET.search_query %}&q={{ request.GET.search_query }}{% endif %}">{{ p }}</a>
+                                    <a href="?page={{ p }}&search={{ search_query }}">{{ p }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
@@ -27,8 +27,8 @@
                 <span class="next-links">
                     {% if news.has_next %}
                         <ul>
-                            <li><a href="?page={{ news.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">&raquo;</a></li>
-                            <li><a href="?page={{ news.paginator.num_pages }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Последняя</a></li>
+                            <li class="page-num"><a href="?page={{ news.next_page_number }}&search={{ search_query }}">&raquo;</a></li>
+                            <li class="first-last"><a href="?page={{ news.paginator.num_pages }}&search={{ search_query }}">Последняя</a></li>
                         </ul>
                     {% endif %}
                 </span>

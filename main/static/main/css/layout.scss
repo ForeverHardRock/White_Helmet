@@ -252,7 +252,11 @@ ul {
         background-color: $font-color;
         border-radius: ($main-bar-elements-font-size*0.2);
       }
-      a {
+      .cat-btn {
+        text-align: left;
+        width: 100%;
+        border: none;
+        background: none;
         padding: 5% 10%;
         color: $font-color;
         font-size: ($main-bar-elements-font-size*0.6);
@@ -262,6 +266,9 @@ ul {
         &:hover {
           background-color: $main-color-light;
         }
+      }
+      .cat-btn-active {
+        background-color: $main-color-light
       }
     }
     .submenu-descriptions {
@@ -281,8 +288,25 @@ ul {
     }
   }
 }
+
+.submenu-back {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  opacity: 50%;
+  z-index: 3000;
+  transition: 0.5s ease;
+  top: -100vh;
+
+}
+
 .show {
   top: $main-bar-height;
+}
+
+.show-back {
+  top: 0;
 }
 
 body {

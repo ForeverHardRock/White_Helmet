@@ -279,8 +279,12 @@
   margin-top: 123px;
   box-shadow: 0 0 50px 10px #C0C0C0;
 }
-.post-bottom > img {
+.post-bottom > a {
+  display: flex;
+  height: auto;
   padding-bottom: 123px;
+}
+.post-bottom > a > img {
   width: 100%;
   height: auto;
   object-fit: cover;
