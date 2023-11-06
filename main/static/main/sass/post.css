@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: Intro;
-  src: url("/fonts/Intro Regular Regular.otf");
+  src: url("/main/static/main/sass/fonts/Intro Regular Regular.otf");
   font-style: normal;
   font-weight: normal;
 }
@@ -390,4 +390,4 @@
   width: auto;
 }
 
-/*# sourceMappingURL=post.css.map */
+/*# sourceMappingURL=post.sass.map */

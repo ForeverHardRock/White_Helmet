@@ -1,0 +1,138 @@
+@mixin post($main-bar-height) {
+  $main-bar-elements-height: ($main-bar-height*0.4);
+  $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
+  .post-block {
+    position: relative;
+    height: 100%;
+    display: flex;
+    padding-top: $main-bar-height/2;
+    padding-bottom: $main-bar-height/2;
+    width: 100%;
+    background-color: $card-background-color;
+    border-radius: $main-bar-height/3;
+    align-items: stretch;
+    box-shadow: 0 0 50px 10px $font-color-light;
+
+    .post-content {
+      position: relative;
+      height: 100%;
+
+      width: 50%;
+      margin-right: 10%;
+      margin-left: 10%;
+
+      .post-way {
+        display: flex;
+
+        > a {
+          color: $main-color-light;
+          font-size: $main-bar-elements-font-size*0.7;
+          margin-right: $main-bar-elements-font-size;
+        }
+
+        > p {
+          font-size: $main-bar-elements-font-size*0.7;
+        }
+      }
+
+      > h2 {
+        font-size: $main-bar-elements-font-size*1.4;
+        font-weight: 600;
+      }
+
+      .subs-in-post {
+        background-color: $main-color-light;
+        font-size: $main-bar-elements-font-size*0.7;
+
+        padding: $main-bar-elements-font-size*0.4;
+        padding-top: $main-bar-elements-font-size*0.3;
+
+        border-radius: ($main-bar-elements-height*0.5);
+      }
+
+      img {
+        border-radius: $main-bar-height/5;
+        width: 100%;
+        margin-bottom: $main-bar-height/4;
+      }
+    }
+
+
+    .news-column {
+      @include news-column($main-bar-height)
+    }
+  }
+
+
+  .latest-news-in-post {
+    margin-bottom: $main-bar-height/4;
+    padding: $main-bar-height/2 10%;
+    width: 100%;
+    height: ($main-bar-height*3);
+    @include latest-news($news-in-carousel-large, $main-bar-height);
+  }
+
+  .rand-3-posts {
+    width: auto;
+    margin-right: 9%;
+    margin-left: 9%;
+    height: $main-bar-height*4;
+
+    .puzzle-grid {
+      height: 100%;
+      width: 100%;
+
+      .new-card {
+        @include news-cards($news-in-puzzle, 1, $margin-in-puzzle, even, $main-bar-height);
+      }
+    }
+
+    .flickity-page-dots {
+      .dot {
+        background: $main-color-light;
+      }
+
+      .dot.is-selected {
+        background: $main-color;
+      }
+    }
+  }
+
+  .post-bottom {
+    width: 100%;
+    background-color: $card-background-color;
+    border-top-left-radius: ($main-bar-height/3);
+    border-top-right-radius: ($main-bar-height/3);
+    padding: $main-bar-height 10% 5%;
+    margin-top: $main-bar-height;
+    box-shadow: 0 0 50px 10px $font-color-light;
+
+    > a {
+      display: flex;
+      height: auto;
+      padding-bottom: $main-bar-height;
+
+      > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    @include bottom-menu($main-bar-height)
+  }
+}
+
+@include post(123px);
+
+@include lt-xl() {
+  @include post(112px);
+}
+
+@include lt-lg() {
+  @include post(101px);
+}
+
+@include lt-md() {
+  @include post(89px);
+}

@@ -34,6 +34,10 @@ function checkEmail(input) {
 
 
 
+const toggle_rubriki = document.querySelector('.toggle-rubriki');
+if (toggle_rubriki) {
+  toggle_rubriki.addEventListener('click', submenu_fnc);
+}
 
 
 const buttons_sub_active = document.querySelectorAll('.cat-btn');
@@ -202,4 +206,9 @@ searchForm.addEventListener('submit', (event) => {
     alert('Введите поисковый запрос');
   }
 });
+
+
+window.onresize = function() {
+  location.reload();
+}
 

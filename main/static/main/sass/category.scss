@@ -1,0 +1,56 @@
+@mixin category($main-bar-height) {
+  $main-bar-elements-height: ($main-bar-height*0.4);
+  $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
+  .category-body {
+    position: relative;
+    display: flex;
+    height: $main-bar-height*15;
+    padding-top: $main-bar-height/2;
+    padding-bottom: $main-bar-height/2;
+    width: 100%;
+    background-color: $card-background-color;
+    border-radius: $main-bar-height/3;
+    box-shadow: 0 0 50px 10px $font-color-light;
+
+    .category-left {
+      height: 100%;
+      width: 60%;
+      margin-left: 9%;
+
+      h2 {
+        margin-left: 1%;
+      }
+
+      .puzzle-grid {
+        width: 100%;
+        height: 100%;
+
+        .new-card {
+          @include news-cards($news-in-puzzle, $news-in-puzzle+1, $margin-in-puzzle, 0, $main-bar-height);
+
+          &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
+            @include bluecard($main-bar-height)
+          }
+        }
+      }
+    }
+
+    .category-right {
+      @include news-column($main-bar-height)
+    }
+  }
+}
+
+@include category(123px);
+
+@include lt-xl() {
+  @include category(112px);
+}
+
+@include lt-lg() {
+  @include category(101px);
+}
+
+@include lt-md() {
+  @include category(89px);
+}

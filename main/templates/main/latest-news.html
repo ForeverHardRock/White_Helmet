@@ -7,7 +7,7 @@
         {% for new in latest_news %}
             <div class="gallery-cell">
                 <p>{{ new.pubdate }}</p>
-                <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a>
+                <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div class="latest-subtitle">{{ new.title }}</div></a>
             </div>
         {% endfor %}
     </div>

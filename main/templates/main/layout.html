@@ -17,13 +17,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
 
-    <link rel="stylesheet" href="{% static 'main/css/layout.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/post.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/category.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/search_result.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/paginator.css' %}">
-{#    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">#}
 
 
 
@@ -57,9 +50,9 @@
             </div>
             <a class="up-menu-main" href="{% url 'home' %}">Главная</a>
             <div class="up-menu-categories">
-                <button onclick="submenu_fnc()">Рубрики
+                <button class="toggle-rubriki">Рубрики
                     <svg id="rotateFunc" fill="#000000" height="800px" width="800px" version="1.1"
-                         viewBox="0 0 330 330" xml:space="preserve">
+                         viewBox="0 0 330 330">
                         <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
                             c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
                             s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
@@ -186,7 +179,8 @@
 
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="{% static 'main/js/scripts.js' %}"></script>
+<script src="{% static 'dist/bundle.js' %}"></script>
+
 
 
 </html>
