@@ -426,7 +426,12 @@
           font-size: $main-bar-elements-font-size*1.5;
           line-height: $main-bar-elements-font-size*2;
         }
-
+        &-text {
+          font-family: apparat;
+          font-weight: 400;
+          font-size: $main-bar-elements-font-size*0.7;
+          line-height: $main-bar-elements-font-size;
+        }
       }
 
       &-logo {
