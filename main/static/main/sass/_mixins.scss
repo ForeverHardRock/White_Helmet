@@ -395,4 +395,104 @@
   }
 }
 
+@mixin tg-banner($main-bar-height) {
+  $main-bar-elements-height: ($main-bar-height*0.4);
+  $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
+  .tg-banner-link {
+    padding-bottom: 5%;
 
+    .tg-banner {
+      position: relative;
+      display: flex;
+      height: $main-bar-height*3;
+      width: 100%;
+      background: linear-gradient(275.61deg, $main-color, $main-color-light);
+      box-shadow: 0 0 10px 2px $font-color-light;
+      border-radius: $main-bar-height/5;
+      justify-content: space-between;
+      overflow: hidden;
+
+      &-left {
+        position: absolute;
+        top: $main-bar-height*0.5;
+        left: $main-bar-height*0.6;
+        width: 40%;
+        z-index: 500;
+
+        &-title {
+          font-family: grotesque;
+          font-weight: 700;
+          letter-spacing: 2px;
+          font-size: $main-bar-elements-font-size*1.5;
+          line-height: $main-bar-elements-font-size*2;
+        }
+
+      }
+
+      &-logo {
+        position: absolute;
+        margin: auto;
+        height: 100%;
+        width: auto;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 450;
+        opacity: 20%;
+      }
+
+      &-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 45%;
+        height: 100%;
+        z-index: 300;
+
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 90%;
+          width: auto;
+          z-index: 350;
+
+        }
+      }
+
+      &-mini {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background: $main-color-light;
+        height: $main-bar-height*0.9;
+        width: $main-bar-height*1.2;
+        border-top-left-radius: $main-bar-height*0.45;
+        border-bottom-left-radius: $main-bar-height*0.45;
+        z-index: 500;
+
+        &-logo {
+          top: $main-bar-height*0.1;
+          left: $main-bar-height*0.1;
+          position: absolute;
+          z-index: 500;
+          height: $main-bar-height*0.7;
+          width: $main-bar-height*0.7;
+        }
+
+      }
+
+      &-gradient {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        //opacity: 50%;
+        background: linear-gradient(165deg, rgba(255, 0, 0, 0) 50%, $main-color 100%);
+        z-index: 450;
+
+      }
+    }
+  }
+}

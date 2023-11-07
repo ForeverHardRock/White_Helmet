@@ -208,7 +208,7 @@ searchForm.addEventListener('submit', (event) => {
 });
 
 
-window.onresize = function() {
-  location.reload();
-}
+// window.onresize = function() {
+//   location.reload();
+// }
 

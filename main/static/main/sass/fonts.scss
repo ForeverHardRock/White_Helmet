@@ -5,10 +5,15 @@
 
 @font-face {
   font-family: 'grotesque';
-  src: url('./fonts/BasisGrotesquePro-Medium.woff2') format('woff2');
+  src: url('./fonts/BasisGrotesquePro-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'apparat';
-  src: url('./fonts/Apparata Light.woff') format('woff');
+  src: url('./fonts/apparat-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'intro-r';
+  src: url('./fonts/intro.woff2') format('woff2');
 }

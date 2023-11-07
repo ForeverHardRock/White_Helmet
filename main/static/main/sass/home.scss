@@ -119,7 +119,11 @@
     border-top-right-radius: $main-bar-height/3;
     border-top-left-radius: $main-bar-height/3;
     box-shadow: 0 0 50px 10px $font-color-light;
-
+    @include tg-banner($main-bar-height);
+    .tg-banner-link {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
     .subs-pict {
       padding-right: 10%;
       padding-left: 10%;

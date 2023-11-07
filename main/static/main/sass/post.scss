@@ -100,6 +100,7 @@
 
   .post-bottom {
     width: 100%;
+    height: auto;
     background-color: $card-background-color;
     border-top-left-radius: ($main-bar-height/3);
     border-top-right-radius: ($main-bar-height/3);
@@ -118,8 +119,8 @@
         object-fit: cover;
       }
     }
-
-    @include bottom-menu($main-bar-height)
+    @include tg-banner($main-bar-height);
+    @include bottom-menu($main-bar-height);
   }
 }
 

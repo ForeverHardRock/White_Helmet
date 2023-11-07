@@ -43,16 +43,17 @@
     .up-menu-logo {
       display: flex;
       justify-content: left;
-
-      > svg {
+      align-items: center;
+      .kaska-logo {
         width: auto;
         height: $main-bar-elements-font-size;
         padding-right: ($main-bar-elements-height/3);
       }
 
-      p {
-        width: auto;
-        fill: $font-color;
+      .kaska-title {
+        font-family: intro-r;
+        font-weight: 400;
+        font-size: $main-bar-elements-font-size;
         margin: 0;
       }
     }
@@ -74,6 +75,9 @@
         padding-right: ($main-bar-elements-height*0.3);
 
         a {
+          font-family: grotesque;
+          font-weight: 500;
+          color: $font-color;
           font-size: ($main-bar-elements-font-size*0.6);
 
           svg {
@@ -83,6 +87,9 @@
       }
 
       > a {
+        font-family: grotesque;
+        font-weight: 500;
+        color: $font-color;
         display: flex;
         align-items: center;
         height: 100%;
@@ -104,6 +111,8 @@
         height: 100%;
 
         button {
+          font-family: grotesque;
+          font-weight: 700;
           color: $font-color;
           background: transparent;
           border: 0;
@@ -287,6 +296,8 @@
         }
 
         .cat-btn {
+          font-family: grotesque;
+          font-weight: 400;
           text-align: left;
           width: 100%;
           border: none;
@@ -320,6 +331,8 @@
 
           .sub-title {
             div {
+              font-family: grotesque;
+              font-weight: 400;
               width: 100%;
               overflow: hidden;
               display: -webkit-box;
@@ -332,6 +345,8 @@
         }
 
         .to-cat {
+          font-family: apparat;
+          font-weight: 500;
           position: absolute;
           bottom: 0;
         }

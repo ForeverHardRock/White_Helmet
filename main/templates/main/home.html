@@ -16,7 +16,7 @@
                         {% if car_news|first == new %}
                             <div class="new-card first-card">
                                 {% if new.pictures != Null %}
-                                    <a class="first-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                                    <a class="first-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}" alt=""></a>
                                 {% endif %}
                                 <div class="cat-date">
                                     <a href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a>
@@ -27,7 +27,7 @@
                         {% else %}
                             <div class="new-card">
                                 {% if new.pictures != Null %}
-                                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}"></a>
+                                    <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}" alt=""></a>
                                 {% endif %}
                                 <div class="new-card-text">
                                     <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">● {{ new.category}}</a><br><br>
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="cat-news">
-        <a href="https://t.me/belaya_kaska"><img class="subs-pict" src="{% static 'main/svg/subscribe.svg' %}"></a>
+        {% include 'main/tg-banner.html' %}
         <div class="categories-list">
             <button id="load-content-last" class="cat_btn active">Последнее</button>
             {% for cat in car_cat  %}
