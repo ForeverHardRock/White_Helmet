@@ -1,5 +1,4 @@
-@mixin post($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin post($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .post-block {
     position: relative;
@@ -25,22 +24,29 @@
         display: flex;
 
         > a {
+          font-family: apparat;
+          font-weight: 400;
           color: $main-color-light;
           font-size: $main-bar-elements-font-size*0.7;
           margin-right: $main-bar-elements-font-size;
         }
 
         > p {
+          font-family: apparat;
+          font-weight: 400;
           font-size: $main-bar-elements-font-size*0.7;
         }
       }
 
       > h2 {
-        font-size: $main-bar-elements-font-size*1.4;
+        font-family: lava;
         font-weight: 600;
+        font-size: $main-bar-elements-font-size*1.4;
       }
 
       .subs-in-post {
+        font-family: grotesque;
+        font-weight: 500;
         background-color: $main-color-light;
         font-size: $main-bar-elements-font-size*0.7;
 
@@ -55,35 +61,43 @@
         width: 100%;
         margin-bottom: $main-bar-height/4;
       }
+      .post-text {
+        font-family: apparat;
+        font-weight: 400;
+        font-size: $main-bar-elements-font-size*0.7;
+        color: $dark-font-color;
+      }
     }
 
 
     .news-column {
-      @include news-column($main-bar-height)
+      @include news-column($main-bar-height, $main-bar-elements-height)
     }
   }
 
 
   .latest-news-in-post {
-    margin-bottom: $main-bar-height/4;
     padding: $main-bar-height/2 10%;
     width: 100%;
-    height: ($main-bar-height*3);
-    @include latest-news($news-in-carousel-large, $main-bar-height);
+    height: ($main-bar-height*2.5);
+    @include latest-news($news-in-carousel-large, $main-bar-height, $main-bar-elements-height);
+    @include lt-md {
+      @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
+    }
   }
 
   .rand-3-posts {
     width: auto;
     margin-right: 9%;
     margin-left: 9%;
-    height: $main-bar-height*4;
+    height: $main-bar-height*3;
 
     .puzzle-grid {
       height: 100%;
       width: 100%;
 
       .new-card {
-        @include news-cards($news-in-puzzle, 1, $margin-in-puzzle, even, $main-bar-height);
+        @include news-cards($news-in-puzzle, 1, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
       }
     }
 
@@ -119,21 +133,25 @@
         object-fit: cover;
       }
     }
-    @include tg-banner($main-bar-height);
-    @include bottom-menu($main-bar-height);
+    @include tg-banner($main-bar-height, $main-bar-elements-height);
+    @include bottom-menu($main-bar-height, $main-bar-elements-height);
   }
 }
 
-@include post(123px);
-
-@include lt-xl() {
-  @include post(112px);
+@include post($stock-height, $stock-height-el);
+@mixin main($height, $el-height) {
+  @include post($height, $el-height)
 }
+@include global
 
-@include lt-lg() {
-  @include post(101px);
-}
-
-@include lt-md() {
-  @include post(89px);
-}
+//@include lt-xl() {
+//  @include post(112px);
+//}
+//
+//@include lt-lg() {
+//  @include post(101px);
+//}
+//
+//@include lt-md() {
+//  @include post(89px);
+//}

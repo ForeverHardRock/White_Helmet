@@ -1,24 +1,23 @@
-@mixin home($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin home($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .latest-news {
     margin-bottom: $main-bar-height/4;
     padding: $main-bar-height/2 10%;
     width: 100%;
-    height: ($main-bar-height*3);
+    height: ($main-bar-height*2.5);
     background-color: $card-background-color;
     border-radius: $main-bar-height/3;
     box-shadow: 0 0 50px 10px $font-color-light;
-    @include latest-news($news-in-carousel-large, $main-bar-height);
+    @include latest-news($news-in-carousel-large, $main-bar-height, $main-bar-elements-height);
 
     @include lt-md {
-      @include latest-news($news-in-carousel-medium, $main-bar-height);
+      @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
     }
   }
 
   .puzzle-news {
     margin: $main-bar-height/2 9%;
-    height: $main-bar-height*13;
+    height: $main-bar-height*10;
 
     .puzzle-carousel {
       width: 100%;
@@ -29,7 +28,13 @@
         width: 100%;
 
         .new-card {
-          @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, even, $main-bar-height);
+          @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
+          @include lt-md(){
+            @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
+            &:nth-last-child(-n+1) {
+              display: none;
+            }
+          }
         }
 
         .first-card {
@@ -37,6 +42,9 @@
           align-items: center;
           position: relative;
           width: ((((100%-($margin-in-puzzle*$news-in-puzzle))/$news-in-puzzle)*2)+$margin-in-puzzle);
+          @include lt-md(){
+            width: (100%-$margin-in-puzzle);
+          }
 
           .first-card-img {
             display: flex;
@@ -119,7 +127,7 @@
     border-top-right-radius: $main-bar-height/3;
     border-top-left-radius: $main-bar-height/3;
     box-shadow: 0 0 50px 10px $font-color-light;
-    @include tg-banner($main-bar-height);
+    @include tg-banner($main-bar-height, $main-bar-elements-height);
     .tg-banner-link {
       padding-left: 10%;
       padding-right: 10%;
@@ -136,13 +144,13 @@
     .categories-list {
       height: 100%;
       width: 100%;
-      padding-right: 25%;
-      padding-left: 25%;
+      padding-right: 20%;
+      padding-left: 20%;
 
       .cat_btn {
         font-family: grotesque;
         font-weight: 400;
-        font-size: $main-bar-elements-font-size*0.6;
+        font-size: $main-bar-elements-font-size*0.8;
         color: $dark-font-color;
         padding-right: 5%;
         background: none;
@@ -158,7 +166,7 @@
       margin-top: 5%;
       margin-bottom: 5%;
       width: 100%;
-      height: $main-bar-height*13;
+      height: $main-bar-height*10;
 
       .flickity-page-dots {
         .dot {
@@ -182,10 +190,10 @@
           height: 100%;
 
           .new-card {
-            @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height);
+            @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
 
             &:nth-child(1), &:nth-child(4), &:nth-child(5) {
-              @include bluecard($main-bar-height)
+              @include bluecard($main-bar-height, $main-bar-elements-height)
             }
 
             &:nth-child(2n):not(:nth-child(6)) {
@@ -194,7 +202,7 @@
           }
 
           .puzzle-right {
-            @include news-column($main-bar-height);
+            @include news-column($main-bar-height, $main-bar-elements-height);
 
             .next-card {
 
@@ -218,7 +226,7 @@
       }
     }
 
-    @include bottom-menu($main-bar-height);
+    @include bottom-menu($main-bar-height, $main-bar-elements-height);
 
     .bottom-menu {
       width: auto;
@@ -228,19 +236,27 @@
   }
 }
 
-@include home(123px);
-
-@include lt-xl() {
-  @include home(112px);
+@include home($stock-height, $stock-height-el);
+@mixin main($height, $el-height) {
+  @include home($height, $el-height)
 }
+@include global
 
-@include lt-lg() {
-  @include home(101px);
-}
 
-@include lt-md() {
-  @include home(89px);
-}
+
+
+
+//@include lt-xl() {
+//  @include home(112px);
+//}
+//
+//@include lt-lg() {
+//  @include home(101px);
+//}
+//
+//@include lt-md() {
+//  @include home(89px);
+//}
 
 
 

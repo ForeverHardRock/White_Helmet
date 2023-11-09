@@ -1,6 +1,6 @@
 
-@mixin layout($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+
+@mixin layout($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   a {
     color: $font-color;
@@ -81,6 +81,7 @@
           font-size: ($main-bar-elements-font-size*0.6);
 
           svg {
+            height: ($main-bar-elements-font-size*0.8);
             margin-right: ($main-bar-elements-height*0.2);
           }
         }
@@ -156,7 +157,7 @@
         margin-right: $main-bar-elements-height*0.5;
 
         svg {
-          height: 50%;
+          height: $main-bar-elements-height*0.6;
           width: auto;
         }
       }
@@ -197,13 +198,25 @@
         }
 
         .search:hover > .searchText {
-          width: 240px;
+          width: 14vw;
           padding: 0 6px;
+          @include lt-lg() {
+            width: 12vw;
+          }
+          @include lt-md() {
+            width: 10vw;
+          }
         }
 
         .searchText:focus {
-          width: 240px;
+          width: 14vw;
           padding: 0 6px;
+          @include lt-lg() {
+            width: 12vw;
+          }
+          @include lt-md() {
+            width: 10vw;
+          }
         }
 
         .search:hover > .btn-search-cancel {
@@ -333,6 +346,8 @@
             div {
               font-family: grotesque;
               font-weight: 400;
+              font-size: ($main-bar-elements-font-size*0.6);
+              color: $font-color;
               width: 100%;
               overflow: hidden;
               display: -webkit-box;
@@ -347,6 +362,8 @@
         .to-cat {
           font-family: apparat;
           font-weight: 500;
+          font-size: ($main-bar-elements-font-size*0.6);
+          color: $font-color;
           position: absolute;
           bottom: 0;
         }
@@ -401,6 +418,7 @@
     right: $main-bar-height/4;
     align-items: center;
     padding: 0;
+    z-index: 5000;
 
     &:hover {
       background-color: lighten($main-color, 15%);
@@ -415,16 +433,27 @@
   }
 }
 
-@include layout(123px);
-
-@include lt-xl() {
-  @include layout(112px);
+@include layout($stock-height, $stock-height-el);
+@mixin main($height, $el-height) {
+  @include layout($height, $el-height)
 }
+@include global
 
-@include lt-lg() {
-  @include layout(101px);
-}
 
-@include lt-md() {
-  @include layout(89px);
-}
+//@include layout(123px);
+//
+//@include lt-xl() {
+//  @include layout(115px);
+//}
+//
+//@include lt-lg() {
+//  @include layout(106px);
+//}
+//
+//@include lt-md() {
+//  @include layout(98px);
+//}
+//
+//@include lt-sm() {
+//  @include layout(89px);
+//}

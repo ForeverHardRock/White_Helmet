@@ -1,5 +1,4 @@
-@mixin paginator($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin paginator($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .pagination {
     width: 100%;
@@ -57,16 +56,21 @@
   }
 }
 
-@include paginator(123px);
-
-@include lt-xl() {
-  @include paginator(112px);
+@include paginator($stock-height, $stock-height-el);
+@mixin main($height, $el-height) {
+  @include paginator($height, $el-height)
 }
+@include global
 
-@include lt-lg() {
-  @include paginator(101px);
-}
 
-@include lt-md() {
-  @include paginator(89px);
-}
+//@include lt-xl() {
+//  @include paginator(112px);
+//}
+//
+//@include lt-lg() {
+//  @include paginator(101px);
+//}
+//
+//@include lt-md() {
+//  @include paginator(89px);
+//}

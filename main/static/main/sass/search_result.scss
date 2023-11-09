@@ -1,5 +1,4 @@
-@mixin search-result($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin search-result($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .search-body {
     position: relative;
@@ -15,16 +14,21 @@
       padding-right: 1%;
       display: flex;
       justify-content: space-between;
+      h2 {
+        font-family: grotesque;
+        font-size: $main-bar-elements-font-size;
+        font-weight: 600;
+      }
     }
 
     .puzzle-grid {
       height: $main-bar-height*13;
 
       .new-card {
-        @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height);
+        @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
 
         &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
-          @include bluecard($main-bar-height)
+          @include bluecard($main-bar-height, $main-bar-elements-height)
         }
       }
     }
@@ -39,16 +43,19 @@
   }
 }
 
-@include search-result(123px);
-
-@include lt-xl() {
-  @include search-result(112px);
+@include search-result($stock-height, $stock-height-el);
+@mixin main($height, $el-height) {
+  @include search-result($height, $el-height)
 }
-
-@include lt-lg() {
-  @include search-result(101px);
-}
-
-@include lt-md() {
-  @include search-result(89px);
-}
+@include global
+//@include lt-xl() {
+//  @include search-result(112px);
+//}
+//
+//@include lt-lg() {
+//  @include search-result(101px);
+//}
+//
+//@include lt-md() {
+//  @include search-result(89px);
+//}

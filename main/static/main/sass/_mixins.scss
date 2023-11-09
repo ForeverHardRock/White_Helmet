@@ -1,8 +1,7 @@
-@mixin latest-news($cols, $main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin latest-news($cols, $main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .latest {
-
+    
     &-title {
       display: flex;
 
@@ -10,7 +9,9 @@
         font-family: grotesque;
         font-weight: 500;
         font-size: $main-bar-elements-font-size;
+        line-height: $main-bar-elements-font-size;
         color: $dark-font-color;
+        margin-bottom: $main-bar-elements-font-size/2;
       }
     }
 
@@ -30,15 +31,21 @@
     &-carousel {
       width: 100%;
       height: 70%;
-
       .flickity-page-dots {
-        width: auto;
-        padding-left: 300px;
-        top: -43px;
-        height: $main-bar-height/4;
+        display: flex;
+        width: 100%;
+        padding-left: $main-bar-elements-font-size*10;
+        top: -$main-bar-elements-font-size*1.5;
+        height: $main-bar-elements-font-size;
+        margin: 0;
 
         .dot {
+          height: $main-bar-elements-font-size/2;
+          width: $main-bar-elements-font-size/2;
           background: $main-color-light;
+          margin-top: $main-bar-elements-font-size/4;
+          margin-right: 5px;
+          margin-left: 5px;
         }
 
         .dot.is-selected {
@@ -74,8 +81,7 @@
 }
 
 
-@mixin news-cards($cols, $cols-v, $margin, $blue, $main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin news-cards($cols, $cols-v, $margin, $blue, $main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   position: relative;
   float: left;
@@ -131,12 +137,11 @@
   }
 
   &:nth-child(#{$blue}) {
-    @include bluecard($main-bar-height)
+    @include bluecard($main-bar-height, $main-bar-elements-height)
   }
 }
 
-@mixin bluecard($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin bluecard($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   background: linear-gradient(to left, $main-color, $main-color-light);
   img {
@@ -197,8 +202,7 @@
   }
 }
 
-@mixin news-column($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin news-column($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   position: absolute;
   right: 0;
@@ -261,8 +265,7 @@
   }
 }
 
-@mixin bottom-menu($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin bottom-menu($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .bottom-menu {
     position: relative;
@@ -278,22 +281,25 @@
       width: 45%;
       margin-right: 5%;
       display: flex;
+      ul {
 
-      h5 {
-        font-family: grotesque;
-        font-weight: 500;
-        font-size: $main-bar-elements-font-size*0.6;
-        color: $dark-font-color;
-      }
-
-      li {
-        margin-bottom: $main-bar-elements-font-size*0.6;
-
-        a {
-          font-family: grotesque;
-          font-weight: 400;
-          font-size: $main-bar-elements-font-size*0.6;
-          color: $font-color-light;
+        li {
+          line-height: $main-bar-elements-font-size;
+          margin-bottom: $main-bar-elements-font-size*0.5;
+          p {
+            font-family: grotesque;
+            font-weight: 600;
+            font-size: $main-bar-elements-font-size*0.5;
+            line-height: $main-bar-elements-font-size*0.5;
+            color: $dark-font-color;
+          }
+          a {
+            font-family: grotesque;
+            font-weight: 400;
+            font-size: $main-bar-elements-font-size*0.5;
+            line-height: $main-bar-elements-font-size*0.5;
+            color: $font-color-light;
+          }
         }
       }
     }
@@ -315,7 +321,7 @@
           font-family: grotesque;
           font-weight: 500;
           color: $font-color;
-          font-size: $main-bar-elements-font-size*0.5;
+          font-size: $main-bar-elements-font-size*0.6;
         }
 
         form {
@@ -344,6 +350,7 @@
             color: $main-color;
             background-color: $font-color;
             border-radius: $main-bar-height*0.5;
+            font-size: $main-bar-elements-font-size*0.5;
           }
         }
 
@@ -359,7 +366,10 @@
             height: auto;
 
             p {
-              width: auto;
+              color: $font-color;
+              font-family: grotesque;
+              font-weight: 500;
+              font-size: $main-bar-elements-font-size*0.6;
             }
 
             .subs-btns {
@@ -369,25 +379,31 @@
               height: auto;
 
               a {
+                position: relative;
                 display: flex;
-                height: $main-bar-height*0.4;
-                width: $main-bar-height*0.4;
+                height: $main-bar-elements-height;
+                width: $main-bar-elements-height;
                 color: $main-color;
                 background-color: $font-color;
                 border-radius: 50%;
                 justify-content: center;
+                align-items: center;
 
                 svg {
-                  height: 100%;
+                  position: absolute;
+                  width: 70%;
+                  height: 70%;
                 }
 
               }
             }
           }
 
-          img {
-            height: 100%;
-            width: auto;
+          .bottom-kaska {
+            svg {
+              height: 100%;
+              width: auto;
+            }
           }
         }
       }
@@ -395,8 +411,7 @@
   }
 }
 
-@mixin tg-banner($main-bar-height) {
-  $main-bar-elements-height: ($main-bar-height*0.4);
+@mixin tg-banner($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .tg-banner-link {
     padding-bottom: 5%;
@@ -422,13 +437,14 @@
         &-title {
           font-family: grotesque;
           font-weight: 700;
-          letter-spacing: 2px;
-          font-size: $main-bar-elements-font-size*1.5;
-          line-height: $main-bar-elements-font-size*2;
+          color: $font-color;
+          font-size: $main-bar-elements-font-size*1.2;
+          line-height: $main-bar-elements-font-size*1.5;
         }
         &-text {
           font-family: apparat;
           font-weight: 400;
+          color: $font-color;
           font-size: $main-bar-elements-font-size*0.7;
           line-height: $main-bar-elements-font-size;
         }
@@ -499,5 +515,27 @@
 
       }
     }
+  }
+}
+
+@mixin global {
+  @include lt-lg() {
+    @include main(116px, 35px);
+  }
+
+  @include lt-md() {
+    @include main(89px, 29px);
+  }
+
+  @include lt-sm() {
+    @include main(77px, 27px);
+  }
+
+  @include lt-mb() {
+    @include main(65px, 25px);
+  }
+
+  @include xs() {
+    @include main(54px, 23px);
   }
 }
