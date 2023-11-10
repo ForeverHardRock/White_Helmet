@@ -2,7 +2,7 @@
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .search-body {
     position: relative;
-    height: $main-bar-height*15;
+    height: auto;
     width: 100%;
     background-color: $card-background-color;
     border-radius: $main-bar-height/3;
@@ -22,15 +22,18 @@
     }
 
     .puzzle-grid {
-      height: $main-bar-height*13;
+      height: auto;
 
       .new-card {
-        @include news-cards($news-in-puzzle, $news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
+        @include news-cards($news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
 
         &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
           @include bluecard($main-bar-height, $main-bar-elements-height)
         }
       }
+    }
+    .pagination {
+      padding-top: $main-bar-height*0.6;
     }
   }
   .no-res {

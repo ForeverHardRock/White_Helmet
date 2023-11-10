@@ -14,7 +14,8 @@
         color: $dark-font-color;
         text-decoration: none;
         font-size: $main-bar-elements-font-size;
-
+        //font-family: grotesque;
+        //font-weight: 500;
       }
 
       span ul {
@@ -32,6 +33,9 @@
           vertical-align: center;
           margin-left: $main-bar-elements-font-size*0.2;
           margin-right: $main-bar-elements-font-size*0.2;
+          font-size: $main-bar-elements-font-size;
+          //font-family: grotesque;
+          //font-weight: 500;
         }
       }
 

@@ -32,7 +32,6 @@
     border-bottom-right-radius: ($main-bar-height/3);
     z-index: 5000;
 
-
     > div {
       height: $main-bar-elements-height;
       display: flex;
@@ -256,6 +255,11 @@
         }
       }
     }
+    @include lt-sm() {
+      .up-menu-center {
+        display: none;
+      }
+    }
   }
 
   .submenu {
@@ -400,6 +404,9 @@
     max-width: 1640px;
     position: relative;
     padding-top: $main-bar-height/4;
+    @include lt-sm() {
+      padding-top: 1px;
+    }
     margin: $main-bar-height auto 0;
   }
 

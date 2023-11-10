@@ -81,14 +81,14 @@
 }
 
 
-@mixin news-cards($cols, $cols-v, $margin, $blue, $main-bar-height, $main-bar-elements-height) {
+@mixin news-cards($cols, $margin, $blue, $main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   position: relative;
   float: left;
   background-color: $card-background-color;
   border-radius: $main-bar-height/5;
   margin: $margin/2;
-  height: ((98%-($margin*$cols-v))/$cols-v);
+  height: $main-bar-height*3;
   width: ((100%-($margin*$cols))/$cols);
   box-shadow: 0 0 10px 2px $font-color-light;
 
@@ -137,7 +137,7 @@
   }
 
   &:nth-child(#{$blue}) {
-    @include bluecard($main-bar-height, $main-bar-elements-height)
+    @include bluecard($main-bar-height, $main-bar-elements-height);
   }
 }
 
@@ -528,7 +528,7 @@
   }
 
   @include lt-sm() {
-    @include main(77px, 27px);
+    @include main(77px, 30px);
   }
 
   @include lt-mb() {
