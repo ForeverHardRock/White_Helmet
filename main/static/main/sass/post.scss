@@ -71,7 +71,9 @@
 
 
     .news-column {
-      @include news-column($main-bar-height, $main-bar-elements-height)
+      @include news-column($main-bar-height, $main-bar-elements-height);
+      width: 20%;
+      margin-right: 10%;
     }
   }
 
@@ -85,29 +87,31 @@
       @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
     }
   }
-
-  .rand-3-posts {
-    width: auto;
-    margin-right: 9%;
-    margin-left: 9%;
-    height: auto;
-
-    .puzzle-grid {
+  .rand-posts {
+    .rand-3-posts {
+      width: auto;
+      margin-right: 9%;
+      margin-left: 9%;
       height: auto;
-      width: 100%;
 
-      .new-card {
-        @include news-cards($news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
+      .puzzle-grid {
+
+        height: auto;
+        width: 100%;
+
+        .new-card {
+          @include news-cards($news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
+        }
       }
-    }
 
-    .flickity-page-dots {
-      .dot {
-        background: $main-color-light;
-      }
+      .flickity-page-dots {
+        .dot {
+          background: $main-color-light;
+        }
 
-      .dot.is-selected {
-        background: $main-color;
+        .dot.is-selected {
+          background: $main-color;
+        }
       }
     }
   }

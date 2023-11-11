@@ -207,8 +207,8 @@
   position: absolute;
   right: 0;
   height: 90%;
-  width: 20%;
-  margin-right: 10%;
+  width: 30%;
+  margin-top: 5px;
   h4 {
     height: 5%;
   }
@@ -234,9 +234,12 @@
     .next-new-card {
       height: auto;
       margin-right: $main-bar-height/4;
-      padding-top: $main-bar-height/4;
-      padding-bottom: $main-bar-height/4;
+      padding-top: $main-bar-height/7;
+      padding-bottom: $main-bar-height/7;
       border-bottom: 1px solid $font-color-light;
+      &:nth-child(1) {
+        padding-top: 5px;
+      }
 
       &:nth-last-child(-n+1) {
         border-bottom: none;
@@ -247,6 +250,8 @@
         font-weight: 400;
         color: $font-color-light;
         font-size: $main-bar-elements-font-size*0.6;
+        text-transform: uppercase;
+        margin-bottom: $main-bar-height/7;
       }
 
       div {

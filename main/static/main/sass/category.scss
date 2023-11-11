@@ -18,6 +18,10 @@
 
       h2 {
         margin-left: 1%;
+        font-family: grotesque;
+        font-size: $main-bar-elements-font-size;
+        font-weight: 600;
+        margin-bottom: 5px;
       }
 
       .puzzle-grid {
@@ -26,7 +30,7 @@
 
         .new-card {
           @include news-cards($news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
-
+          height: $main-bar-height*2.5;
           &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
             @include bluecard($main-bar-height, $main-bar-elements-height)
           }
@@ -35,7 +39,43 @@
     }
 
     .category-right {
-      @include news-column($main-bar-height, $main-bar-elements-height)
+      h2 {
+        font-family: grotesque;
+        font-size: $main-bar-elements-font-size;
+        font-weight: 600;
+      }
+      @include news-column($main-bar-height, $main-bar-elements-height);
+      width: 20%;
+      margin-right: 10%;
+    }
+  }
+  .cat-3-posts {
+    .rand-3-posts {
+      width: auto;
+      margin-right: 9%;
+      margin-left: 9%;
+      height: auto;
+
+      .puzzle-grid {
+
+        height: auto;
+        width: 100%;
+
+        .new-card {
+          @include news-cards($news-in-puzzle+1, $margin-in-puzzle, odd, $main-bar-height, $main-bar-elements-height);
+          height: $main-bar-height*2.5;
+        }
+      }
+
+      .flickity-page-dots {
+        .dot {
+          background: $main-color-light;
+        }
+
+        .dot.is-selected {
+          background: $main-color;
+        }
+      }
     }
   }
 }

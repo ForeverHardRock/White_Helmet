@@ -175,7 +175,7 @@ def show_category(request, cat_slug: str):
             continue
         else:
             three_posts.append(one_post)
-        if len(three_posts) == 3:
+        if len(three_posts) == 4:
             three_posts_list.append(three_posts)
             three_posts = []
 
