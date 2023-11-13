@@ -81,11 +81,11 @@
 }
 
 
-@mixin news-cards($cols, $margin, $blue, $main-bar-height, $main-bar-elements-height) {
+@mixin news-cards($cols, $margin, $main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   position: relative;
   float: left;
-  background-color: $card-background-color;
+  background: $card-background-color;
   border-radius: $main-bar-height/5;
   margin: $margin/2;
   height: $main-bar-height*3;
@@ -93,6 +93,7 @@
   box-shadow: 0 0 10px 2px $font-color-light;
 
   img {
+    display: block;
     position: absolute;
     height: 50%;
     border-top-left-radius: $main-bar-height/5;
@@ -101,9 +102,13 @@
     object-fit: cover;
   }
   .new-card-text {
+    height: 50%;
     top: 50%;
     position: absolute;
     padding: 5%;
+    .new-card-pubdate{
+      display: none;
+    }
 
     .new-card-category {
       font-family: apparat;
@@ -114,7 +119,13 @@
     }
 
     .new-card-title {
+      position: relative;
+      padding-top: initial;
+      bottom: initial;
+      width: 100%;
       > div {
+        width: 100%;
+        color: $dark-font-color;
         font-family: apparat;
         font-weight: 400;
         line-height: $main-bar-elements-font-size;
@@ -135,15 +146,12 @@
       display: none;
     }
   }
-
-  &:nth-child(#{$blue}) {
-    @include bluecard($main-bar-height, $main-bar-elements-height);
-  }
 }
 
 @mixin bluecard($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   background: linear-gradient(to left, $main-color, $main-color-light);
+  display: flex;
   img {
     display: none;
   }
@@ -161,10 +169,7 @@
     }
 
     .new-card-title {
-      position: absolute;
-      padding-top: 5%;
-      width: 90%;
-      bottom: 60%;
+      top: 10%;
 
       > div {
         font-family: lava;
@@ -185,6 +190,9 @@
       top: 50%;
       display: block;
       width: 90%;
+      @include lt-sm() {
+        top: 60%;
+      }
 
       > div {
         font-family: apparat;
@@ -278,6 +286,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @include lt-sm() {
+      display: block;
+    }
 
     .bottom-left {
       padding-top: $main-bar-height/6;
@@ -286,6 +297,10 @@
       width: 45%;
       margin-right: 5%;
       display: flex;
+      @include lt-sm() {
+        width: 100%;
+        margin: 0;
+      }
       ul {
 
         li {
@@ -316,7 +331,12 @@
       right: 0;
       width: 45%;
       background: linear-gradient(to left, $main-color, $main-color-light);
-
+      @include lt-sm() {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        height: $main-bar-elements-height*6;
+      }
       .bottom-content {
         width: 100%;
         height: 100%;
@@ -431,6 +451,9 @@
       border-radius: $main-bar-height/5;
       justify-content: space-between;
       overflow: hidden;
+      @include lt-sm() {
+        height: $main-bar-height*7;
+      }
 
       &-left {
         position: absolute;
@@ -438,6 +461,10 @@
         left: $main-bar-height*0.6;
         width: 40%;
         z-index: 500;
+        @include lt-sm() {
+          padding-right: $main-bar-height*0.6;
+          width: auto;
+        }
 
         &-title {
           font-family: grotesque;
@@ -458,13 +485,27 @@
       &-logo {
         position: absolute;
         margin: auto;
-        height: 100%;
+        height: 120%;
         width: auto;
-        top: 0;
+        top: -5%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%) rotate(-15deg);
         z-index: 450;
         opacity: 20%;
+        @include lt-sm() {
+          margin: 0;
+          left: 25%;
+          top: 30%;
+          height: auto;
+          width: 70%;
+          opacity: 30%;
+          path {
+            fill: lighten($main-color, 25%);
+          }
+          circle {
+            stroke: lighten($main-color, 25%);
+          }
+        }
       }
 
       &-right {
@@ -474,6 +515,10 @@
         width: 45%;
         height: 100%;
         z-index: 300;
+        @include lt-sm() {
+          left: 5%;
+          width: 70%;
+        }
 
         img {
           position: absolute;
@@ -482,7 +527,11 @@
           height: 90%;
           width: auto;
           z-index: 350;
-
+          @include lt-sm() {
+            //height: 45%;
+            height: auto;
+            width: 100%;
+          }
         }
       }
 
@@ -496,6 +545,13 @@
         border-top-left-radius: $main-bar-height*0.45;
         border-bottom-left-radius: $main-bar-height*0.45;
         z-index: 500;
+        @include lt-sm() {
+          top: 70%;
+          height: $main-bar-height*1.4;
+          width: $main-bar-height*1.8;
+          border-top-left-radius: $main-bar-height*0.7;
+          border-bottom-left-radius: $main-bar-height*0.7;
+        }
 
         &-logo {
           top: $main-bar-height*0.1;
@@ -504,8 +560,13 @@
           z-index: 500;
           height: $main-bar-height*0.7;
           width: $main-bar-height*0.7;
+          @include lt-sm() {
+            top: $main-bar-height*0.2;
+            left: $main-bar-height*0.2;
+            height: $main-bar-height;
+            width: $main-bar-height;
+          }
         }
-
       }
 
       &-gradient {
@@ -517,7 +578,9 @@
         //opacity: 50%;
         background: linear-gradient(165deg, rgba(255, 0, 0, 0) 50%, $main-color 100%);
         z-index: 450;
-
+        @include lt-sm() {
+          display: none;
+        }
       }
     }
   }

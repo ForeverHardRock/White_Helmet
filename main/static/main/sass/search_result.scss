@@ -25,7 +25,7 @@
       height: auto;
 
       .new-card {
-        @include news-cards($news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
+        @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 
         &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
           @include bluecard($main-bar-height, $main-bar-elements-height)

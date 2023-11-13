@@ -30,9 +30,19 @@
         width: 100%;
 
         .new-card {
-          @include news-cards($news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
 
-          @include lt-md(){
+          @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+
+          &:nth-child(even) {
+            @include bluecard($main-bar-height, $main-bar-elements-height);
+
+            @include lt-sm() {
+              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
+
+            }
+          }
+
+          @include lt-md() {
             &:nth-last-child(-n+1) {
               display: none;
             }
@@ -40,10 +50,14 @@
 
           @include lt-sm() {
 
-            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, 0, $main-bar-height, $main-bar-elements-height);
+
+            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
             &:nth-child(2), &:nth-child(5) {
               width: (100%-($margin-in-puzzle*2));
-              @include bluecard($main-bar-height, $main-bar-elements-height)
+              @include bluecard($main-bar-height, $main-bar-elements-height);
+              .new-card-text {
+                width: 100%;
+              }
             }
           }
         }
@@ -53,7 +67,7 @@
           align-items: center;
           position: relative;
           width: ((((100%-($margin-in-puzzle*$news-in-puzzle))/$news-in-puzzle)*2)+$margin-in-puzzle);
-          @include lt-md(){
+          @include lt-md() {
             width: (100%-$margin-in-puzzle);
           }
           @include lt-sm() {
@@ -142,10 +156,27 @@
     border-top-left-radius: $main-bar-height/3;
     box-shadow: 0 0 50px 10px $font-color-light;
     @include tg-banner($main-bar-height, $main-bar-elements-height);
+
+    .mobile-last-news {
+      display: none;
+      font-weight: 600;
+      font-family: grotesque;
+      font-size: $main-bar-elements-font-size;
+      color: $dark-font-color;
+      margin-top: $main-bar-elements-height;
+      padding-left: 10%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      @include lt-sm() {
+        display: block;
+      }
+    }
+
     .tg-banner-link {
       padding-left: 10%;
       padding-right: 10%;
     }
+
     .subs-pict {
       padding-right: 10%;
       padding-left: 10%;
@@ -160,6 +191,10 @@
       width: 100%;
       padding-right: 20%;
       padding-left: 20%;
+      @include lt-sm() {
+        padding-right: 10%;
+        padding-left: 10%;
+      }
 
       .cat_btn {
         font-family: grotesque;
@@ -179,6 +214,10 @@
     .puzzle-news-by-cat {
       margin: $main-bar-height/2 9%;
       height: auto;
+      @include lt-sm() {
+        //margin-top: $main-bar-elements-height/2;
+        margin-top: 0;
+      }
 
       .flickity-page-dots {
         .dot {
@@ -194,41 +233,130 @@
         width: 100%;
         height: auto;
 
-        .puzzle-grid {
-          width: 100%;
-          height: $main-bar-height*9;
-          margin-bottom: $margin-in-puzzle*3;
+        .flickity-viewport {
+          height: auto;
 
-          .new-card {
-            @include news-cards($news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
+          .flickity-slider {
+            height: auto;
 
-            &:nth-child(1), &:nth-child(4), &:nth-child(5) {
-              @include bluecard($main-bar-height, $main-bar-elements-height)
-            }
+            .puzzle-grid {
+              display: block;
+              width: 100%;
+              height: $main-bar-height*9;
+              margin-bottom: $margin-in-puzzle*3;
+              @include lt-sm() {
+                height: $main-bar-elements-height*35;
+              }
 
-            &:nth-child(2n):not(:nth-child(6)) {
-              margin-right: $margin-in-puzzle*2;
-            }
-          }
+              .new-card {
+                @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 
-          .puzzle-right {
-            @include news-column($main-bar-height, $main-bar-elements-height);
+                &:nth-child(1), &:nth-child(4), &:nth-child(5) {
+                  @include bluecard($main-bar-height, $main-bar-elements-height);
 
-            .next-card {
+                  @include lt-sm() {
+                    @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+                  }
+                }
 
-              padding-top: $margin-in-puzzle;
-              height: auto;
+                &:nth-child(2n):not(:nth-child(6)) {
+                  margin-right: $margin-in-puzzle*2;
+                }
 
-              .next-new-card {
-                margin-right: 0;
+                @include lt-sm() {
+                  &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                    margin: 0 1%;
+                    height: auto;
+                    width: 98%;
+                    box-shadow: none;
+                    border-radius: 0;
 
-                &:nth-child(1) {
-                  padding-top: 0;
+                    img {
+                      display: none;
+                    }
+
+                    .new-card-text {
+                      position: relative;
+                      height: 100%;
+                      top: 0;
+                      width: 100%;
+                      padding: 0 0 $main-bar-elements-height/2;
+                      border-bottom: 1px solid $font-color-light;
+
+                      .new-card-category {
+                        display: none;
+                      }
+
+                      .new-card-pubdate {
+                        display: block;
+                        margin: 0;
+                        font-family: grotesque;
+                        font-weight: 400;
+                        color: $font-color-light;
+                        font-size: $main-bar-elements-font-size*0.6;
+                        text-transform: uppercase;
+                        padding-top: $main-bar-elements-height/2;
+                        padding-bottom: $main-bar-elements-height/4;
+                      }
+
+                      .new-card-title {
+                        > div {
+                          font-family: lava;
+                          font-weight: 400;
+                          overflow: hidden;
+                          display: -webkit-box;
+                          -webkit-line-clamp: 3;
+                          -webkit-box-orient: vertical;
+                          height: auto;
+                          color: $dark-font-color;
+                          font-size: $main-bar-elements-font-size*0.7;
+                          line-height: $main-bar-elements-font-size;
+                        }
+                      }
+
+                    }
+                  }
+                  &:nth-child(3) {
+                    margin-bottom: $main-bar-elements-height;
+                  }
+                  &:nth-child(4), &:nth-child(7) {
+                    @include bluecard($main-bar-height, $main-bar-elements-height);
+                    width: (100%-($margin-in-puzzle*2));
+                    margin: $margin-in-puzzle;
+                    .new-card-text {
+                      width: 100%;
+                    }
+                  }
+                  &:nth-child(5), &:nth-child(6) {
+                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
+                  }
                 }
               }
 
-              &::-webkit-scrollbar {
-                width: 0;
+              .puzzle-right {
+                @include news-column($main-bar-height, $main-bar-elements-height);
+
+                .next-card {
+
+                  padding-top: $margin-in-puzzle;
+                  height: auto;
+
+                  .next-new-card {
+                    margin-right: 0;
+
+                    &:nth-child(1) {
+                      padding-top: 0;
+                    }
+                  }
+
+                  &::-webkit-scrollbar {
+                    width: 0;
+                  }
+                }
+
+                @include lt-sm() {
+                  display: none;
+                }
               }
             }
           }
@@ -250,10 +378,8 @@
 @mixin main($height, $el-height) {
   @include home($height, $el-height)
 }
+
 @include global
-
-
-
 
 
 //@include lt-xl() {

@@ -100,7 +100,10 @@
         width: 100%;
 
         .new-card {
-          @include news-cards($news-in-puzzle, $margin-in-puzzle, even, $main-bar-height, $main-bar-elements-height);
+          @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+          &:nth-child(even) {
+            @include bluecard($main-bar-height, $main-bar-elements-height)
+          }
         }
       }
 

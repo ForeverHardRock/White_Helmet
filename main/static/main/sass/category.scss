@@ -29,7 +29,7 @@
         height: 100%;
 
         .new-card {
-          @include news-cards($news-in-puzzle, $margin-in-puzzle, 0, $main-bar-height, $main-bar-elements-height);
+          @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
           height: $main-bar-height*2.5;
           &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
             @include bluecard($main-bar-height, $main-bar-elements-height)
@@ -62,7 +62,10 @@
         width: 100%;
 
         .new-card {
-          @include news-cards($news-in-puzzle+1, $margin-in-puzzle, odd, $main-bar-height, $main-bar-elements-height);
+          @include news-cards($news-in-puzzle+1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+          &:nth-child(odd) {
+            @include bluecard($main-bar-height, $main-bar-elements-height)
+          }
           height: $main-bar-height*2.5;
         }
       }
