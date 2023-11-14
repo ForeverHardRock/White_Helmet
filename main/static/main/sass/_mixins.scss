@@ -90,7 +90,7 @@
   margin: $margin/2;
   height: $main-bar-height*3;
   width: ((100%-($margin*$cols))/$cols);
-  box-shadow: 0 0 10px 2px $font-color-light;
+  box-shadow: 0 0 $main-bar-elements-height/5 2px $font-color-light;
 
   img {
     display: block;
@@ -111,11 +111,18 @@
     }
 
     .new-card-category {
-      font-family: apparat;
-      font-weight: 400;
-      color: $main-color;
-      font-size: $main-bar-elements-font-size*0.7;
-      line-height: $main-bar-elements-font-size;
+      div {
+        font-family: apparat;
+        font-weight: 400;
+        color: $main-color;
+        font-size: $main-bar-elements-font-size*0.7;
+        line-height: $main-bar-elements-font-size;
+        height: auto;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
     }
 
     .new-card-title {
@@ -162,10 +169,18 @@
     position: relative;
 
     .new-card-category {
-      font-family: apparat;
-      font-weight: 400;
-      color: $font-color;
-      font-size: $main-bar-elements-font-size*0.7
+      div {
+        font-family: apparat;
+        font-weight: 400;
+        color: $font-color;
+        font-size: $main-bar-elements-font-size*0.7;
+        line-height: $main-bar-elements-font-size;
+        height: auto;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
     }
 
     .new-card-title {
@@ -583,6 +598,97 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+@mixin search($main-bar-height, $main-bar-elements-height) {
+  $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
+  .search {
+    display: flex;
+    height: 100%;
+    background: $card-background-color;
+    border-radius: ($main-bar-elements-height*0.5);
+  }
+
+  .btn-search-commit {
+    width: $main-bar-elements-height;
+    height: $main-bar-elements-height;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 2px $main-color;
+    background: $main-color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color;
+    cursor: pointer;
+    border: none;
+
+    svg {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .btn-search-cancel {
+    border: none;
+  }
+
+  .searchText {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: $main-color;
+    font-size: $main-bar-elements-font-size*0.6;
+    transition: 0.4s;
+    width: 0;
+    font-weight: 600;
+
+    &::placeholder {
+      color: $font-color-light;
+    }
+  }
+}
+
+@mixin search-hover() {
+   .search:hover > .searchText {
+    width: 14vw;
+    padding: 0 6px;
+    @include lt-lg() {
+      width: 12vw;
+    }
+    @include lt-md() {
+      width: 10vw;
+    }
+  }
+
+  .searchText:focus {
+    width: 14vw;
+    padding: 0 6px;
+    @include lt-lg() {
+      width: 12vw;
+    }
+    @include lt-md() {
+      width: 10vw;
+    }
+  }
+
+  .search:hover > .btn-search-cancel {
+    width: auto;
+  }
+
+  //.btn-search-cancel:focus {
+  //  display: none;
+  //}
+  .search:hover > .btn-search-commit {
+    svg {
+      transform: scale(1.5);
+    }
+  }
+
+  .search:hover > .btn-search-commit:hover {
+    svg {
+      transform: scale(1.5);
     }
   }
 }

@@ -167,97 +167,81 @@
         justify-content: center;
         align-items: center;
 
-        .search {
-          display: flex;
-          height: 100%;
-          background: $card-background-color;
-          border-radius: ($main-bar-elements-height*0.5);
-        }
-
-        .btn-search-commit {
-          width: $main-bar-elements-height;
-          height: $main-bar-elements-height;
-          border-radius: 50%;
-          box-shadow: 0 0 1px 2px $main-color;
-          background: $main-color-light;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: $font-color;
-          cursor: pointer;
-          border: none;
-
-          svg {
-            transition: all 0.2s ease-in-out;
-          }
-        }
-
-        .btn-search-cancel {
-          border: none;
-        }
-
-        .search:hover > .searchText {
-          width: 14vw;
-          padding: 0 6px;
-          @include lt-lg() {
-            width: 12vw;
-          }
-          @include lt-md() {
-            width: 10vw;
-          }
-        }
-
-        .searchText:focus {
-          width: 14vw;
-          padding: 0 6px;
-          @include lt-lg() {
-            width: 12vw;
-          }
-          @include lt-md() {
-            width: 10vw;
-          }
-        }
-
-        .search:hover > .btn-search-cancel {
-          width: auto;
-        }
-
-        //.btn-search-cancel:focus {
-        //  display: none;
-        //}
-
-        .searchText {
-          border: none;
-          background: none;
-          outline: none;
-          padding: 0;
-          color: $main-color;
-          font-size: $main-bar-elements-font-size*0.6;
-          transition: 0.4s;
-          width: 0;
-          font-weight: 600;
-
-          &::placeholder {
-            color: $font-color-light;
-          }
-        }
-
-        .search:hover > .btn-search-commit {
-          svg {
-            transform: scale(1.5);
-          }
-        }
-
-        .search:hover > .btn-search-commit:hover {
-          svg {
-            transform: scale(1.5);
-          }
-        }
+        @include search($main-bar-height, $main-bar-elements-height);
+        @include search-hover();
       }
+    }
+    .menu-btn-mobile {
+      display: none;
     }
     @include lt-sm() {
       .up-menu-center {
         display: none;
+      }
+      .up-menu-right {
+        .up-menu-vk {
+          display: none;
+        }
+        .up-menu-search{
+          display: none;
+        }
+
+        .menu-btn-mobile {
+          display: block;
+        }
+
+        #nav-icon1 {
+          $line-height: $main-bar-elements-font-size*0.2;
+          width: $main-bar-elements-font-size;
+          height: $main-bar-elements-font-size;
+          position: relative;
+          transform: rotate(0deg);
+          transition: .5s ease-in-out;
+          cursor: pointer;
+
+          span {
+            display: block;
+            position: absolute;
+            height: $line-height;
+            width: 100%;
+            background: $font-color;
+            border-radius: $line-height;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+
+            &:nth-child(1) {
+              top: 0;
+            }
+
+            &:nth-child(2) {
+              top: ($main-bar-elements-font-size/2)-($line-height/2);
+            }
+
+            &:nth-child(3) {
+              top: ($main-bar-elements-font-size)-$line-height;
+            }
+
+          }
+
+          &.open {
+            span:nth-child(1) {
+              top: (($main-bar-elements-font-size)-$line-height)/2;
+              transform: rotate(135deg);
+            }
+
+            span:nth-child(2) {
+              opacity: 0;
+              left: -60px;
+            }
+
+            span:nth-child(3) {
+              top: (($main-bar-elements-font-size)-$line-height)/2;
+              transform: rotate(-135deg);
+            }
+          }
+        }
       }
     }
   }
@@ -275,15 +259,24 @@
     padding-top: $main-bar-height;
     transition: 0.5s ease;
 
+    .mobile-search-form {
+      display: none;
+    }
+
     .submenu-content {
+      position: relative;
       height: ($main-bar-height*3);
       display: flex;
+      width: 100%;
 
       div {
         height: 90%;
       }
 
       .submenu-logo {
+        @include lt-sm() {
+          position: absolute;
+        }
         width: 30%;
         display: flex;
         justify-content: center;
@@ -294,6 +287,7 @@
       }
 
       .submenu-categories {
+
         width: 20%;
         overflow: scroll;
         overflow-x: hidden;
@@ -311,6 +305,8 @@
           background-color: $font-color;
           border-radius: ($main-bar-elements-font-size*0.2);
         }
+
+
 
         .cat-btn {
           font-family: grotesque;
@@ -333,6 +329,10 @@
 
         .cat-btn-active {
           background-color: $main-color-light
+        }
+        @include lt-sm() {
+          margin-left: 10%;
+          width: 30%;
         }
       }
 
@@ -370,6 +370,38 @@
           color: $font-color;
           position: absolute;
           bottom: 0;
+        }
+        @include lt-sm() {
+          //width: auto;
+          padding-right: 0;
+        }
+      }
+    }
+
+    @include lt-sm() {
+      top: -($main-bar-height*5);
+      height: ($main-bar-height*5);
+      .mobile-search-form {
+        @include search($main-bar-height, $main-bar-elements-height);
+        position: relative;
+        width: 100%;
+        padding-bottom: $main-bar-elements-height;
+        display: flex;
+        justify-content: center;
+        .search {
+          display: flex;
+          justify-content: center;
+          width: 70%;
+          height: $main-bar-elements-height;
+          .searchText {
+            width: 100%;
+          }
+
+          .btn-search-cancel {
+            width: auto;
+          }
+
+
         }
       }
     }

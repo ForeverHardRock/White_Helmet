@@ -25,6 +25,7 @@
       }
 
       .puzzle-grid {
+        overflow: hidden;
         width: 100%;
         height: 100%;
 
@@ -57,7 +58,7 @@
       height: auto;
 
       .puzzle-grid {
-
+        overflow: hidden;
         height: auto;
         width: 100%;
 

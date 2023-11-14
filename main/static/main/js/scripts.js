@@ -4,6 +4,18 @@ function submenu_fnc() {
   document.getElementById("backFunc").classList.toggle("show-back");
 }
 
+
+$(function() {
+    $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+    });
+});
+
+const btn_menu_mobile = document.querySelector('.btn-menu-mobile');
+if (btn_menu_mobile) {
+  btn_menu_mobile.addEventListener('click', submenu_fnc);
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

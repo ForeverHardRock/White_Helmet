@@ -23,7 +23,7 @@
 
     .puzzle-grid {
       height: auto;
-
+      overflow: hidden;
       .new-card {
         @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 

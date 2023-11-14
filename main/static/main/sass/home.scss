@@ -27,6 +27,7 @@
       height: auto;
 
       .puzzle-grid {
+        overflow: hidden;
         width: 100%;
 
         .new-card {
@@ -37,7 +38,7 @@
             @include bluecard($main-bar-height, $main-bar-elements-height);
 
             @include lt-sm() {
-              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
+              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 
             }
           }
@@ -51,10 +52,10 @@
           @include lt-sm() {
 
 
-            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
+            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
             &:nth-child(2), &:nth-child(5) {
-              width: (100%-($margin-in-puzzle*2));
               @include bluecard($main-bar-height, $main-bar-elements-height);
+              width: (100%-$margin-in-puzzle);
               .new-card-text {
                 width: 100%;
               }
@@ -70,9 +71,9 @@
           @include lt-md() {
             width: (100%-$margin-in-puzzle);
           }
-          @include lt-sm() {
-            width: (100%-($margin-in-puzzle*2));
-          }
+          //@include lt-sm() {
+          //  width: (100%-($margin-in-puzzle*2));
+          //}
 
           .first-card-img {
             display: flex;
@@ -167,6 +168,7 @@
       padding-left: 10%;
       margin-bottom: 0;
       padding-bottom: 0;
+      width: 80%;
       @include lt-sm() {
         display: block;
       }
@@ -240,10 +242,12 @@
             height: auto;
 
             .puzzle-grid {
+              overflow: hidden;
               display: block;
               width: 100%;
-              height: $main-bar-height*9;
-              margin-bottom: $margin-in-puzzle*3;
+              height: $main-bar-height*10;
+              //margin-bottom: $margin-in-puzzle*3;
+              padding-bottom: 0;
               @include lt-sm() {
                 height: $main-bar-elements-height*35;
               }
@@ -260,7 +264,7 @@
                 }
 
                 &:nth-child(2n):not(:nth-child(6)) {
-                  margin-right: $margin-in-puzzle*2;
+                  margin-right: $margin-in-puzzle;
                 }
 
                 @include lt-sm() {
@@ -321,14 +325,13 @@
                   }
                   &:nth-child(4), &:nth-child(7) {
                     @include bluecard($main-bar-height, $main-bar-elements-height);
-                    width: (100%-($margin-in-puzzle*2));
-                    margin: $margin-in-puzzle;
+                    width: (100%-$margin-in-puzzle);
                     .new-card-text {
                       width: 100%;
                     }
                   }
                   &:nth-child(5), &:nth-child(6) {
-                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle*2, $main-bar-height, $main-bar-elements-height);
+                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
                   }
                 }
               }
