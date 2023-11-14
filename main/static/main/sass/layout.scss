@@ -144,20 +144,30 @@
     .up-menu-right {
       display: flex;
       justify-content: right;
+      @include lt-sm() {
+        width: 50%;
+      }
 
-      .up-menu-vk {
-        width: $main-bar-elements-height;
-        height: $main-bar-elements-height;
-        display: flex;
-        align-items: center;
-        background-color: $main-color-light;
-        border-radius: 50%;
-        justify-content: center;
-        margin-right: $main-bar-elements-height*0.5;
+      .up-menu-tg {
+        margin-right: 30%;
+        opacity: 0;
+        display: none;
+        transition: opacity 0.3s ease-in-out;
 
         svg {
-          height: $main-bar-elements-height*0.6;
           width: auto;
+          height: $main-bar-elements-height;
+        }
+      }
+
+      .up-menu-vk {
+        display: flex;
+        margin-right: $main-bar-elements-height*0.5;
+        transition: opacity 0.3s ease-in-out;
+
+        svg {
+          width: auto;
+          height: $main-bar-elements-height;
         }
       }
 
@@ -174,15 +184,26 @@
     .menu-btn-mobile {
       display: none;
     }
+
     @include lt-sm() {
       .up-menu-center {
         display: none;
       }
       .up-menu-right {
+        width: 50%;
         .up-menu-vk {
-          display: none;
+          display: flex;
+          opacity: 0;
+          margin-right: 25%;
+          pointer-events: none;
         }
-        .up-menu-search{
+
+        .up-menu-tg {
+          display: flex;
+          pointer-events: none;
+        }
+
+        .up-menu-search {
           display: none;
         }
 
@@ -391,14 +412,21 @@
         .search {
           display: flex;
           justify-content: center;
-          width: 70%;
+          width: 60%;
           height: $main-bar-elements-height;
           .searchText {
+            padding-left: 3%;
             width: 100%;
           }
 
           .btn-search-cancel {
+            font-family: grotesque;
             width: auto;
+            height: 100%;
+            padding-right: 2%;
+            font-size: $main-bar-elements-height;
+            line-height: $main-bar-elements-height*1.2;
+            margin: 0;
           }
 
 
@@ -427,6 +455,14 @@
     top: 0;
     opacity: 50%;
   }
+
+  .show-circles {
+    @include lt-sm() {
+      opacity: 1!important;
+      pointer-events: auto!important;
+    }
+  }
+
 
   body {
     background-color: $page-background-color;

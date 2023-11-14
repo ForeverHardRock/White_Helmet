@@ -1,6 +1,7 @@
 @mixin search-result($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .search-body {
+    margin-top: $main-bar-elements-height;
     position: relative;
     height: auto;
     width: 100%;

@@ -13,6 +13,7 @@
     @include lt-md {
       @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
     }
+
     @include lt-sm() {
       display: none;
     }

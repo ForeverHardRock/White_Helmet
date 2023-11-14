@@ -2,6 +2,8 @@ function submenu_fnc() {
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("rotateFunc").classList.toggle("rotate");
   document.getElementById("backFunc").classList.toggle("show-back");
+  document.getElementById("vk-circle").classList.toggle("show-circles");
+  document.getElementById("tg-circle").classList.toggle("show-circles");
 }
 
 
