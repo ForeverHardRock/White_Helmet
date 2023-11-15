@@ -245,7 +245,7 @@ def search_results(request):
         result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query)).order_by('-post_id')
         if len(result) > 0:
 
-            paginator = Paginator(result, 9)
+            paginator = Paginator(result, 19)
             page_number = request.GET.get('page')
             posts = paginator.get_page(page_number)
         else:
@@ -270,7 +270,7 @@ def search_results(request):
             continue
         else:
             three_posts.append(one_post)
-        if len(three_posts) == 3:
+        if len(three_posts) == 4:
             three_posts_list.append(three_posts)
             three_posts = []
 

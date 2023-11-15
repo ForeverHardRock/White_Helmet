@@ -11,36 +11,65 @@
                 {% endif %}
             </div>
             <div class="puzzle-grid">
+
+
                 {% for new in news %}
+                    {% include 'main/new-card.html' %}
+                    {% if forloop.counter0 == 2 %}
+                        <div class="new-card card-search-set">
+                            <div class="card-search-settings">
+                                <div class="switch-mode">
+                                    <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false"
+                                           type="radio"
+                                           checked>
+                                    <label for="toggle-on" class="btn">Релевантность</label>
+                                    <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true"
+                                           type="radio">
+                                    <label for="toggle-off" class="btn">Хронология</label>
+                                </div>
 
-                    <div class="new-card">
-                        {% if new.pictures != Null %}
-                            <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ '/media/' }}{{ new.pictures }}"></a>
-                        {% endif %}
-                        <div class="new-card-text">
-                            <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}"><div>● {{ new.category}}</div></a><br><br>
-                            <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.title }}</div></a><br><br>
-                            <a class="new-card-description" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><div>{{ new.description }}</div></a>
+                                <div class="set-time">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="flexRadioDefault1"
+                                               checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">За все время</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">Сегодня</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">3 дня</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="flexRadioDefault4">
+                                        <label class="form-check-label" for="flexRadioDefault4">Неделя</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
+                    {% endif %}
                 {% endfor %}
-
 
 
             </div>
             {% include 'main/paginator.html' %}
         </div>
-        {% else %}
-            <div class="no-res">
-                <h2>По вашему запросу ничего не найдено</h2>
-            </div>
+    {% else %}
+        <div class="no-res">
+            <h2>По вашему запросу ничего не найдено</h2>
+        </div>
     {% endif %}
 
     <div class="latest-news-in-post">
         {% include 'main/latest-news.html' %}
     </div>
-    <div class="rand-posts">
+    <div class="rand-posts-search">
         {% include 'main/three-r-posts.html' %}
     </div>
     <div class="post-bottom">

@@ -226,4 +226,3 @@ searchForm.addEventListener('submit', (event) => {
 //   location.reload();
 // }
 
-

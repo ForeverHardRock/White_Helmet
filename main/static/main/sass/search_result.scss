@@ -15,6 +15,7 @@
       padding-right: 1%;
       display: flex;
       justify-content: space-between;
+
       h2 {
         font-family: grotesque;
         font-size: $main-bar-elements-font-size;
@@ -23,16 +24,106 @@
     }
 
     .puzzle-grid {
+      position: relative;
       height: auto;
       overflow: hidden;
-      .new-card {
-        @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 
-        &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
-          @include bluecard($main-bar-height, $main-bar-elements-height)
+      .card-search-set {
+        position: relative;
+        .card-search-settings {
+          position: absolute;
+          z-index: 1000;
+          width: 100%;
+          height: 100%;
+          .switch-mode {
+            display: flex;
+            height: $main-bar-elements-height;
+            width: 100%;
+            box-shadow: inset 0 0 0 2px $main-color-light;
+            border-radius: $main-bar-elements-height/2;
+            align-items: center;
+            .btn {
+              height: $main-bar-elements-height;
+              display: block;
+              font-size: $main-bar-elements-font-size*0.7;
+              position: relative;
+              transition: background 600ms ease, color 600ms ease;
+              padding: 0;
+              margin: 0;
+            }
+
+            input[type="radio"].toggle {
+              display: none;
+
+              & + label {
+                height: $main-bar-elements-height;
+                cursor: pointer;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                &:hover {
+                  background: none;
+                  color: $main-color-light;
+                }
+
+                &:after {
+                  border-radius: $main-bar-elements-height/2;
+                  background: $main-color-light;
+
+                  content: "";
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+                  width: 100%;
+                  z-index: -1;
+                }
+              }
+
+              &.toggle-left + label {
+                //border-right: 0;
+
+                &:after {
+                  left: 100%
+                }
+              }
+
+              &.toggle-right + label {
+                //margin-left: -5px;
+
+                &:after {
+                  left: -100%;
+                }
+              }
+
+              &:checked + label {
+                cursor: default;
+                color: $font-color;
+                transition: color 200ms;
+
+                &:after {
+                  left: 0;
+                }
+              }
+            }
+          }
         }
       }
+
+      .new-card {
+        @include news-cards($news-in-puzzle+1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+
+        &:nth-child(1), &:nth-child(5), &:nth-child(7), &:nth-child(8), &:nth-child(11), &:nth-child(12), &:nth-child(17), &:nth-child(19) {
+          @include bluecard($main-bar-height, $main-bar-elements-height)
+        }
+
+        height: $main-bar-height*2.5;
+      }
     }
+
     .pagination {
       padding-top: $main-bar-height*0.6;
     }
@@ -45,12 +136,47 @@
     box-shadow: 0 0 50px 10px $font-color-light;
     padding: $main-bar-height/2 9%;
   }
+  .rand-posts-search {
+    .rand-3-posts {
+      width: auto;
+      margin-right: 9%;
+      margin-left: 9%;
+      height: auto;
+
+      .puzzle-grid {
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+
+        .new-card {
+          @include news-cards($news-in-puzzle+1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+
+          &:nth-child(odd) {
+            @include bluecard($main-bar-height, $main-bar-elements-height)
+          }
+
+          height: $main-bar-height*2.5;
+        }
+      }
+
+      .flickity-page-dots {
+        .dot {
+          background: $main-color-light;
+        }
+
+        .dot.is-selected {
+          background: $main-color;
+        }
+      }
+    }
+  }
 }
 
 @include search-result($stock-height, $stock-height-el);
 @mixin main($height, $el-height) {
   @include search-result($height, $el-height)
 }
+
 @include global
 //@include lt-xl() {
 //  @include search-result(112px);
