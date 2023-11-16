@@ -1,7 +1,7 @@
 @mixin latest-news($cols, $main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .latest {
-    
+
     &-title {
       display: flex;
 
@@ -30,7 +30,7 @@
 
     &-carousel {
       width: 100%;
-      height: 70%;
+      height: 75%;
       .flickity-page-dots {
         display: flex;
         width: 100%;

@@ -1,5 +1,5 @@
 {% block three-r-posts-block %}
-<div class="rand-3-posts js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+<div class="rand-3-posts js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
     {% for cat_page in three_posts_list %}
     <div class="puzzle-grid">
         {% for new in cat_page %}

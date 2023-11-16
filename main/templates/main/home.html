@@ -9,7 +9,7 @@
         {% include 'main/latest-news.html' %}
     </div>
     <div class="puzzle-news">
-        <div class="puzzle-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+        <div class="puzzle-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
             {% for car_news in car_news_list %}
                 <div class="puzzle-grid">
                     {% for new in car_news %}
@@ -43,7 +43,7 @@
         </div>
         <p class="mobile-last-news">Последние новости</p>
         <div class="puzzle-news-by-cat">
-            <div class="cat-news-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false }'>
+            <div class="cat-news-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
                 <div class="puzzle-grid" id="content-1"></div>
                 <div class="puzzle-grid" id="content-2"></div>
                 <div class="puzzle-grid" id="content-3"></div>
