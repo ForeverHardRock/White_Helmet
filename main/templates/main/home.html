@@ -5,52 +5,107 @@
 
 
 {% block content %}
-    <div class="latest-news">
-        {% include 'main/latest-news.html' %}
-    </div>
-    <div class="puzzle-news">
-        <div class="puzzle-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
-            {% for car_news in car_news_list %}
-                <div class="puzzle-grid">
-                    {% for new in car_news %}
-                        {% if car_news|first == new %}
-                            <div class="new-card first-card">
-                                {% if new.pictures != Null %}
-                                    <a class="first-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img src="{{ 'media/' }}{{ new.pictures }}" alt=""></a>
-                                {% endif %}
-                                <div class="cat-date">
-                                    <a href="{% url 'cat_name' cat_slug=new.category_en %}"><div>● {{ new.category}}</div></a>
-                                    <p>{{ new.pubdate }}</p>
-                                </div>
-                                <a class="first-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.title }}</a>
+<div class="latest-news">
+    {% include 'main/latest-news.html' %}
+</div>
+<div class="puzzle-news">
+    <div class="puzzle-carousel js-flickity"
+         data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
+        {% for car_news in car_news_list %}
+            <div class="puzzle-grid">
+                {% for new in car_news %}
+                    {% if car_news|first == new %}
+                        <div class="new-card first-card">
+                            {% if new.pictures != Null %}
+                                <a class="first-card-img"
+                                   href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img
+                                        src="{{ 'media/' }}{{ new.pictures }}" alt=""></a>
+                            {% endif %}
+                            <div class="cat-date">
+                                <a href="{% url 'cat_name' cat_slug=new.category_en %}">
+                                    <div>● {{ new.category }}</div>
+                                </a>
+                                <p>{{ new.pubdate }}</p>
                             </div>
+                            <a class="first-card-title"
+                               href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">{{ new.title }}</a>
+                        </div>
+                    {% else %}
+                        {% include 'main/new-card.html' %}
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="cat-news">
+    {% include 'main/tg-banner.html' %}
+
+    {#    VAR 1#}
+    {#        <div class="categories-list">#}
+    {#            <button id="load-content-last" class="cat_btn active">Последнее</button>#}
+    {#            {% for cat in car_cat %}#}
+    {#                <button id="load-content-{{ cat.cat_en }}" class="cat_btn">{{ cat.cat_ru }}</button>#}
+    {#            {% endfor %}#}
+    {#        </div>#}
+    {#        <p class="mobile-last-news">Последние новости</p>#}
+    {#        <div class="puzzle-news-by-cat">#}
+    {#            <div class="cat-news-carousel js-flickity"#}
+    {#                 data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>#}
+    {#                <div class="puzzle-grid" id="content-1"></div>#}
+    {#                <div class="puzzle-grid" id="content-2"></div>#}
+    {#                <div class="puzzle-grid" id="content-3"></div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    VAR 1#}
+
+    {#    VAR 2#}
+    <div class="categories-list">
+        {% for cat in car_cat %}
+            {% if car_cat|first == cat %}
+                <button aria-label="Page dot {{ forloop.counter }}" class="cat_btn is-selected">{{ cat.cat_ru }}</button>
+            {% else %}
+                <button aria-label="Page dot {{ forloop.counter }}" class="cat_btn">{{ cat.cat_ru }}</button>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+    <p class="mobile-last-news">Последние новости</p>
+    <div class="puzzle-news-by-cat">
+        <div class="cat-news-carousel js-flickity"
+             data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
+            {% for car_cat_list in car_cat_lists %}
+                <div class="puzzle-grid" id="puzzle-grid{{ forloop.counter }}">
+                    {% for news_list in car_cat_list %}
+                        {% if car_cat_list|first == news_list %}
+                            {% for new in news_list%}
+                                {% include 'main/new-card.html' %}
+                            {% endfor %}
                         {% else %}
-                            {% include 'main/new-card.html' %}
+                            <div class="puzzle-right">
+                                <div class="next-card">
+                                    {% for new_col in news_list %}
+                                        <div class="next-new-card">
+                                            <p>{{ new_col.pubdate }}</p>
+                                            <a href="{% url 'url_post' cat_slug=new_col.category_en post_slug=new_col.url %}">
+                                                <div>{{ new_col.title }}</div>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
                         {% endif %}
                     {% endfor %}
-
                 </div>
             {% endfor %}
         </div>
     </div>
-    <div class="cat-news">
-        {% include 'main/tg-banner.html' %}
-        <div class="categories-list">
-            <button id="load-content-last" class="cat_btn active">Последнее</button>
-            {% for cat in car_cat  %}
-                <button id="load-content-{{ cat.cat_en }}" class="cat_btn">{{ cat.cat_ru }}</button>
-            {% endfor %}
-        </div>
-        <p class="mobile-last-news">Последние новости</p>
-        <div class="puzzle-news-by-cat">
-            <div class="cat-news-carousel js-flickity" data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
-                <div class="puzzle-grid" id="content-1"></div>
-                <div class="puzzle-grid" id="content-2"></div>
-                <div class="puzzle-grid" id="content-3"></div>
-            </div>
-        </div>
+    {#    VAR 2#}
+
+
     {% include 'main/bottom.html' %}
-    </div>
+</div>
 {#                {% for cat_page in cat_news_list %}#}
 {#                    <div class="puzzle-grid-{{ forloop.counter }}">#}
 {#                        {% for new in cat_page %}#}
@@ -67,8 +122,6 @@
 {#                        {% endfor %}#}
 {#                    </div>#}
 {#                {% endfor %}#}
-
-
 
 
 {#    <div class="slider">#}

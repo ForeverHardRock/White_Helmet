@@ -92,122 +92,67 @@ window.addEventListener("load", function() {
 
 
 
-// const buttons = document.querySelectorAll('button[id^="load-content"]');
-// for (let i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', function() {
-//         let buttonId = this.id.replace('load-content-', '');
+
 //
-//         fetch(`/load-content/${buttonId}/`)
-//             .then(res => {
-//                 console.log('res', res.json());
-//                 // document.getElementById('content-1').innerHTML = res.text();
-//                 // return res.json();
-//             })
-//             // .then(json => {
-//             //     console.log('json', json);
-//             // })
-//     });
-// }
-
-
 // var buttons = document.querySelectorAll('button[id^="load-content"]');
 // for (var i = 0; i < buttons.length; i++) {
 //   buttons[i].addEventListener('click', function() {
 //     var buttonId = this.id.replace('load-content-', '');
 //
-//     var xhr = new XMLHttpRequest();
+//     var xhr1 = new XMLHttpRequest();
+//     var xhr2 = new XMLHttpRequest();
+//     var xhr3 = new XMLHttpRequest();
 //
-//     xhr.open('GET', '/load-content/' + buttonId + '/', true);
-//     xhr.send();
+//     xhr1.open('GET', '/load-content-1/' + buttonId + '/', true);
 //
-//     xhr.onreadystatechange = function() {
-//       if (xhr.readyState == 4 && xhr.status == 200) {
+//     xhr1.send();
+//
+//     xhr1.onreadystatechange = function() {
+//       if (xhr1.readyState == 4 && xhr1.status == 200) {
 //         // Обновляем контент на странице
 //
-//         document.getElementById('content').innerHTML = xhr.responseText;
+//         document.getElementById('content-1').innerHTML = xhr1.responseText;
 //
 //       }
 //     };
+//
+//
+//     xhr2.open('GET', '/load-content-2/' + buttonId + '/', true);
+//
+//     xhr2.send();
+//
+//     xhr2.onreadystatechange = function() {
+//       if (xhr2.readyState == 4 && xhr2.status == 200) {
+//         // Обновляем контент на странице
+//
+//         document.getElementById('content-2').innerHTML = xhr2.responseText;
+//
+//       }
+//     };
+//
+//
+//     xhr3.open('GET', '/load-content-3/' + buttonId + '/', true);
+//
+//     xhr3.send();
+//
+//     xhr3.onreadystatechange = function() {
+//       if (xhr3.readyState == 4 && xhr3.status == 200) {
+//         // Обновляем контент на странице
+//
+//         document.getElementById('content-3').innerHTML = xhr3.responseText;
+//
+//       }
+//     };
+//
 //   });
 // }
-
-// const buttons = document.querySelectorAll('button[id^="load-content"]');
-// buttons.forEach(button => { button.addEventListener('click', () => { const buttonId = button.id.replace('load-content-', '');
-//     const xhr1 = new XMLHttpRequest();
-//     const xhr2 = new XMLHttpRequest();
-//     const xhr3 = new XMLHttpRequest();
-//     xhr1.open('GET', `/load-content-1/${buttonId}/`);
-//     xhr2.open('GET', `/load-content-2/${buttonId}/`);
-//     xhr3.open('GET', `/load-content-3/${buttonId}/`);
-//     Promise.all([xhr1, xhr2, xhr3]).then(responses => { responses.forEach(response => { if (response.status === 200) { const contentId = response.target.id.replace('load-content-', '');
-//         document.getElementById(`content-${contentId}`).innerHTML = response.target.responseText; } }); }); }); });
-
-
-var buttons = document.querySelectorAll('button[id^="load-content"]');
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    var buttonId = this.id.replace('load-content-', '');
-
-    var xhr1 = new XMLHttpRequest();
-    var xhr2 = new XMLHttpRequest();
-    var xhr3 = new XMLHttpRequest();
-
-    xhr1.open('GET', '/load-content-1/' + buttonId + '/', true);
-
-    xhr1.send();
-
-    xhr1.onreadystatechange = function() {
-      if (xhr1.readyState == 4 && xhr1.status == 200) {
-        // Обновляем контент на странице
-
-        document.getElementById('content-1').innerHTML = xhr1.responseText;
-
-      }
-    };
-
-
-    xhr2.open('GET', '/load-content-2/' + buttonId + '/', true);
-
-    xhr2.send();
-
-    xhr2.onreadystatechange = function() {
-      if (xhr2.readyState == 4 && xhr2.status == 200) {
-        // Обновляем контент на странице
-
-        document.getElementById('content-2').innerHTML = xhr2.responseText;
-
-      }
-    };
-
-
-    xhr3.open('GET', '/load-content-3/' + buttonId + '/', true);
-
-    xhr3.send();
-
-    xhr3.onreadystatechange = function() {
-      if (xhr3.readyState == 4 && xhr3.status == 200) {
-        // Обновляем контент на странице
-
-        document.getElementById('content-3').innerHTML = xhr3.responseText;
-
-      }
-    };
-
-  });
-}
-
-window.addEventListener("load", function() {
-  document.getElementById("load-content-last").click();
-});
+//
+// window.addEventListener("load", function() {
+//   document.getElementById("load-content-last").click();
+// });
 
 
 
-const buttons_active = document.querySelectorAll('.cat_btn');
-buttons_active.forEach(button => {button.addEventListener('click', () => {
-    buttons_active.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-});
-});
 
 
 
@@ -222,7 +167,56 @@ searchForm.addEventListener('submit', (event) => {
 });
 
 
-// window.onresize = function() {
-//   location.reload();
-// }
+
+const buttons_active = document.querySelectorAll('.cat_btn');
+buttons_active.forEach(button => {button.addEventListener('click', () => {
+    buttons_active.forEach(btn => btn.classList.remove('is-selected'));
+    button.classList.add('is-selected');
+});
+});
+
+
+
+// Находим все элементы с определенным aria-label
+const elements = document.querySelectorAll('[aria-label]');
+
+// Добавляем обработчик события click к каждому элементу
+elements.forEach(element => {
+  element.addEventListener('click', () => {
+    // Находим все элементы с тем же aria-label, что и нажатый элемент
+    const sameLabelElements = document.querySelectorAll(`[aria-label="${element.getAttribute('aria-label')}"]`);
+    // Вызываем функцию для каждого найденного элемента
+    sameLabelElements.forEach(sameLabelElement => {
+      sameLabelElement.click();
+    });
+  });
+});
+
+
+
+// Находим все элементы с классом dot
+const dotElements = document.querySelectorAll('.dot');
+
+// Отслеживаем изменения в классах элементов с классом dot
+dotElements.forEach((dotElement) => {
+  const observer = new MutationObserver((mutationsList, observer) => {
+    mutationsList.forEach((mutation) => {
+      // Проверяем, что класс был добавлен
+        console.log('gaaay')
+      if (mutation.addedNodes.length > 0) {
+
+        // Получаем элемент с классом cat_btn и тем же aria-label
+        const catBtnElement = document.querySelector(`[aria-label="${dotElement.dataset.label}"]`);
+        // Если элемент с классом cat_btn уже существует, то добавляем ему класс is-selected
+        if (catBtnElement) {
+          catBtnElement.classList.add('is-selected');
+        }
+      }
+    });
+  });
+
+  // Настраиваем отслеживание изменений в классах элемента
+  const config = { attributes: true, childList: true, subtree: true };
+  observer.observe(dotElement, config);
+});
 

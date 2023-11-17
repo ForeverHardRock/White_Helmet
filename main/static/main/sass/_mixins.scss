@@ -1,6 +1,10 @@
 @mixin latest-news($cols, $main-bar-height, $main-bar-elements-height) {
+  .mobile-latest {
+      display: none;
+    }
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .latest {
+
 
     &-title {
       display: flex;
@@ -31,6 +35,7 @@
     &-carousel {
       width: 100%;
       height: 75%;
+
       .flickity-page-dots {
         display: flex;
         width: 100%;
@@ -60,12 +65,13 @@
         width: (100%/$cols);
         border-right: 1px solid $font-color-light;
 
-        &:nth-child(#{ $cols }n) {
-          border: none;
+        &:nth-child(#{ $news-in-carousel-large }n + 1) {
+          padding-left: 0;
         }
 
-        &:nth-child(1), &:nth-child(#{$cols}n+1) {
-          padding: 0;
+        &:nth-child(#{ $news-in-carousel-large }n) {
+          border-right: none;
+          padding-right: 0;
         }
 
         p {
@@ -75,7 +81,51 @@
           color: $font-color-light;
           font-size: $main-bar-elements-font-size*0.6;
         }
+
+        @include lt-md() {
+          padding-right: 1% !important;
+          padding-left: 1% !important;
+          border-right: 1px solid $font-color-light !important;
+          &:nth-child(#{ $news-in-carousel-medium }n + 1) {
+            padding-left: 0 !important;
+          }
+          &:nth-child(#{ $news-in-carousel-medium }n) {
+            padding-right: 0 !important;
+            border-right: none !important;
+          }
+        }
+
+        @include lt-sm() {
+          width: 100%;
+          border-right: none;
+          height: 100%;
+          top: 0;
+          padding: 0 0 $main-bar-elements-height/2 !important;
+          border-bottom: 1px solid $font-color-light;
+          border-right: none !important;
+          border-bottom: 1px solid $font-color-light !important;
+          p {
+            display: block;
+            margin: 0;
+            font-family: grotesque;
+            font-weight: 400;
+            color: $font-color-light;
+            font-size: $main-bar-elements-font-size*0.6;
+            text-transform: uppercase;
+            padding-top: $main-bar-elements-height/2;
+            padding-bottom: $main-bar-elements-height/4;
+          }
+        }
       }
+    }
+  }
+  @include lt-sm() {
+    height: auto;
+    .desktop-latest {
+      display: none;
+    }
+    .mobile-latest {
+      display: block;
     }
   }
 }
@@ -106,7 +156,8 @@
     top: 50%;
     position: absolute;
     padding: 5%;
-    .new-card-pubdate{
+
+    .new-card-pubdate {
       display: none;
     }
 
@@ -130,6 +181,7 @@
       padding-top: initial;
       bottom: initial;
       width: 100%;
+
       > div {
         width: 100%;
         color: $dark-font-color;
@@ -260,11 +312,12 @@
       padding-top: $main-bar-height/7;
       padding-bottom: $main-bar-height/7;
       border-bottom: 1px solid $font-color-light;
+
       &:nth-child(1) {
         padding-top: 5px;
       }
 
-      &:nth-last-child(-n+1) {
+      &:last-child {
         border-bottom: none;
       }
 
@@ -316,11 +369,13 @@
         width: 100%;
         margin: 0;
       }
+
       ul {
 
         li {
           line-height: $main-bar-elements-font-size;
           margin-bottom: $main-bar-elements-font-size*0.5;
+
           p {
             font-family: grotesque;
             font-weight: 600;
@@ -328,6 +383,7 @@
             line-height: $main-bar-elements-font-size*0.5;
             color: $dark-font-color;
           }
+
           a {
             font-family: grotesque;
             font-weight: 400;
@@ -353,6 +409,7 @@
         height: $main-bar-elements-height*6;
         border-radius: $main-bar-height/5;
       }
+
       .bottom-content {
         width: 100%;
         height: 100%;
@@ -489,6 +546,7 @@
           font-size: $main-bar-elements-font-size*1.2;
           line-height: $main-bar-elements-font-size*1.5;
         }
+
         &-text {
           font-family: apparat;
           font-weight: 400;
@@ -631,6 +689,14 @@
 
   .btn-search-cancel {
     border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: $main-color;
+    font-size: $main-bar-elements-font-size;
+    width: 0;
+    font-weight: 600;
+    transition: padding-right 0.4s ease;
   }
 
   .searchText {
@@ -651,7 +717,7 @@
 }
 
 @mixin search-hover() {
-   .search:hover > .searchText {
+  .search:hover > .searchText {
     width: 14vw;
     padding: 0 6px;
     @include lt-lg() {
@@ -675,6 +741,7 @@
 
   .search:hover > .btn-search-cancel {
     width: auto;
+    padding-right: 5%;
   }
 
   //.btn-search-cancel:focus {
@@ -689,6 +756,29 @@
   .search:hover > .btn-search-commit:hover {
     svg {
       transform: scale(1.5);
+    }
+  }
+}
+
+@mixin bottom-field($main-bar-height, $main-bar-elements-height) {
+  width: 100%;
+  height: auto;
+  background-color: $card-background-color;
+  border-top-left-radius: ($main-bar-height/3);
+  border-top-right-radius: ($main-bar-height/3);
+  padding: $main-bar-height 10% 5%;
+  margin-top: $main-bar-height;
+  box-shadow: 0 0 50px 10px $font-color-light;
+
+  > a {
+    display: flex;
+    height: auto;
+    padding-bottom: $main-bar-height;
+
+    > img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
 }

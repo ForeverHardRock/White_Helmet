@@ -15,5 +15,21 @@
         {% endfor %}
     </div>
 
+    <div class="latest-carousel mobile-latest js-flickity"
+         data-flickity-options='{"groupCells": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
+        {% for latest_news_group in latest_news_groups %}
+            <div class="puzzle-grid">
+                {% for new in latest_news_group %}
+                    <div class="gallery-cell">
+                        <p>{{ new.pubdate }}</p>
+                        <a href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">
+                            <div class="latest-subtitle">{{ new.title }}</div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
 
 {% endblock %}

@@ -32,6 +32,7 @@
         .new-card {
           @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
           height: $main-bar-height*2.5;
+
           &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
             @include bluecard($main-bar-height, $main-bar-elements-height)
           }
@@ -45,11 +46,23 @@
         font-size: $main-bar-elements-font-size;
         font-weight: 600;
       }
+
       @include news-column($main-bar-height, $main-bar-elements-height);
       width: 20%;
       margin-right: 10%;
     }
   }
+
+  .latest-news-in-category {
+    padding: $main-bar-height/2 10%;
+    width: 100%;
+    height: ($main-bar-height*2.5);
+    @include latest-news($news-in-carousel-large, $main-bar-height, $main-bar-elements-height);
+    @include lt-md {
+      @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
+    }
+  }
+
   .cat-3-posts {
     .rand-3-posts {
       width: auto;
@@ -64,9 +77,11 @@
 
         .new-card {
           @include news-cards($news-in-puzzle+1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+
           &:nth-child(odd) {
             @include bluecard($main-bar-height, $main-bar-elements-height)
           }
+
           height: $main-bar-height*2.5;
         }
       }
@@ -81,6 +96,18 @@
         }
       }
     }
+
+    @include lt-sm() {
+      display: none;
+    }
+  }
+  .category-bottom {
+    @include bottom-field($main-bar-height, $main-bar-elements-height);
+    @include tg-banner($main-bar-height, $main-bar-elements-height);
+    @include bottom-menu($main-bar-height, $main-bar-elements-height);
+    @include lt-sm() {
+      margin-top: 0;
+    }
   }
 }
 
@@ -88,6 +115,7 @@
 @mixin main($height, $el-height) {
   @include category($height, $el-height)
 }
+
 @include global
 
 //@include lt-xl() {

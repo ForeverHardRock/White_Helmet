@@ -1,0 +1,16 @@
+<form class="search" id="search-form" method="get" action="{% url 'search_results' %}">
+    <input type="text" class="searchText" id="search-input" placeholder="{{ search_query }}"
+           name="search"
+           autocomplete="off">
+    <button class="btn-search-cancel" type="reset">×</button>
+    <button class="btn-search-commit" type="submit">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10.3912" cy="10.3912" r="7.4622" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></circle>
+            <path d="M15.5813 15.9688L18.5069 18.8868" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+        </svg>
+    </button>
+</form>

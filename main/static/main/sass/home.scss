@@ -8,6 +8,7 @@
     background-color: $card-background-color;
     border-radius: $main-bar-height/3;
     box-shadow: 0 0 50px 10px $font-color-light;
+
     @include latest-news($news-in-carousel-large, $main-bar-height, $main-bar-elements-height);
 
     @include lt-md {
@@ -57,6 +58,7 @@
             &:nth-child(2), &:nth-child(5) {
               @include bluecard($main-bar-height, $main-bar-elements-height);
               width: (100%-$margin-in-puzzle);
+
               .new-card-text {
                 width: 100%;
               }
@@ -209,7 +211,7 @@
         border: none;
       }
 
-      .active {
+      .is-selected {
         font-weight: 700;
       }
     }
@@ -247,8 +249,8 @@
               display: block;
               width: 100%;
               height: $main-bar-height*10;
-              //margin-bottom: $margin-in-puzzle*3;
               padding-bottom: 0;
+
               @include lt-sm() {
                 height: $main-bar-elements-height*35;
               }
@@ -327,6 +329,7 @@
                   &:nth-child(4), &:nth-child(7) {
                     @include bluecard($main-bar-height, $main-bar-elements-height);
                     width: (100%-$margin-in-puzzle);
+
                     .new-card-text {
                       width: 100%;
                     }

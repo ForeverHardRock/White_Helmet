@@ -10,7 +10,18 @@ from django.http import HttpResponse
 
 
 def home(request):
-    latest_news = News.objects.filter(active=1).order_by('-post_id')[:12]
+    news_on_block = 3
+    pages_of_news = 4
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:news_on_block*pages_of_news]
+    latest_news_group = []
+    latest_news_groups = []
+    for i in range(pages_of_news):
+        i = i * news_on_block
+        for ii in range(news_on_block):
+            latest_news_group.append(latest_news[i+ii])
+        latest_news_groups.append(latest_news_group)
+        latest_news_group = []
+
     car_news = News.objects.filter(active=1, car_active=1).order_by('-post_id')
     car_news_list = []
     car_news_list_ad = []
@@ -23,6 +34,11 @@ def home(request):
     if car_news_list_ad:
         car_news_list.append(car_news_list_ad)
     car_cat = Categories.objects.filter(active=1, car_active=1).order_by('cat_ru')
+    car_cat_lists = []
+    for cat in car_cat:
+        cat_news_list_1 = News.objects.filter(active=1, category_en=cat.cat_en).order_by('-post_id')[:7]
+        cat_news_list_2 = News.objects.filter(active=1, category_en=cat.cat_en).order_by('-post_id')[7:12]
+        car_cat_lists.append([cat_news_list_1, cat_news_list_2])
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
 
     # cat_news_list = []
@@ -55,9 +71,11 @@ def home(request):
 
     home_data = {
         'latest_news': latest_news,
+        'latest_news_groups': latest_news_groups,
         'car_news_list': car_news_list,
         'car_news': car_news,
         'car_cat': car_cat,
+        'car_cat_lists': car_cat_lists,
         'sub_cat': sub_cat,
 
         # 'cat_news_list': cat_news_list,
@@ -153,7 +171,18 @@ def load_content_3(request, button_id):
 
 
 def show_category(request, cat_slug: str):
-    latest_news = News.objects.filter(active=1).order_by('-post_id')[:12]
+    news_on_block = 3
+    pages_of_news = 4
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:news_on_block * pages_of_news]
+    latest_news_group = []
+    latest_news_groups = []
+    for i in range(pages_of_news):
+        i = i * news_on_block
+        for ii in range(news_on_block):
+            latest_news_group.append(latest_news[i + ii])
+        latest_news_groups.append(latest_news_group)
+        latest_news_group = []
+
     description = get_object_or_404(Categories, cat_en=cat_slug)
     news = News.objects.filter(category=description, active=1).order_by('-post_id')[:12]
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
@@ -187,12 +216,25 @@ def show_category(request, cat_slug: str):
         # 'three_posts': three_posts,
         'sub_cat': sub_cat,
         'latest_news': latest_news,
+        'latest_news_groups': latest_news_groups,
         'bottom': 'relative'
     }
     return render(request, 'main/category.html', context=desc_data)
 
 
 def show_post(request, post_slug: str, cat_slug: str):
+    news_on_block = 3
+    pages_of_news = 4
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:news_on_block * pages_of_news]
+    latest_news_group = []
+    latest_news_groups = []
+    for i in range(pages_of_news):
+        i = i * news_on_block
+        for ii in range(news_on_block):
+            latest_news_group.append(latest_news[i + ii])
+        latest_news_groups.append(latest_news_group)
+        latest_news_group = []
+
     car_cat = Categories.objects.filter(active=1, car_active=1).order_by('cat_ru')
     post = get_object_or_404(News, url=post_slug)
     if post:
@@ -228,6 +270,7 @@ def show_post(request, post_slug: str, cat_slug: str):
             'three_posts_list': three_posts_list,
             'sub_cat': sub_cat,
             'latest_news': latest_news,
+            'latest_news_groups': latest_news_groups,
             'news_for_column': news_for_column,
             'car_cat': car_cat,
         }
@@ -254,8 +297,18 @@ def search_results(request):
         posts = None
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
 
+    news_on_block = 3
+    pages_of_news = 4
+    latest_news = News.objects.filter(active=1).order_by('-post_id')[:news_on_block * pages_of_news]
+    latest_news_group = []
+    latest_news_groups = []
+    for i in range(pages_of_news):
+        i = i * news_on_block
+        for ii in range(news_on_block):
+            latest_news_group.append(latest_news[i + ii])
+        latest_news_groups.append(latest_news_group)
+        latest_news_group = []
 
-    latest_news = News.objects.filter(active=1).order_by('-post_id')[:12]
     three_posts = []
     three_posts_list = []
     while len(three_posts_list) < 3:
@@ -275,14 +328,13 @@ def search_results(request):
             three_posts = []
 
 
-
-
     search_data = {
         'news': posts,
         'search_query': search_query,
         'sub_cat': sub_cat,
         'three_posts_list': three_posts_list,
         'latest_news': latest_news,
+        'latest_news_groups': latest_news_groups,
     }
 
     return render(request, 'main/search_results.html', context=search_data)
