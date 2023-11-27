@@ -32,7 +32,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+document.getElementById("up-btn").addEventListener("click", topFunction);
 
 
 function checkEmail(input) {
@@ -176,7 +176,6 @@ buttons_active.forEach(button => {button.addEventListener('click', () => {
 });
 
 
-
 // Находим все элементы с определенным aria-label
 const elements = document.querySelectorAll('[aria-label]');
 
@@ -193,30 +192,18 @@ elements.forEach(element => {
 });
 
 
+function relevance_link() {
+  document.getElementById("relevance-link").click();
+}
+const rel_btn = document.getElementById("relevance-btn");
+if (rel_btn) {
+    rel_btn.addEventListener("click", relevance_link);
+}
 
-// Находим все элементы с классом dot
-const dotElements = document.querySelectorAll('.dot');
-
-// Отслеживаем изменения в классах элементов с классом dot
-dotElements.forEach((dotElement) => {
-  const observer = new MutationObserver((mutationsList, observer) => {
-    mutationsList.forEach((mutation) => {
-      // Проверяем, что класс был добавлен
-        console.log('gaaay')
-      if (mutation.addedNodes.length > 0) {
-
-        // Получаем элемент с классом cat_btn и тем же aria-label
-        const catBtnElement = document.querySelector(`[aria-label="${dotElement.dataset.label}"]`);
-        // Если элемент с классом cat_btn уже существует, то добавляем ему класс is-selected
-        if (catBtnElement) {
-          catBtnElement.classList.add('is-selected');
-        }
-      }
-    });
-  });
-
-  // Настраиваем отслеживание изменений в классах элемента
-  const config = { attributes: true, childList: true, subtree: true };
-  observer.observe(dotElement, config);
-});
-
+function chronology_link() {
+  document.getElementById("chronology-link").click();
+}
+const chr_btn = document.getElementById("chronology-btn");
+if (chr_btn) {
+    chr_btn.addEventListener("click", chronology_link);
+}

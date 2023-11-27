@@ -15,6 +15,9 @@
       height: 100%;
       width: 60%;
       margin-left: 9%;
+      @include lt-sm() {
+        margin-left: 10%-($margin-in-puzzle-mobile/2);
+      }
 
       h2 {
         margin-left: 1%;
@@ -22,6 +25,9 @@
         font-size: $main-bar-elements-font-size;
         font-weight: 600;
         margin-bottom: 5px;
+        @include lt-sm() {
+          margin-left: $margin-in-puzzle-mobile/2;
+        }
       }
 
       .puzzle-grid {
@@ -34,9 +40,24 @@
           height: $main-bar-height*2.5;
 
           &:nth-child(1), &:nth-child(4), &:nth-child(6), &:nth-child(9) {
-            @include bluecard($main-bar-height, $main-bar-elements-height)
+            @include bluecard($main-bar-height, $main-bar-elements-height);
+            @include lt-sm() {
+              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
+            }
+          }
+
+          @include lt-sm() {
+            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
+            &:nth-child(1), &:nth-child(4), &:nth-child(7), &:nth-child(10) {
+              @include bluecard($main-bar-height, $main-bar-elements-height);
+              width: 100%-$margin-in-puzzle-mobile;
+            }
           }
         }
+      }
+
+      @include lt-sm() {
+        width: 80%+$margin-in-puzzle-mobile;
       }
     }
 
@@ -50,6 +71,9 @@
       @include news-column($main-bar-height, $main-bar-elements-height);
       width: 20%;
       margin-right: 10%;
+      @include lt-sm() {
+        display: none;
+      }
     }
   }
 

@@ -23,6 +23,10 @@
   .puzzle-news {
     margin: $main-bar-height/2 9%;
     height: auto;
+    @include lt-sm() {
+      margin-left: 10%-($margin-in-puzzle-mobile/2);
+      margin-right: 10%-($margin-in-puzzle-mobile/2);
+    }
 
     .puzzle-carousel {
       width: 100%;
@@ -40,7 +44,7 @@
             @include bluecard($main-bar-height, $main-bar-elements-height);
 
             @include lt-sm() {
-              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
 
             }
           }
@@ -52,12 +56,10 @@
           }
 
           @include lt-sm() {
-
-
-            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
             &:nth-child(2), &:nth-child(5) {
               @include bluecard($main-bar-height, $main-bar-elements-height);
-              width: (100%-$margin-in-puzzle);
+              width: (100%-$margin-in-puzzle-mobile);
 
               .new-card-text {
                 width: 100%;
@@ -74,9 +76,9 @@
           @include lt-md() {
             width: (100%-$margin-in-puzzle);
           }
-          //@include lt-sm() {
-          //  width: (100%-($margin-in-puzzle*2));
-          //}
+          @include lt-sm() {
+            width: (100%-$margin-in-puzzle-mobile);
+          }
 
           .first-card-img {
             display: flex;

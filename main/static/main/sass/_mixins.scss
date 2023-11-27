@@ -177,6 +177,7 @@
     }
 
     .new-card-title {
+      top: 10%;
       position: relative;
       padding-top: initial;
       bottom: initial;
@@ -210,7 +211,7 @@
 @mixin bluecard($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   background: linear-gradient(to left, $main-color, $main-color-light);
-  display: flex;
+  //display: flex;
   img {
     display: none;
   }
@@ -481,16 +482,13 @@
                 display: flex;
                 height: $main-bar-elements-height;
                 width: $main-bar-elements-height;
-                color: $main-color;
-                background-color: $font-color;
-                border-radius: 50%;
                 justify-content: center;
                 align-items: center;
 
                 svg {
                   position: absolute;
-                  width: 70%;
-                  height: 70%;
+                  width: 100%;
+                  height: 100%;
                 }
 
               }

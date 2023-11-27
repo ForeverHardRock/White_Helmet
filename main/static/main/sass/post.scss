@@ -2,7 +2,6 @@
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .post-block {
     position: relative;
-    height: 100%;
     display: flex;
     padding-top: $main-bar-height/2;
     padding-bottom: $main-bar-height/2;
@@ -32,6 +31,7 @@
         }
 
         > p {
+          color: $font-color-light;
           font-family: apparat;
           font-weight: 400;
           font-size: $main-bar-elements-font-size*0.7;
@@ -68,13 +68,32 @@
         font-size: $main-bar-elements-font-size*0.7;
         color: $dark-font-color;
       }
+
+      @include lt-sm() {
+        width: 80%;
+      }
     }
 
 
     .news-column {
+
+      &-title {
+        font-family: grotesque;
+        font-weight: 600;
+        font-size: $main-bar-elements-font-size;
+      }
+
       @include news-column($main-bar-height, $main-bar-elements-height);
+      top: 0;
+      margin-top: 0;
+      padding-top: $main-bar-height/2;
+      padding-bottom: $main-bar-height/2;
       width: 20%;
       margin-right: 10%;
+      height: 100%;
+      @include lt-sm() {
+        display: none;
+      }
     }
   }
 
@@ -94,7 +113,10 @@
       margin-right: 9%;
       margin-left: 9%;
       height: auto;
-
+      @include lt-sm() {
+        margin-left: 10%-$margin-in-puzzle-mobile/2;
+        margin-right: 10%-$margin-in-puzzle-mobile/2;
+      }
       .puzzle-grid {
         overflow: hidden;
         height: auto;
@@ -104,7 +126,19 @@
           @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
 
           &:nth-child(even) {
-            @include bluecard($main-bar-height, $main-bar-elements-height)
+            @include bluecard($main-bar-height, $main-bar-elements-height);
+            @include lt-sm() {
+              @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
+            }
+          }
+
+          @include lt-sm() {
+            @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
+            &:nth-child(1) {
+
+              @include bluecard($main-bar-height, $main-bar-elements-height);
+              width: 100%-$margin-in-puzzle-mobile;
+            }
           }
         }
       }

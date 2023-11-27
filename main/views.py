@@ -1,13 +1,10 @@
+import datetime
+
 from django.shortcuts import render, get_object_or_404
 from .models import News, Categories
 from django.core.paginator import Paginator
 from django.db.models import Q
 import random
-import json
-from django.core import serializers
-from django.template.loader import get_template
-from django.http import HttpResponse
-
 
 def home(request):
     news_on_block = 3
@@ -281,22 +278,46 @@ def about(request):
     return render(request, 'main/about.html')
 
 
-def search_results(request):
+def search_results(request, filter_mode: str, filter_time: str):
     search_query = request.GET.get('search')
-    print('!!!!!!', search_query)
+    search_set = 2
     if search_query:
-        result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query)).order_by('-post_id')
+        time_now = datetime.date.today()
+        if filter_mode == "relevance":
+            sort = "-post_views"
+        else:
+            sort = "-post_id"
+        if filter_time == "today":
+            time_set = time_now - datetime.timedelta(days=1)
+            result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query),
+                                         pubdate__gte=time_set).order_by(sort)
+        elif filter_time == "3days":
+            time_set = time_now - datetime.timedelta(days=3)
+            result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query),
+                                         pubdate__gte=time_set).order_by(sort)
+        elif filter_time == "week":
+            time_set = time_now - datetime.timedelta(days=7)
+            result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query),
+                                         pubdate__gte=time_set).order_by(sort)
+        else:
+            result = News.objects.filter(Q(title__iregex=search_query) | Q(ptext__iregex=search_query)).order_by(sort)
+
         if len(result) > 0:
+            if len(result) == 1:
+                search_set = 0
+            elif len(result) == 2:
+                search_set = 1
 
             paginator = Paginator(result, 19)
             page_number = request.GET.get('page')
             posts = paginator.get_page(page_number)
+
         else:
             posts = None
     else:
         posts = None
-    sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
 
+    sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
     news_on_block = 3
     pages_of_news = 4
     latest_news = News.objects.filter(active=1).order_by('-post_id')[:news_on_block * pages_of_news]
@@ -335,6 +356,9 @@ def search_results(request):
         'three_posts_list': three_posts_list,
         'latest_news': latest_news,
         'latest_news_groups': latest_news_groups,
+        'filter_mode': filter_mode,
+        'filter_time': filter_time,
+        'search_set': search_set,
     }
 
     return render(request, 'main/search_results.html', context=search_data)
