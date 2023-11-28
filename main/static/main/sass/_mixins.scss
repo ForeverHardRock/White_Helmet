@@ -140,7 +140,7 @@
   margin: $margin/2;
   height: $main-bar-height*3;
   width: ((100%-($margin*$cols))/$cols);
-  box-shadow: 0 0 $main-bar-elements-height/5 2px $font-color-light;
+  box-shadow: 0 0 $main-bar-elements-height/5 2px lighten($font-color-light, 10%);
 
   img {
     display: block;
@@ -766,7 +766,7 @@
   border-top-right-radius: ($main-bar-height/3);
   padding: $main-bar-height 10% 5%;
   margin-top: $main-bar-height;
-  box-shadow: 0 0 50px 10px $font-color-light;
+  //box-shadow: 0 0 50px 10px $font-color-light;
 
   > a {
     display: flex;

@@ -1,5 +1,5 @@
 <div class="new-card">
-    {% if new.pictures != Null %}
+    {% if new.pictures != Null or new.pictures == "" %}
         <a class="new-card-img" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img
                 src="{{ '/media/' }}{{ new.pictures }}"></a>
     {% endif %}

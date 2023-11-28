@@ -4,12 +4,12 @@
     position: relative;
     display: flex;
     height: auto;
-    padding-top: $main-bar-height/2;
+    padding-top: $main-bar-height*1.5;
     padding-bottom: $main-bar-height/2;
     width: 100%;
     background-color: $card-background-color;
-    border-radius: $main-bar-height/3;
-    box-shadow: 0 0 50px 10px $font-color-light;
+    //border-radius: $main-bar-height/3;
+    //box-shadow: 0 0 50px 10px $font-color-light;
 
     .category-left {
       height: 100%;
@@ -62,7 +62,7 @@
     }
 
     .category-right {
-      h2 {
+      &-title {
         font-family: grotesque;
         font-size: $main-bar-elements-font-size;
         font-weight: 600;
@@ -71,6 +71,15 @@
       @include news-column($main-bar-height, $main-bar-elements-height);
       width: 20%;
       margin-right: 10%;
+
+
+      top: 0;
+      margin-top: 0;
+      padding-top: $main-bar-height*1.5;
+      padding-bottom: $main-bar-height/2;
+      height: 100%;
+
+
       @include lt-sm() {
         display: none;
       }
