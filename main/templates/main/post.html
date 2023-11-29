@@ -19,7 +19,7 @@
                           fill="white"></path>
                 </svg>
                 Поделиться</a><br><br>
-            {% if post.pictures != Null %}
+            {% if post.pictures != Null and post.pictures != ""%}
                 <img class="post-img" src="../{{ 'media/' }}{{ post.pictures }}" alt="{{ post.title }}">
             {% endif %}
             <p class="post-text">{{ post.ptext }}</p>

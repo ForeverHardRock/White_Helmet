@@ -92,38 +92,38 @@ def load_categories(request, button_id):
     return render(request, 'main/sub-preload.html',
                   {'sub_pre_news': sub_pre_news, 'view_category': button_id})
 
-
-def load_content_1(request, button_id):
-    if button_id == 'last':
-        cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[:7]
-        cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[7:12]
-    else:
-        cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:7]
-        cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[7:12]
-    return render(request, 'main/template-cat-news.html',
-                  {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
-
-
-def load_content_2(request, button_id):
-    if button_id == 'last':
-        cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[12:19]
-        cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[19:24]
-    else:
-        cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[12:19]
-        cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[19:24]
-    return render(request, 'main/template-cat-news.html',
-                  {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
-
-
-def load_content_3(request, button_id):
-    if button_id == 'last':
-        cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[24:31]
-        cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[31:36]
-    else:
-        cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[24:31]
-        cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[31:36]
-    return render(request, 'main/template-cat-news.html',
-                  {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
+#
+# def load_content_1(request, button_id):
+#     if button_id == 'last':
+#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[:7]
+#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[7:12]
+#     else:
+#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:7]
+#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[7:12]
+#     return render(request, 'main/template-cat-news.html',
+#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
+#
+#
+# def load_content_2(request, button_id):
+#     if button_id == 'last':
+#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[12:19]
+#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[19:24]
+#     else:
+#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[12:19]
+#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[19:24]
+#     return render(request, 'main/template-cat-news.html',
+#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
+#
+#
+# def load_content_3(request, button_id):
+#     if button_id == 'last':
+#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[24:31]
+#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[31:36]
+#     else:
+#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[24:31]
+#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[31:36]
+#     return render(request, 'main/template-cat-news.html',
+#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
 
 # def load_content(request, button_id):
 #     # cat_news_list = []
@@ -181,36 +181,32 @@ def show_category(request, cat_slug: str):
         latest_news_group = []
 
     description = get_object_or_404(Categories, cat_en=cat_slug)
-    news = News.objects.filter(category=description, active=1).order_by('-post_id')[:12]
     sub_cat = Categories.objects.filter(active=1, sub_active=1).order_by('cat_ru')
     news_for_column = News.objects.filter(active=1, category=description).order_by('-post_views')[:20]
-    print(len(news_for_column), description)
 
-    three_posts = []
+    result = News.objects.filter(category=description, active=1).order_by('-post_id')
+    paginator = Paginator(result, 12)
+    page_number = request.GET.get('page')
+    news = paginator.get_page(page_number)
+
     three_posts_list = []
-    while len(three_posts_list) < 3:
-        one_of_three_cat = \
-        random.sample([x.cat_ru for x in Categories.objects.filter(active=1, cat_en__lt=description)], 1)[0]
+    while len(three_posts_list) < 12:
+        one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
         try:
             one_post = \
                 News.objects.filter(active=1, category=one_of_three_cat, pictures__isnull=False).order_by('-post_id')[
                 :1][0]
         except:
             continue
-        if one_post in three_posts or one_of_three_cat == description or one_post.category == description:
+        if one_post in three_posts_list or one_of_three_cat == description or one_post.category == description:
             continue
         else:
-            three_posts.append(one_post)
-        if len(three_posts) == 4:
-            three_posts_list.append(three_posts)
-            three_posts = []
-
+            three_posts_list.append(one_post)
     desc_data = {
         'description_category': description,
         'news': news,
         'news_for_column': news_for_column,
         'three_posts_list': three_posts_list,
-        # 'three_posts': three_posts,
         'sub_cat': sub_cat,
         'latest_news': latest_news,
         'latest_news_groups': latest_news_groups,
@@ -245,9 +241,8 @@ def show_post(request, post_slug: str, cat_slug: str):
         news_for_column = News.objects.filter(active=1, category=description, post_id__lt=post.post_id).order_by(
             '-post_id')[:20]
 
-        three_posts = []
         three_posts_list = []
-        while len(three_posts_list) < 3:
+        while len(three_posts_list) < 12:
             one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
             try:
                 one_post = \
@@ -255,13 +250,11 @@ def show_post(request, post_slug: str, cat_slug: str):
                 :1][0]
             except:
                 continue
-            if one_post in three_posts or one_of_three_cat == description or one_post.category == description:
+            if one_post in three_posts_list or one_of_three_cat == description or one_post.category == description:
                 continue
             else:
-                three_posts.append(one_post)
-            if len(three_posts) == 3:
-                three_posts_list.append(three_posts)
-                three_posts = []
+                three_posts_list.append(one_post)
+
         post_data = {
             'post': post,
             'three_posts_list': three_posts_list,
@@ -330,9 +323,26 @@ def search_results(request, filter_mode: str, filter_time: str):
         latest_news_groups.append(latest_news_group)
         latest_news_group = []
 
-    three_posts = []
+    # three_posts = []
+    # three_posts_list = []
+    # while len(three_posts_list) < 3:
+    #     one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
+    #     try:
+    #         one_post = \
+    #             News.objects.filter(active=1, category=one_of_three_cat, pictures__isnull=False).order_by('-post_id')[
+    #             :1][0]
+    #     except:
+    #         continue
+    #     if one_post in three_posts or one_of_three_cat == search_query or one_post.category == search_query:
+    #         continue
+    #     else:
+    #         three_posts.append(one_post)
+    #     if len(three_posts) == 4:
+    #         three_posts_list.append(three_posts)
+    #         three_posts = []
+
     three_posts_list = []
-    while len(three_posts_list) < 3:
+    while len(three_posts_list) < 12:
         one_of_three_cat = random.sample([x.cat_ru for x in Categories.objects.all()], 1)[0]
         try:
             one_post = \
@@ -340,15 +350,11 @@ def search_results(request, filter_mode: str, filter_time: str):
                 :1][0]
         except:
             continue
-        if one_post in three_posts or one_of_three_cat == search_query or one_post.category == search_query:
+        if one_post in three_posts_list or one_of_three_cat == search_query or one_post.category == search_query:
             continue
         else:
-            three_posts.append(one_post)
-        if len(three_posts) == 4:
-            three_posts_list.append(three_posts)
-            three_posts = []
-
-
+            three_posts_list.append(one_post)
+    print("111"+str(posts[0].pictures)+"222")
     search_data = {
         'news': posts,
         'search_query': search_query,

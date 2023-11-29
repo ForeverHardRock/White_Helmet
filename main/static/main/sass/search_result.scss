@@ -1,14 +1,13 @@
 @mixin search-result($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .search-body {
-    margin-top: $main-bar-elements-height;
     position: relative;
     height: auto;
     width: 100%;
     background-color: $card-background-color;
-    border-radius: $main-bar-height/3;
-    box-shadow: 0 0 50px 10px $font-color-light;
-    padding: $main-bar-height/2 9%;
+    //border-radius: $main-bar-height/3;
+    //box-shadow: 0 0 50px 10px $font-color-light;
+    padding: $main-bar-height*1.5 9% $main-bar-height/4;;
     @include lt-sm() {
       padding-right: 10%-$margin-in-puzzle-mobile/2;
       padding-left: 10%-$margin-in-puzzle-mobile/2;
@@ -182,6 +181,7 @@
 
           .set-time {
             width: auto;
+
             a {
               display: flex;
               align-items: center;
@@ -197,6 +197,11 @@
             }
           }
         }
+
+        @include lt-md() {
+          position: absolute !important;
+          right: 0;
+        }
       }
 
       .new-card {
@@ -204,12 +209,23 @@
 
         &:nth-child(1), &:nth-child(5), &:nth-child(7), &:nth-child(8), &:nth-child(11), &:nth-child(12), &:nth-child(17), &:nth-child(19) {
           @include bluecard($main-bar-height, $main-bar-elements-height);
+          @include lt-md() {
+            @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+          }
           @include lt-sm() {
             @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
           }
         }
 
-        height: $main-bar-height*2.5;
+        @include lt-md() {
+          @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+          &:nth-child(1) {
+            width: ((((100%-($margin-in-puzzle*$news-in-puzzle))/$news-in-puzzle)*2)+$margin-in-puzzle);
+            margin-right: $margin-in-puzzle*2;
+          }
+
+
+        }
 
         @include lt-sm() {
           @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
@@ -232,7 +248,7 @@
     }
 
     .pagination {
-      padding-top: $main-bar-height*0.6;
+      padding-top: $main-bar-height/4;
     }
 
     .no-res {
@@ -248,44 +264,31 @@
   }
 
 
-  .rand-posts-search {
-    .rand-3-posts {
-      width: auto;
-      margin-right: 9%;
-      margin-left: 9%;
-      height: auto;
+  .search-center {
+    background-color: $font-color;
 
-      .puzzle-grid {
-        overflow: hidden;
-        height: auto;
+    &-back {
+      background-color: $page-background-color;
+      border-top-left-radius: $main-bar-height/3;
+      border-top-right-radius: $main-bar-height/3;
+
+      .latest-news-in-search {
+        padding: $main-bar-height/2 10%;
         width: 100%;
-
-        .new-card {
-          @include news-cards($news-in-puzzle+1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
-
-          &:nth-child(odd) {
-            @include bluecard($main-bar-height, $main-bar-elements-height)
-          }
-
-          height: $main-bar-height*2.5;
+        height: ($main-bar-height*2.5);
+        @include latest-news($news-in-carousel-large, $main-bar-height, $main-bar-elements-height);
+        @include lt-md {
+          @include latest-news($news-in-carousel-medium, $main-bar-height, $main-bar-elements-height);
         }
       }
 
-      .flickity-page-dots {
-        .dot {
-          background: $main-color-light;
-        }
-
-        .dot.is-selected {
-          background: $main-color;
-        }
-      }
-
-      @include lt-sm() {
-        display: none;
+      .rand-posts-search {
+        @include rand-post-card($main-bar-height, $main-bar-elements-height)
       }
     }
   }
+
+
   .search-bottom {
     @include bottom-field($main-bar-height, $main-bar-elements-height);
     @include tg-banner($main-bar-height, $main-bar-elements-height);

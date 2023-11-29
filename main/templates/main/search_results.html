@@ -26,37 +26,41 @@
                                            type="radio"
                                            {% if filter_mode == 'relevance' %}checked{% endif %}>
                                     <label for="relevance" class="btn" id="relevance-btn">Релевантность</label>
-                                    <a id="relevance-link" href="{% url 'search_results' filter_mode="relevance" filter_time=filter_time %}?search={{ search_query }}"></a>
+                                    <a id="relevance-link"
+                                       href="{% url 'search_results' filter_mode="relevance" filter_time=filter_time %}?search={{ search_query }}"></a>
                                     <input id="chronology" class="toggle toggle-right" name="toggle" value="true"
                                            type="radio"
                                            {% if filter_mode == 'chronology' %}checked{% endif %}>
                                     <label for="chronology" class="btn" id="chronology-btn">Хронология</label>
-                                    <a id="chronology-link" href="{% url 'search_results' filter_mode="chronology" filter_time=filter_time %}?search={{ search_query }}"></a>
+                                    <a id="chronology-link"
+                                       href="{% url 'search_results' filter_mode="chronology" filter_time=filter_time %}?search={{ search_query }}"></a>
                                 </div>
 
-{#                                <div class="set-time">#}
-{#                                    <div class="form-check">#}
-{#                                        <input class="form-check-input" type="radio" id="all-time" {% if filter_time == 'all-time' %}checked{% endif %}>#}
-{#                                        <label class="form-check-label" for="all-time">За все время</label>#}
-{#                                    </div>#}
-{#                                    <div class="form-check">#}
-{#                                        <input class="form-check-input" type="radio" id="today" {% if filter_time == 'today' %}checked{% endif %}>#}
-{#                                        <label class="form-check-label" for="today">Сегодня</label>#}
-{#                                    </div>#}
-{#                                    <div class="form-check">#}
-{#                                        <input class="form-check-input" type="radio" id="3days" {% if filter_time == '3days' %}checked{% endif %}>#}
-{#                                        <label class="form-check-label" for="3days">3 дня</label>#}
-{#                                    </div>#}
-{#                                    <div class="form-check">#}
-{#                                        <input class="form-check-input" type="radio" id="week" {% if filter_time == 'week' %}checked{% endif %}>#}
-{#                                        <label class="form-check-label" for="week">Неделя</label>#}
-{#                                    </div>#}
-{#                                </div>#}
+                                {#                                <div class="set-time">#}
+                                {#                                    <div class="form-check">#}
+                                {#                                        <input class="form-check-input" type="radio" id="all-time" {% if filter_time == 'all-time' %}checked{% endif %}>#}
+                                {#                                        <label class="form-check-label" for="all-time">За все время</label>#}
+                                {#                                    </div>#}
+                                {#                                    <div class="form-check">#}
+                                {#                                        <input class="form-check-input" type="radio" id="today" {% if filter_time == 'today' %}checked{% endif %}>#}
+                                {#                                        <label class="form-check-label" for="today">Сегодня</label>#}
+                                {#                                    </div>#}
+                                {#                                    <div class="form-check">#}
+                                {#                                        <input class="form-check-input" type="radio" id="3days" {% if filter_time == '3days' %}checked{% endif %}>#}
+                                {#                                        <label class="form-check-label" for="3days">3 дня</label>#}
+                                {#                                    </div>#}
+                                {#                                    <div class="form-check">#}
+                                {#                                        <input class="form-check-input" type="radio" id="week" {% if filter_time == 'week' %}checked{% endif %}>#}
+                                {#                                        <label class="form-check-label" for="week">Неделя</label>#}
+                                {#                                    </div>#}
+                                {#                                </div>#}
 
                                 <div class="set-time">
-                                    <a id="all-time" href="{% url 'search_results' filter_mode=filter_mode filter_time="all-time" %}?search={{ search_query }}">
+                                    <a id="all-time"
+                                       href="{% url 'search_results' filter_mode=filter_mode filter_time="all-time" %}?search={{ search_query }}">
                                         {% if filter_time == 'all-time' %}
-                                            <svg class="all-time-circle" id="active-circle" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            <svg class="all-time-circle" id="active-circle" width="18" height="18"
+                                                 viewBox="0 0 18 18" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="9" cy="9" r="9" fill="#1268FB"></circle>
                                                 <circle cx="9.00036" cy="9.00231" r="3.31579" fill="white"></circle>
@@ -70,9 +74,11 @@
                                         За все время
                                     </a>
 
-                                    <a id="today" href="{% url 'search_results' filter_mode=filter_mode filter_time="today" %}?search={{ search_query }}">
+                                    <a id="today"
+                                       href="{% url 'search_results' filter_mode=filter_mode filter_time="today" %}?search={{ search_query }}">
                                         {% if filter_time == 'today' %}
-                                            <svg class="today-circle" id="active-circle" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            <svg class="today-circle" id="active-circle" width="18" height="18"
+                                                 viewBox="0 0 18 18" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="9" cy="9" r="9" fill="#1268FB"></circle>
                                                 <circle cx="9.00036" cy="9.00231" r="3.31579" fill="white"></circle>
@@ -86,9 +92,11 @@
                                         Сегодня
                                     </a>
 
-                                    <a id="3days" href="{% url 'search_results' filter_mode=filter_mode filter_time="3days" %}?search={{ search_query }}">
+                                    <a id="3days"
+                                       href="{% url 'search_results' filter_mode=filter_mode filter_time="3days" %}?search={{ search_query }}">
                                         {% if filter_time == '3days' %}
-                                            <svg class="3days-circle" id="active-circle" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            <svg class="3days-circle" id="active-circle" width="18" height="18"
+                                                 viewBox="0 0 18 18" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="9" cy="9" r="9" fill="#1268FB"></circle>
                                                 <circle cx="9.00036" cy="9.00231" r="3.31579" fill="white"></circle>
@@ -102,9 +110,11 @@
                                         3 дня
                                     </a>
 
-                                    <a id="week" href="{% url 'search_results' filter_mode=filter_mode filter_time="week" %}?search={{ search_query }}">
+                                    <a id="week"
+                                       href="{% url 'search_results' filter_mode=filter_mode filter_time="week" %}?search={{ search_query }}">
                                         {% if filter_time == 'week' %}
-                                            <svg class="week-circle" id="active-circle" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            <svg class="week-circle" id="active-circle" width="18" height="18"
+                                                 viewBox="0 0 18 18" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="9" cy="9" r="9" fill="#1268FB"></circle>
                                                 <circle cx="9.00036" cy="9.00231" r="3.31579" fill="white"></circle>
@@ -138,12 +148,15 @@
 
         </div>
     {% endif %}
-
-    <div class="latest-news-in-post">
-        {% include 'main/latest-news.html' %}
-    </div>
-    <div class="rand-posts-search">
-        {% include 'main/three-r-posts.html' %}
+    <div class="search-center">
+        <div class="search-center-back">
+            <div class="latest-news-in-search">
+                {% include 'main/latest-news.html' %}
+            </div>
+            <div class="rand-posts-search">
+                {% include 'main/three-r-posts.html' %}
+            </div>
+        </div>
     </div>
     <div class="search-bottom">
         {% include 'main/tg-banner.html' %}

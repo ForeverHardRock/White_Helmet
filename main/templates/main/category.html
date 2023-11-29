@@ -6,39 +6,51 @@
 
 {% block content %}
     <div class="category-body">
-        <div class="category-left">
 
-            <h2>{{ description_category }}</h2>
+        <div class="category-body-content">
 
-            <div class="puzzle-grid">
-                {% for new in news %}
-                   {% include 'main/new-card.html' %}
-                {% endfor %}
-                <br><br>
+            <div class="category-left">
 
-    {#            {% include 'main/three-r-posts.html' %}#}
+                <h2>{{ description_category }}</h2>
 
-{#            {% include 'main/paginator.html' %}#}
+                <div class="puzzle-grid">
+                    {% for new in news %}
+                        {% include 'main/new-card.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="category-right">
+                <p class="category-right-title">Интересное</p>
+                <div class="next-card">
+                    {% for new_col in news_for_column %}
+                        <div class="next-new-card">
+                            <p>{{ new_col.pubdate }}</p>
+                            <a href="{% url 'url_post' cat_slug=new_col.category_en post_slug=new_col.url %}">
+                                <div>{{ new_col.title }}</div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+
+        </div>
+        {% include 'main/paginator.html' %}
+    </div>
+
+    <div class="category-center">
+        <div class="category-center-back">
+            <div class="latest-news-in-category">
+                {% include 'main/latest-news.html' %}
+            </div>
+            <div class="cat-3-posts">
+                {% include 'main/three-r-posts.html' %}
             </div>
         </div>
-        <div class="category-right">
-            <p class="category-right-title">Интересное</p>
-            <div class="next-card">
-                {% for new_col in news_for_column %}
-                    <div class="next-new-card">
-                        <p>{{ new_col.pubdate }}</p>
-                        <a href="{% url 'url_post' cat_slug=new_col.category_en post_slug=new_col.url %}"><div>{{ new_col.title }}</div></a>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
     </div>
-    <div class="latest-news-in-category">
-        {% include 'main/latest-news.html' %}
-    </div>
-    <div class="cat-3-posts">
-        {% include 'main/three-r-posts.html' %}
-    </div>
+
+
     <div class="category-bottom">
         {% include 'main/tg-banner.html' %}
         {% include 'main/bottom.html' %}

@@ -18,7 +18,7 @@
                             {% for new in car_news %}
                                 {% if car_news|first == new %}
                                     <div class="new-card first-card">
-                                        {% if new.pictures != Null %}
+                                        {% if new.pictures != Null and new.pictures != "" %}
                                             <a class="first-card-img"
                                                href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}"><img
                                                     src="{{ 'media/' }}{{ new.pictures }}" alt=""></a>
