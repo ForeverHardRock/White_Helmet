@@ -23,6 +23,10 @@
 
     //border: 1px solid red;
     background-color: $font-color;
+    @include lt-sm() {
+      margin-top: $main-bar-height;
+      background-color: $page-background-color;
+    }
 
     .puzzle-back {
       padding-top: $main-bar-height/2;
@@ -32,7 +36,6 @@
       border-top-left-radius: $main-bar-height/3;
       border-top-right-radius: $main-bar-height/3;
       //border: 1px solid black;
-
       .puzzle-news {
         margin: 0 9%;
         height: auto;
@@ -167,7 +170,6 @@
   }
 
   .cat-news {
-    justify-content: center;
     width: 100%;
     height: auto;
     padding-top: $main-bar-height/2;
@@ -265,19 +267,13 @@
               overflow: hidden;
               display: block;
               width: 100%;
-              height: $main-bar-height*10;
+              height: auto;
               padding-bottom: 0;
-
-              @include lt-sm() {
-                height: $main-bar-elements-height*35;
-              }
 
               .new-card {
                 @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
-
                 &:nth-child(1), &:nth-child(4), &:nth-child(5) {
                   @include bluecard($main-bar-height, $main-bar-elements-height);
-
                   @include lt-sm() {
                     @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
                   }
@@ -344,6 +340,7 @@
                     margin-bottom: $main-bar-elements-height;
                   }
                   &:nth-child(4), &:nth-child(7) {
+                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
                     @include bluecard($main-bar-height, $main-bar-elements-height);
                     width: (100%-$margin-in-puzzle);
 
@@ -352,7 +349,7 @@
                     }
                   }
                   &:nth-child(5), &:nth-child(6) {
-                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+                    @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
                   }
                 }
               }

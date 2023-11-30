@@ -7,6 +7,7 @@
         <a class="new-card-category" href="{% url 'cat_name' cat_slug=new.category_en %}">
             <div>● {{ new.category }}</div>
         </a>
+        <p class="new-card-pubdate">{{ new.pubdate }}</p>
         <a class="new-card-title" href="{% url 'url_post' cat_slug=new.category_en post_slug=new.url %}">
             <div>{{ new.title }}</div>
         </a>
