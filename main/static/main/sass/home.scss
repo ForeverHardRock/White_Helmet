@@ -211,10 +211,11 @@
     }
 
     .categories-list {
+      justify-content: center;
       height: 100%;
       width: 100%;
-      padding-right: 20%;
-      padding-left: 20%;
+      padding-right: 15%;
+      padding-left: 15%;
       @include lt-sm() {
         padding-right: 10%;
         padding-left: 10%;
@@ -236,12 +237,35 @@
     }
 
     .puzzle-news-by-cat {
+      position: relative;
       margin: $main-bar-height/2 9%;
       height: auto;
       @include lt-sm() {
         //margin-top: $main-bar-elements-height/2;
         margin-top: 0;
       }
+
+      //.flickity-page-buttons {
+      //  height: $main-bar-elements-height*2;
+      //  top: -$main-bar-elements-height;
+      //  position: absolute;
+      //  padding-right: 20%;
+      //  padding-left: 20%;
+      //  @include lt-sm() {
+      //    padding-right: 10%;
+      //    padding-left: 10%;
+      //  }
+      //
+      //  .cat_btn {
+      //    font-family: grotesque;
+      //    font-weight: 400;
+      //    font-size: $main-bar-elements-font-size*0.8;
+      //    color: $dark-font-color;
+      //    padding-right: 5%;
+      //    background: none;
+      //    border: none;
+      //  }
+      //}
 
       .flickity-page-dots {
         .dot {
@@ -263,7 +287,7 @@
           .flickity-slider {
             height: auto;
 
-            .puzzle-grid {
+            .cat-puzzle-grid {
               overflow: hidden;
               display: block;
               width: 100%;
@@ -272,6 +296,7 @@
 
               .new-card {
                 @include news-cards($news-in-puzzle, $margin-in-puzzle, $main-bar-height, $main-bar-elements-height);
+
                 &:nth-child(1), &:nth-child(4), &:nth-child(5) {
                   @include bluecard($main-bar-height, $main-bar-elements-height);
                   @include lt-sm() {
@@ -356,6 +381,7 @@
 
               .puzzle-right {
                 @include news-column($main-bar-height, $main-bar-elements-height);
+                width: ((100%-($margin-in-puzzle*($news-in-puzzle)))/($news-in-puzzle));
 
                 .next-card {
 

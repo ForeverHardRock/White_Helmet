@@ -69,24 +69,21 @@
             {% for cat in car_cat %}
                 {% if car_cat|first == cat %}
                     <button aria-label="Page dot {{ forloop.counter }}"
-                            class="cat_btn is-selected">{{ cat.cat_ru }}</button>
+                            class="cat_btn is-selected" id="puzzle-grid{{ forloop.counter }}">{{ cat.cat_ru }}</button>
                 {% else %}
-                    <button aria-label="Page dot {{ forloop.counter }}" class="cat_btn">{{ cat.cat_ru }}</button>
+                    <button aria-label="Page dot {{ forloop.counter }}" class="cat_btn" id="puzzle-grid{{ forloop.counter }}">{{ cat.cat_ru }}</button>
                 {% endif %}
-                {#            {% if car_cat|first == cat %}#}
-                {#                <a href="#puzzle-grid{{ forloop.counter }}" aria-label="Page dot {{ forloop.counter }}" class="cat_btn is-selected">{{ cat.cat_ru }}</a>#}
-                {#            {% else %}#}
-                {#                <a href="#puzzle-grid{{ forloop.counter }}" aria-label="Page dot {{ forloop.counter }}" class="cat_btn">{{ cat.cat_ru }}</a>#}
-                {#            {% endif %}#}
-
             {% endfor %}
         </div>
+
+
         <p class="mobile-last-news">Последние новости</p>
         <div class="puzzle-news-by-cat">
+
             <div class="cat-news-carousel js-flickity"
                  data-flickity='{"groupCells": true, "hash": true, "wrapAround": true, "pageDots": true, "cellAlign": "left", "prevNextButtons": false, "dragThreshold": 10 }'>
                 {% for car_cat_list in car_cat_lists %}
-                    <div class="puzzle-grid" id="puzzle-grid{{ forloop.counter }}">
+                    <div class="cat-puzzle-grid" id="puzzle-grid{{ forloop.counter }}" aria-label="Page dot {{ forloop.counter }}">
                         {% for news_list in car_cat_list %}
                             {% if car_cat_list|first == news_list %}
                                 {% for new in news_list %}
@@ -110,9 +107,9 @@
                     </div>
                 {% endfor %}
             </div>
-        </div>
-        {#    VAR 2#}
 
+
+        </div>
 
         {% include 'main/bottom.html' %}
     </div>

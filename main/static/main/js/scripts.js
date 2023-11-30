@@ -167,31 +167,6 @@ searchForm.addEventListener('submit', (event) => {
 });
 
 
-
-const buttons_active = document.querySelectorAll('.cat_btn');
-buttons_active.forEach(button => {button.addEventListener('click', () => {
-    buttons_active.forEach(btn => btn.classList.remove('is-selected'));
-    button.classList.add('is-selected');
-});
-});
-
-
-// Находим все элементы с определенным aria-label
-const elements = document.querySelectorAll('[aria-label]');
-
-// Добавляем обработчик события click к каждому элементу
-elements.forEach(element => {
-  element.addEventListener('click', () => {
-    // Находим все элементы с тем же aria-label, что и нажатый элемент
-    const sameLabelElements = document.querySelectorAll(`[aria-label="${element.getAttribute('aria-label')}"]`);
-    // Вызываем функцию для каждого найденного элемента
-    sameLabelElements.forEach(sameLabelElement => {
-      sameLabelElement.click();
-    });
-  });
-});
-
-
 function relevance_link() {
   document.getElementById("relevance-link").click();
 }
@@ -207,3 +182,114 @@ const chr_btn = document.getElementById("chronology-btn");
 if (chr_btn) {
     chr_btn.addEventListener("click", chronology_link);
 }
+
+
+//
+//
+//
+//
+//
+//
+
+
+
+
+const buttons_active = document.querySelectorAll('.cat_btn');
+buttons_active.forEach(button => {button.addEventListener('click', () => {
+    buttons_active.forEach(btn => btn.classList.remove('is-selected'));
+    button.classList.add('is-selected');
+});
+});
+
+
+
+const catBtns = document.querySelectorAll('.cat_btn');
+
+// Добавляем обработчик клика на каждую кнопку cat_btn
+catBtns.forEach(catBtn => {
+  catBtn.addEventListener('click', () => {
+    // Получаем aria-label у кнопки cat_btn
+    const ariaLabel = catBtn.getAttribute('aria-label');
+
+    // Находим все кнопки dot с таким же aria-label внутри элемента с классом "cat-news"
+    const dots = document.querySelectorAll('.cat-news [aria-label="' + ariaLabel + '"]');
+
+    // Производим клик на найденных кнопках dot
+    dots.forEach(dot => {
+      dot.click();
+    });
+  });
+});
+
+
+
+
+
+
+// Находим все контейнеры с классом "puzzle-grid"
+const puzzleGrids = document.querySelectorAll('.cat-puzzle-grid');
+
+// Создаем объект для хранения контейнеров с классом "is-selected"
+const selectedGrids = {};
+
+// Создаем функцию для обработки изменений в DOM
+const observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    // Проверяем, что изменения произошли внутри контейнера с классом "puzzle-grid"
+    if (mutation.target.closest('.cat-puzzle-grid')) {
+      // Получаем все контейнеры с классом "puzzle-grid"
+      const puzzleGrids = document.querySelectorAll('.cat-puzzle-grid');
+
+      // Проходимся по всем контейнерам с классом "puzzle-grid"
+      puzzleGrids.forEach(grid => {
+        // Проверяем, что контейнер уже был добавлен в объект "selectedGrids"
+        if (selectedGrids[grid.id]) {
+          // Если контейнер уже был добавлен, то проверяем, что он имеет класс "is-selected"
+          if (grid.classList.contains('is-selected')) {
+            // Если контейнер имеет класс "is-selected", то добавляем его в объект "selectedGrids"
+            selectedGrids[grid.id] = grid;
+          } else {
+            // Если контейнер не имеет класс "is-selected", то удаляем его из объекта "selectedGrids"
+            delete selectedGrids[grid.id];
+          }
+        } else {
+          // Если контейнер еще не был добавлен в объект "selectedGrids", то проверяем, что он имеет класс "is-selected"
+          if (grid.classList.contains('is-selected')) {
+            // Если контейнер имеет класс "is-selected", то добавляем его в объект "selectedGrids"
+            selectedGrids[grid.id] = grid;
+          }
+        }
+      });
+
+      // Проверяем, что в объекте "selectedGrids" есть хотя бы один контейнер с классом "is-selected"
+      if (Object.keys(selectedGrids).length > 0) {
+        // Если есть, то получаем первый контейнер с классом "is-selected" из объекта "selectedGrids"
+        const selectedGrid = Object.values(selectedGrids)[0];
+
+        // Получаем aria-label у контейнера с классом "is-selected"
+        const selectedLabel = selectedGrid.getAttribute('aria-label');
+
+        // Находим контейнер с классом "cat_btn" с таким же aria-label
+        const targetBtn = document.querySelector(`.cat_btn[aria-label="${selectedLabel}"]`);
+
+        // Добавляем класс "is-selected" к найденному контейнеру
+        if (targetBtn) {
+          const catBtns = document.querySelectorAll('.cat_btn');
+          catBtns.forEach(btn => {
+            if (btn === targetBtn) {
+              btn.classList.add('is-selected');
+            } else {
+              btn.classList.remove('is-selected');
+            }
+          });
+        }
+      }
+    }
+  });
+});
+
+// Настраиваем объект для отслеживания изменений в DOM
+const config = { attributes: true, childList: true, subtree: true };
+
+// Запускаем отслеживание изменений в DOM
+observer.observe(document.body, config);

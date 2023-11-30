@@ -140,9 +140,9 @@
   height: $main-bar-height*3;
   width: ((100%-($margin*$cols))/$cols);
   box-shadow: 0 0 $main-bar-elements-height/5 2px lighten($font-color-light, 10%);
-  @include lt-md() {
-    height: $main-bar-height*2.5;
-  }
+  //@include lt-md() {
+  //  height: $main-bar-height*2.5;
+  //}
 
   img {
     display: block;
@@ -285,8 +285,11 @@
   position: absolute;
   right: 0;
   height: 90%;
-  width: 30%;
   margin-top: 5px;
+  width: ((100%-($margin-in-puzzle*($news-in-puzzle+1)))/($news-in-puzzle+1));
+  @include lt-md() {
+    width: ((100%-($margin-in-puzzle*($news-in-puzzle)))/($news-in-puzzle));
+  }
   h4 {
     height: 5%;
   }
@@ -296,22 +299,22 @@
     overflow-x: hidden;
 
     &::-webkit-scrollbar {
+      display: none;
       width: ($main-bar-elements-font-size*0.2);
-    }
 
-    &::-webkit-scrollbar-track {
-      background: lighten($font-color-light, 20%);
-      border-radius: ($main-bar-elements-font-size*0.2);
-    }
+      &-track {
+        background: lighten($font-color-light, 20%);
+        border-radius: ($main-bar-elements-font-size*0.2);
+      }
 
-    &::-webkit-scrollbar-thumb {
-      background-color: lighten($font-color-light, 10%);
-      border-radius: ($main-bar-elements-font-size*0.2);
+      &-thumb {
+        background-color: lighten($font-color-light, 10%);
+        border-radius: ($main-bar-elements-font-size*0.2);
+      }
     }
-
     .next-new-card {
       height: auto;
-      margin-right: $main-bar-height/4;
+      //margin-right: 5%;
       padding-top: $main-bar-height/7;
       padding-bottom: $main-bar-height/7;
       border-bottom: 1px solid $font-color-light;
