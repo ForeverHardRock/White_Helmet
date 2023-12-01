@@ -62,6 +62,14 @@ buttons_sub_active.forEach(button => {button.addEventListener('click', () => {
 });
 
 
+window.addEventListener('load', function() {
+  var catBtn = document.querySelector('.cat-btn-active');
+  if (catBtn) {
+    catBtn.click();
+  }
+});
+
+
 var cat_buttons = document.querySelectorAll('button[id^="load-categories"]');
 for (var ii = 0; ii < cat_buttons.length; ii++) {
   cat_buttons[ii].addEventListener('click', function() {
@@ -85,12 +93,15 @@ for (var ii = 0; ii < cat_buttons.length; ii++) {
 }
 
 
-window.addEventListener("load", function() {
-  document.querySelector(".cat-btn-active").click();
-});
 
+function share_btn_fnc() {
+  document.getElementById("field-bns-id").classList.toggle("show-btns");
+}
 
-
+const toggle_share = document.querySelector('.share-field-btn');
+if (toggle_share) {
+  toggle_share.addEventListener('click', share_btn_fnc);
+}
 
 
 //
@@ -147,10 +158,6 @@ window.addEventListener("load", function() {
 //   });
 // }
 //
-// window.addEventListener("load", function() {
-//   document.getElementById("load-content-last").click();
-// });
-
 
 
 
