@@ -73,7 +73,7 @@
                 {% if post.pictures != Null and post.pictures != "" %}
                     <img class="post-img" src="../{{ 'media/' }}{{ post.pictures }}" alt="{{ post.title }}">
                 {% endif %}
-                <p class="post-text">{{ post.ptext }}</p>
+                <p class="post-text">{{ post.ptext|safe }}</p>
             </div>
 
             <div class="news-column">

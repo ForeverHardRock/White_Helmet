@@ -312,6 +312,7 @@
         border-radius: ($main-bar-elements-font-size*0.2);
       }
     }
+
     .next-new-card {
       height: auto;
       //margin-right: 5%;
@@ -443,7 +444,6 @@
       }
 
       ul {
-
         li {
           line-height: $main-bar-elements-font-size;
           margin-bottom: $main-bar-elements-font-size*0.5;
@@ -454,6 +454,9 @@
             font-size: $main-bar-elements-font-size*0.5;
             line-height: $main-bar-elements-font-size*0.5;
             color: $dark-font-color;
+            @include lt-sm() {
+              font-size: $main-bar-elements-font-size*0.7;
+            }
           }
 
           a {
@@ -462,6 +465,9 @@
             font-size: $main-bar-elements-font-size*0.5;
             line-height: $main-bar-elements-font-size*0.5;
             color: $font-color-light;
+            @include lt-sm() {
+              font-size: $main-bar-elements-font-size*0.7;
+            }
           }
         }
       }
@@ -492,6 +498,9 @@
           font-weight: 500;
           color: $font-color;
           font-size: $main-bar-elements-font-size*0.6;
+          @include lt-sm() {
+            font-size: $main-bar-elements-font-size*0.7;
+          }
         }
 
         form {
@@ -501,6 +510,8 @@
           padding-bottom: 5%;
 
           input {
+            display: flex;
+            align-items: center;
             font-family: grotesque;
             font-weight: 400;
             font-size: $main-bar-elements-font-size*0.6;
@@ -510,9 +521,15 @@
             padding: 2% 5%;
             background-color: lighten($main-color, 25%);
             border-radius: $main-bar-height*0.5;
+            @include lt-sm() {
+              font-size: $main-bar-elements-font-size*0.7;
+            }
           }
 
           button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: grotesque;
             font-weight: 400;
             width: 35%;
@@ -521,6 +538,9 @@
             background-color: $font-color;
             border-radius: $main-bar-height*0.5;
             font-size: $main-bar-elements-font-size*0.5;
+            @include lt-sm() {
+              font-size: $main-bar-elements-font-size*0.7;
+            }
           }
         }
 
@@ -540,6 +560,10 @@
               font-family: grotesque;
               font-weight: 500;
               font-size: $main-bar-elements-font-size*0.6;
+              @include lt-sm() {
+                margin-bottom: $main-bar-elements-font-size*0.5;
+                font-size: $main-bar-elements-font-size*0.7;
+              }
             }
 
             .subs-btns {
@@ -551,8 +575,8 @@
               a {
                 position: relative;
                 display: flex;
-                height: $main-bar-elements-height;
-                width: $main-bar-elements-height;
+                height: $main-bar-elements-height*1.2;
+                width: $main-bar-elements-height*1.2;
                 justify-content: center;
                 align-items: center;
 

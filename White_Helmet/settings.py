@@ -20,15 +20,18 @@ ALLOWED_HOSTS = ['192.168.50.253']
 # Application definition
 
 INSTALLED_APPS = [
+    # 'django_summernote',
+    'tinymce',
     'main',
     'account',
-    'django_email_verification',
+    # 'django_email_verification',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [

@@ -1,6 +1,7 @@
 from django.db import models
 import pytz
 from datetime import datetime, timedelta
+from tinymce import models as tinymce_models
 
 
 class Categories(models.Model):
@@ -28,7 +29,8 @@ class News(models.Model):
     pubdate = models.DateTimeField('Дата публикации', auto_now_add=False)
     creator = models.CharField('Автор', max_length=30, default='Admin')
     description = models.TextField('Описание')
-    ptext = models.TextField('Текст')
+    # ptext = models.TextField('Текст')
+    ptext = tinymce_models.HTMLField('Текст')
     category = models.CharField('Категория', max_length=30, choices=[(x.cat_ru, x.cat_ru) for x in Categories.objects.all().order_by('cat_ru')], default='Без рубрики')
     category_en = models.CharField('Транслитерация', max_length=30)
     pictures = models.ImageField(upload_to='images/',  verbose_name='Картинка')
