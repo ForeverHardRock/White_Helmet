@@ -613,7 +613,7 @@
       height: $main-bar-height*3;
       width: 100%;
       background: linear-gradient(275.61deg, $main-color, $main-color-light);
-      box-shadow: 0 0 10px 2px $font-color-light;
+      //box-shadow: 0 0 10px 2px $font-color-light;
       border-radius: $main-bar-height/5;
       justify-content: space-between;
       overflow: hidden;
@@ -763,21 +763,38 @@
   }
 
   .btn-search-commit {
+    position: relative;
     width: $main-bar-elements-height;
     height: $main-bar-elements-height;
-    border-radius: 50%;
+    background-color: $main-color;
+    border-radius: $main-bar-elements-height;
     box-shadow: 0 0 1px 2px $main-color;
-    background: $main-color-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $font-color;
+    //color: $font-color;
     cursor: pointer;
     border: none;
 
-    svg {
-      transition: all 0.2s ease-in-out;
+    div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $main-bar-elements-height;
+      height: $main-bar-elements-height;
+      border-radius: 50%;
+
+      background-color: $main-color-light;
+
+      svg {
+        position: absolute;
+        left: $main-bar-elements-height*0.15;
+        top: $main-bar-elements-height*0.15;
+        width: $main-bar-elements-height*0.7;
+        height: $main-bar-elements-height*0.7;
+        transition: all 0.2s ease-in-out;
+      }
+
     }
+
+
   }
 
   .btn-search-cancel {
@@ -837,18 +854,85 @@
     padding-right: 5%;
   }
 
-  //.btn-search-cancel:focus {
-  //  display: none;
-  //}
   .search:hover > .btn-search-commit {
     svg {
-      transform: scale(1.5);
+      transform: scale(1.3);
     }
   }
 
   .search:hover > .btn-search-commit:hover {
     svg {
-      transform: scale(1.5);
+      transform: scale(1.3);
+    }
+  }
+}
+
+@mixin search-static($main-bar-height, $main-bar-elements-height) {
+  .search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: $main-bar-elements-height;
+    border: 2px $main-color-light solid;
+    border-radius: $main-bar-elements-height/2;
+    background: $font-color;
+    background-clip: border-box;
+
+    .searchText {
+      display: flex;
+      padding-left: 3%;
+      width: 100%;
+      border: none;
+      background: none;
+      align-items: center;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &:active {
+        border: none;
+        outline: none;
+      }
+    }
+
+    .btn-search-cancel {
+      display: flex;
+      align-items: center;
+      width: auto;
+      height: 100%;
+      margin-right: $main-bar-elements-height*0.3;
+      background: none;
+      border: none;
+      padding: 0;
+      svg {
+        height: $main-bar-elements-height*0.3;
+      }
+    }
+
+    .btn-search-commit {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $main-color-light;
+      border: none;
+      padding: 0;
+      margin: 0;
+      border-radius: $main-bar-elements-height/2;
+      width: $main-bar-elements-height;
+      height: $main-bar-elements-height;
+      svg {
+        position: absolute;
+        width: $main-bar-elements-height*0.98;
+        height: $main-bar-elements-height*0.98;
+        circle {
+          fill: $main-color-light;
+        }
+      }
     }
   }
 }

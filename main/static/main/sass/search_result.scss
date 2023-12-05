@@ -15,43 +15,11 @@
 
     .mobile-search-form {
       display: none;
-      @include search($main-bar-height, $main-bar-elements-height);
       position: relative;
       width: 100%;
       padding-bottom: $main-bar-elements-height;
       justify-content: center;
-
-      .search {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        height: $main-bar-elements-height;
-        box-shadow: inset 0 0 0 2px $main-color-light;
-
-        .searchText {
-          padding-left: 3%;
-          width: 100%;
-          height: $main-bar-elements-height;
-
-        }
-
-        .btn-search-commit {
-          box-shadow: none;
-        }
-
-        .btn-search-cancel {
-          font-family: grotesque;
-          width: auto;
-          height: 100%;
-          padding-right: 2%;
-          font-size: $main-bar-elements-height;
-          line-height: $main-bar-elements-height*1.2;
-          margin: 0;
-        }
-      }
-
+      @include search-static($main-bar-height, $main-bar-elements-height);
       @include lt-sm() {
         display: flex;
       }

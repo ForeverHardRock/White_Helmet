@@ -354,7 +354,6 @@ def search_results(request, filter_mode: str, filter_time: str):
             continue
         else:
             three_posts_list.append(one_post)
-    print("111"+str(posts[0].pictures)+"222")
     search_data = {
         'news': posts,
         'search_query': search_query,

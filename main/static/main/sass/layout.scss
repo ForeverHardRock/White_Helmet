@@ -38,6 +38,7 @@
       align-items: center;
       justify-content: space-between;
       margin: 0 auto 0;
+
       > div {
         height: $main-bar-elements-height;
         display: flex;
@@ -415,36 +416,12 @@
       top: -($main-bar-height*5);
       height: ($main-bar-height*5);
       .mobile-search-form {
-        @include search($main-bar-height, $main-bar-elements-height);
+        @include search-static($main-bar-height, $main-bar-elements-height);
         position: relative;
         width: 100%;
         padding-bottom: $main-bar-elements-height;
         display: flex;
         justify-content: center;
-
-        .search {
-          display: flex;
-          justify-content: center;
-          width: 60%;
-          height: $main-bar-elements-height;
-
-          .searchText {
-            padding-left: 3%;
-            width: 100%;
-          }
-
-          .btn-search-cancel {
-            font-family: grotesque;
-            width: auto;
-            height: 100%;
-            padding-right: 2%;
-            font-size: $main-bar-elements-height;
-            line-height: $main-bar-elements-height*1.2;
-            margin: 0;
-          }
-
-
-        }
       }
     }
   }
@@ -494,30 +471,42 @@
   .up-field {
     display: flex;
     position: fixed;
-    width: 10%;
+    width: 100%;
+    max-width: 1640px;
     transition: 0.5s;
     bottom: -100px;
-    right: 0;
     z-index: 2000;
-    &-btn {
-      background-color: $main-color-light;
-      height: $main-bar-height/2;
-      width: $main-bar-height/2;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      align-items: center;
-      padding: 0;
-    }
-    &:hover {
-      background-color: lighten($main-color, 15%);
-      transform: scale(1.3);
-      transition: transform .2s ease;
-    }
+    height: $main-bar-height/2;
 
-    span {
-      font-size: $main-bar-height/2;
-      color: $font-color;
+    &-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10%;
+      display: flex;
+      justify-content: center;
+
+      &-btn {
+        background-color: $main-color-light;
+        height: $main-bar-height/2;
+        width: $main-bar-height/2;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        padding: 0;
+
+        &:hover {
+          background-color: lighten($main-color, 15%);
+          transform: scale(1.3);
+          transition: transform .2s ease;
+        }
+
+        span {
+          font-size: $main-bar-height/2;
+          color: $font-color;
+        }
+      }
     }
   }
 }

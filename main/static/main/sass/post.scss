@@ -53,6 +53,7 @@
         .share-field {
           position: relative;
           display: flex;
+          align-items: center;
           height: $main-bar-elements-height;
           margin-bottom: $main-bar-elements-height*0.5;
 
@@ -69,10 +70,16 @@
             font-family: grotesque;
             font-weight: 500;
             background-color: $main-color-light;
-            font-size: $main-bar-elements-font-size*0.7;
+            font-size: $main-bar-elements-font-size*0.8;
             color: $font-color;
             border: none;
             border-radius: ($main-bar-elements-height*0.5);
+            padding: 0;
+            svg {
+              height: $main-bar-elements-font-size;
+              width: auto;
+              margin-right: 5%;
+            }
           }
 
           &-btns {
@@ -84,11 +91,16 @@
             width: $main-bar-height*1.5;
             justify-content: space-between;
             transition: 0.5s ease;
-            .share-field-btns-btn {
+            &-btn {
               margin: 0;
+              width: auto;
               height: $main-bar-elements-height;
               border: none;
               background: none;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
               svg {
                 height: $main-bar-elements-height*0.98;
