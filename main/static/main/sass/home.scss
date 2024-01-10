@@ -211,24 +211,34 @@
     }
 
     .categories-list {
-      justify-content: center;
-      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: auto;
+      margin: auto;
       width: 100%;
-      padding-right: 15%;
-      padding-left: 15%;
-      @include lt-sm() {
-        padding-right: 10%;
-        padding-left: 10%;
-      }
+      padding-right: 10%;
+      padding-left: 10%;
 
       .cat_btn {
+        text-align: center;
         font-family: grotesque;
+        white-space: nowrap;
         font-weight: 400;
-        font-size: $main-bar-elements-font-size*0.8;
+        font-size: $main-bar-elements-font-size*0.7;
         color: $dark-font-color;
-        padding-right: 5%;
         background: none;
         border: none;
+        @include lt-sm() {
+          flex-basis: 33%;
+          font-size: $main-bar-elements-font-size*0.8;
+        }
+        @include lt-mb() {
+          flex-basis: 50%;
+        }
+
       }
 
       .is-selected {
@@ -238,11 +248,10 @@
 
     .puzzle-news-by-cat {
       position: relative;
-      margin: $main-bar-height/2 9%;
+      margin: $main-bar-height/2 9% $main-bar-height 9%;
       height: auto;
       @include lt-sm() {
-        //margin-top: $main-bar-elements-height/2;
-        margin-top: 0;
+        margin: 0 9% $main-bar-height/2 9%;
       }
 
       //.flickity-page-buttons {
@@ -406,6 +415,14 @@
                 }
               }
             }
+          }
+        }
+        .flickity-page-dots {
+          position: absolute;
+          bottom: -($main-bar-height/2);
+          transform: translateY(50%);
+          @include lt-sm() {
+            bottom: 0;
           }
         }
       }

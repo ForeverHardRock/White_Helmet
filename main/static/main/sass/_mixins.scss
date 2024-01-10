@@ -445,7 +445,7 @@
 
       ul {
         li {
-          line-height: $main-bar-elements-font-size;
+          line-height: $main-bar-elements-font-size*0.8;
           margin-bottom: $main-bar-elements-font-size*0.5;
 
           p {
@@ -489,77 +489,86 @@
       }
 
       .bottom-content {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
         width: 100%;
         height: 100%;
         padding: 3% 5%;
 
-        p {
-          font-family: grotesque;
-          font-weight: 500;
-          color: $font-color;
-          font-size: $main-bar-elements-font-size*0.6;
-          @include lt-sm() {
-            font-size: $main-bar-elements-font-size*0.7;
-          }
-        }
-
-        form {
-          display: flex;
+        .bottom-form {
           width: 100%;
-          justify-content: space-between;
-          padding-bottom: 5%;
 
-          input {
-            display: flex;
-            align-items: center;
+          p {
             font-family: grotesque;
-            font-weight: 400;
+            font-weight: 500;
+            color: $font-color;
             font-size: $main-bar-elements-font-size*0.6;
-            outline: none;
-            width: 60%;
-            border: none;
-            padding: 2% 5%;
-            background-color: lighten($main-color, 25%);
-            border-radius: $main-bar-height*0.5;
             @include lt-sm() {
               font-size: $main-bar-elements-font-size*0.7;
             }
           }
 
-          button {
+          form {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: grotesque;
-            font-weight: 400;
-            width: 35%;
-            border: none;
-            color: $main-color;
-            background-color: $font-color;
-            border-radius: $main-bar-height*0.5;
-            font-size: $main-bar-elements-font-size*0.5;
-            @include lt-sm() {
-              font-size: $main-bar-elements-font-size*0.7;
+            width: 100%;
+            justify-content: space-between;
+            height: $main-bar-elements-height;
+
+            input {
+              font-family: grotesque;
+              font-weight: 400;
+              font-size: $main-bar-elements-font-size*0.6;
+              line-height: $main-bar-elements-font-size*0.6;
+              outline: none;
+              width: 60%;
+              border: none;
+              padding-left: 5%;
+              background-color: lighten($main-color, 25%);
+              border-radius: $main-bar-height*0.5;
+              @include lt-sm() {
+                font-size: $main-bar-elements-font-size*0.7;
+                line-height: $main-bar-elements-font-size*0.6;
+              }
+            }
+
+            button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: grotesque;
+              font-weight: 400;
+              width: 35%;
+              border: none;
+              color: $main-color;
+              background-color: $font-color;
+              border-radius: $main-bar-height*0.5;
+              font-size: $main-bar-elements-font-size*0.5;
+              @include lt-sm() {
+                font-size: $main-bar-elements-font-size*0.7;
+              }
             }
           }
         }
 
         .subs-icons {
-          position: absolute;
-          width: 90%;
+          width: 100%;
           display: flex;
           justify-content: space-between;
           height: 40%;
-          bottom: 5%;
 
           .subs-left {
-            height: auto;
+            position: relative;
+            width: auto;
 
             p {
               color: $font-color;
               font-family: grotesque;
               font-weight: 500;
+              margin: 0;
               font-size: $main-bar-elements-font-size*0.6;
+              width: auto;
+
               @include lt-sm() {
                 margin-bottom: $main-bar-elements-font-size*0.5;
                 font-size: $main-bar-elements-font-size*0.7;
@@ -567,16 +576,18 @@
             }
 
             .subs-btns {
-              width: auto;
+              position: absolute;
+              width: 100%;
               display: flex;
               justify-content: space-between;
               height: auto;
+              bottom: 0;
 
               a {
                 position: relative;
                 display: flex;
-                height: $main-bar-elements-height*1.2;
-                width: $main-bar-elements-height*1.2;
+                height: $main-bar-elements-height;
+                width: $main-bar-elements-height;
                 justify-content: center;
                 align-items: center;
 
@@ -591,8 +602,11 @@
           }
 
           .bottom-kaska {
+            display: flex;
+            align-items: center;
+
             svg {
-              height: 100%;
+              height: 90%;
               width: auto;
             }
           }
@@ -791,22 +805,22 @@
         height: $main-bar-elements-height*0.7;
         transition: all 0.2s ease-in-out;
       }
-
     }
-
-
   }
 
   .btn-search-cancel {
+    display: flex;
+    align-items: center;
     border: none;
     background: none;
+    height: $main-bar-elements-height;
     outline: none;
     padding: 0;
-    color: $main-color;
-    font-size: $main-bar-elements-font-size;
     width: 0;
-    font-weight: 600;
-    transition: padding-right 0.4s ease;
+    svg {
+      width: $main-bar-elements-font-size*0.6;
+      height: $main-bar-elements-font-size*0.6;
+    }
   }
 
   .searchText {
@@ -819,6 +833,7 @@
     transition: 0.4s;
     width: 0;
     font-weight: 600;
+    text-indent: $main-bar-elements-height/4;
 
     &::placeholder {
       color: $font-color-light;
@@ -852,18 +867,6 @@
   .search:hover > .btn-search-cancel {
     width: auto;
     padding-right: 5%;
-  }
-
-  .search:hover > .btn-search-commit {
-    svg {
-      transform: scale(1.3);
-    }
-  }
-
-  .search:hover > .btn-search-commit:hover {
-    svg {
-      transform: scale(1.3);
-    }
   }
 }
 
@@ -908,6 +911,7 @@
       background: none;
       border: none;
       padding: 0;
+
       svg {
         height: $main-bar-elements-height*0.3;
       }
@@ -925,10 +929,12 @@
       border-radius: $main-bar-elements-height/2;
       width: $main-bar-elements-height;
       height: $main-bar-elements-height;
+
       svg {
         position: absolute;
         width: $main-bar-elements-height*0.98;
         height: $main-bar-elements-height*0.98;
+
         circle {
           fill: $main-color-light;
         }
