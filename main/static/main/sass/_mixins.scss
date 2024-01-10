@@ -815,8 +815,9 @@
     background: none;
     height: $main-bar-elements-height;
     outline: none;
-    padding: 0;
     width: 0;
+    padding: 0;
+    
     svg {
       width: $main-bar-elements-font-size*0.6;
       height: $main-bar-elements-font-size*0.6;
@@ -834,6 +835,7 @@
     width: 0;
     font-weight: 600;
     text-indent: $main-bar-elements-height/4;
+
 
     &::placeholder {
       color: $font-color-light;

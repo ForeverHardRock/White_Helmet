@@ -219,8 +219,9 @@
       height: auto;
       margin: auto;
       width: 100%;
-      padding-right: 10%;
       padding-left: 10%;
+      padding-right: 10%;
+
 
       .cat_btn {
         text-align: center;
@@ -417,6 +418,7 @@
             }
           }
         }
+
         .flickity-page-dots {
           position: absolute;
           bottom: -($main-bar-height/2);
