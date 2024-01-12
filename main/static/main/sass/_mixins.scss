@@ -619,7 +619,7 @@
 @mixin tg-banner($main-bar-height, $main-bar-elements-height) {
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   .tg-banner-link {
-    padding-bottom: 5%;
+    padding-bottom: $main-bar-height/2;
 
     .tg-banner {
       position: relative;

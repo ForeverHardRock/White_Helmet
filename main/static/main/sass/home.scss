@@ -37,7 +37,7 @@
       border-top-right-radius: $main-bar-height/3;
       //border: 1px solid black;
       .puzzle-news {
-        margin: 0 9%;
+        margin: 0 (10%-$margin-in-puzzle/2);
         height: auto;
         @include lt-sm() {
           margin-left: 10%-($margin-in-puzzle-mobile/2);
@@ -249,10 +249,10 @@
 
     .puzzle-news-by-cat {
       position: relative;
-      margin: $main-bar-height/2 9% $main-bar-height 9%;
+      margin: $main-bar-height/2 (10%-$margin-in-puzzle/2) $main-bar-height (10%-$margin-in-puzzle/2);
       height: auto;
       @include lt-sm() {
-        margin: 0 9% $main-bar-height/2 9%;
+        margin: 0 (10%-$margin-in-puzzle-mobile/2) $main-bar-height/2 (10%-$margin-in-puzzle-mobile/2);
       }
 
       //.flickity-page-buttons {
@@ -320,9 +320,9 @@
 
                 @include lt-sm() {
                   &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-                    margin: 0 1%;
+                    margin: 0 ($margin-in-puzzle-mobile/2);
                     height: auto;
-                    width: 98%;
+                    width: (100%-$margin-in-puzzle-mobile);
                     box-shadow: none;
                     border-radius: 0;
 
@@ -377,7 +377,7 @@
                   &:nth-child(4), &:nth-child(7) {
                     @include news-cards(($news-in-puzzle)-1, $margin-in-puzzle-mobile, $main-bar-height, $main-bar-elements-height);
                     @include bluecard($main-bar-height, $main-bar-elements-height);
-                    width: (100%-$margin-in-puzzle);
+                    width: (100%-$margin-in-puzzle-mobile);
 
                     .new-card-text {
                       width: 100%;
@@ -392,6 +392,8 @@
               .puzzle-right {
                 @include news-column($main-bar-height, $main-bar-elements-height);
                 width: ((100%-($margin-in-puzzle*($news-in-puzzle)))/($news-in-puzzle));
+                margin-right: $margin-in-puzzle/2;
+                height: auto;
 
                 .next-card {
 
