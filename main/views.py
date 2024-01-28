@@ -367,3 +367,15 @@ def search_results(request, filter_mode: str, filter_time: str):
     }
 
     return render(request, 'main/search_results.html', context=search_data)
+
+
+def rss_feed(request):
+    items = News.objects.order_by('-post_id')[:1]
+    for item in items:
+        time = datetime.datetime.strptime(str(item.pubdate), '%Y-%m-%d %H:%M:%S.%f%z')
+        item.pubdate = time.strftime('%a, %d %b %Y %H:%M:%S %z')
+    domain = request.scheme + '://' + request.get_host()
+
+    return render(request, 'main/rss.xml', {'items': items, 'domain': domain}, content_type='application/rss+xml')
+
+

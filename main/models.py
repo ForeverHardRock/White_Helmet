@@ -10,7 +10,7 @@ class Categories(models.Model):
     cat_en = models.CharField('Транслитерация', max_length=30)
     active = models.BooleanField(default=True, verbose_name='Активно')
     car_active = models.BooleanField(default=False, verbose_name='Карусель')
-    sub_active = models.BooleanField(default=False, verbose_name='Боковое меню')
+    sub_active = models.BooleanField(default=False, verbose_name='Верхнее меню')
 
     class Meta:
         managed = False
@@ -24,7 +24,7 @@ class Categories(models.Model):
 
 class News(models.Model):
     post_id = models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
-    title = models.CharField('Название', max_length=100)
+    title = models.CharField('Название', max_length=255)
     url = models.CharField('Ссылка', max_length=255)
     pubdate = models.DateTimeField('Дата публикации', auto_now_add=False)
     creator = models.CharField('Автор', max_length=30, default='Admin')
@@ -36,7 +36,7 @@ class News(models.Model):
     pictures = models.ImageField(upload_to='images/',  verbose_name='Картинка')
     active = models.BooleanField(default=True, verbose_name='Активно')
     car_active = models.BooleanField(default=False, verbose_name='Карусель')
-    post_views = models.IntegerField('Просмотры')
+    post_views = models.IntegerField('Просмотры', default=0)
 
     class Meta:
         managed = False

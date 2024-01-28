@@ -1,0 +1,23 @@
+{% autoescape off %}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss">
+    <channel>
+        <title>White-Helmet's RSS</title>
+        <link>{{ domain }}</link>
+        <description>Construction news</description>
+        <language>ru</language>
+        {% for item in items %}
+            <item>
+                <title>{{ item.title }}</title>
+                <link>{{ domain }}/{{ item.category_en }}/{{ item.url }}</link>
+                <guid isPermaLink="false">{{ item.post_id }}</guid>
+                <pubDate>{{ item.pubdate }}</pubDate>
+                <category>format-article</category>
+                <category>index</category>
+                <content:encoded><![CDATA[<figure><img src="{{ domain }}/media/{{ item.pictures }}"></figure>{{ item.ptext }}]]></content:encoded>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
+{% endautoescape %}
