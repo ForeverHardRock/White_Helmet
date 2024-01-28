@@ -54,5 +54,14 @@ class News(models.Model):
             self.category_en = 'bez-rubriki'
         super().save(*args, **kwargs)
 
+        while len(News.objects.filter(active=1, car_active=1)) > 80:
+            last_car_active = News.objects.filter(active=1, car_active=1).order_by('post_id')[0]
+            last_car_active.car_active = 0
+            last_car_active.save()
+            print('Post '+str(last_car_active.post_id)+' removed from carousel')
+
+
+
+
 
 

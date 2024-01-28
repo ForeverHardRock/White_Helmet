@@ -27,7 +27,7 @@ class NewsForm(forms.ModelForm):
             'post_views': 'Просмотры',
         }
         widgets = {
-            'category_en': forms.TextInput(attrs={'disabled': 'disabled'}),
-            'url': forms.TextInput(attrs={'disabled': 'disabled'}),
+            'category_en': forms.TextInput(attrs={'readonly': 'readonly', }),
+            'url': forms.TextInput(attrs={'readonly': 'readonly', }),
         }
 
