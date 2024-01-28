@@ -2,7 +2,7 @@
   $main-bar-elements-font-size: ($main-bar-elements-height*0.6);
   a {
     color: $font-color;
-    text-decoration: none;
+    text-decoration: none!important;
 
     &:hover {
       color: $font-color;
@@ -10,8 +10,8 @@
   }
 
   ul {
-    list-style: none;
-    padding: 0;
+    list-style: none!important;
+    padding: 0!important;
   }
 
   .up-menu {
@@ -52,6 +52,7 @@
         align-items: center;
 
         .kaska-logo {
+          fill: $font-color;
           width: auto;
           height: $main-bar-elements-font-size;
           padding-right: ($main-bar-elements-height/3);
@@ -61,6 +62,7 @@
           font-family: intro-r;
           font-weight: 400;
           font-size: $main-bar-elements-font-size;
+          color: $font-color;
           margin: 0;
           White-space: nowrap
         }
@@ -457,7 +459,7 @@
 
 
   body {
-    background-color: $page-background-color;
+    background-color: $page-background-color!important;
   }
 
   .page-body {
