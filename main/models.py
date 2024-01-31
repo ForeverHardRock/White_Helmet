@@ -2,6 +2,9 @@ from django.db import models
 import pytz
 from datetime import datetime, timedelta
 from tinymce import models as tinymce_models
+from django.core.exceptions import ValidationError
+from django.contrib import messages
+
 
 
 class Categories(models.Model):
@@ -20,6 +23,15 @@ class Categories(models.Model):
 
     def __str__(self):
         return self.cat_ru
+
+    def clean(self):
+        if Categories.objects.filter(cat_ru=self.cat_ru).exists() or Categories.objects.filter(cat_en=self.cat_en).exists():
+            raise ValidationError("Такая категория уже существует")
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
+
 
 
 class News(models.Model):
@@ -47,11 +59,16 @@ class News(models.Model):
     def __str__(self):
         return self.title
 
+    # def clean(self):
+    #     if News.objects.filter(title=self.title).exists():
+    #         raise ValidationError("Такая новость уже существует")
+
     def save(self, *args, **kwargs):
         if not self.pubdate:
             self.pubdate = datetime.utcnow().replace(tzinfo=pytz.utc)+timedelta(hours=3)
         if not self.category_en:
             self.category_en = 'bez-rubriki'
+        # self.full_clean()
         super().save(*args, **kwargs)
 
         while len(News.objects.filter(active=1, car_active=1)) > 80:

@@ -1,5 +1,5 @@
 from django import forms
-from .models import News
+from .models import News, Categories
 
 
 # class ImageForm(forms.ModelForm):
@@ -31,3 +31,18 @@ class NewsForm(forms.ModelForm):
             'url': forms.TextInput(attrs={'readonly': 'readonly', }),
         }
 
+
+class CategoriesForm(forms.ModelForm):
+    class Meta:
+        model = Categories
+        fields = ['cat_ru', 'cat_en', 'active', 'car_active', 'sub_active']
+        labels = {
+            'cat_ru': 'Категория на русском',
+            'cat_en': 'Транслитерация',
+            'active': 'Активно',
+            'car_active': 'Карусель',
+            'sub_active': 'Верхнее меню'
+        }
+        widgets = {
+            'cat_en': forms.TextInput(attrs={'readonly': 'readonly', }),
+        }
