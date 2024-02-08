@@ -14,6 +14,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Lib" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/pip/_internal/metadata/importlib" />
       <excludeFolder url="file://$MODULE_DIR$/Lib/site-packages/pip/_vendor/colorama/tests" />

@@ -1,0 +1,28 @@
+{% autoescape off %}<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+    <channel>
+        <title>Белая Каска</title>
+        <link>{{ domain }}</link>
+        <description>Новости строительства</description>
+        <language>ru</language>
+        {% for item in items %}
+            <item turbo="true">
+                <link>{{ domain }}/{{ item.category_en }}/{{ item.url }}</link>
+                <pubDate>{{ item.pubdate }}</pubDate>
+                <category>{{ item.category }}</category>
+                <turbo:content>
+                    <![CDATA[
+                        <header>
+                            <h1>{{ item.title }}</h1>
+                            <figure>
+                                <img src="{{ domain }}/media/{{ item.pictures }}">
+                            </figure>
+                        </header>
+                        {{ item.ptext }}
+                    ]]>
+                </turbo:content>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
+{% endautoescape %}

@@ -75,6 +75,7 @@
             border: none;
             border-radius: ($main-bar-elements-height*0.5);
             padding: 0;
+
             svg {
               height: $main-bar-elements-font-size;
               width: auto;
@@ -91,6 +92,7 @@
             width: $main-bar-height*1.5;
             justify-content: space-between;
             transition: 0.5s ease;
+
             &-btn {
               margin: 0;
               width: auto;
@@ -108,13 +110,14 @@
               }
             }
           }
+
           .show-btns {
             left: $main-bar-height*1.5;
             margin-left: 4%;
           }
         }
 
-        img {
+        .post-img {
           border-radius: $main-bar-height/5;
           width: 100%;
           margin-bottom: $main-bar-height/4;
@@ -126,6 +129,44 @@
           font-size: $main-bar-elements-font-size*0.7;
           color: $dark-font-color;
           margin-bottom: 0;
+        }
+
+        figure {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 200px;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          padding-bottom: ($main-bar-elements-font-size/2);
+
+          &::-webkit-scrollbar {
+            height: ($main-bar-elements-font-size/2);
+          }
+
+          &::-webkit-scrollbar-track {
+            background: $page-background-color;
+            border-radius: ($main-bar-elements-font-size/2);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: $main-color-light;
+            border-radius: ($main-bar-elements-font-size/2);
+          }
+
+          img {
+            margin-right: 10px;
+            max-width: 100%;
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            border-radius: $main-bar-height/8;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
         }
       }
 

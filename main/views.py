@@ -4,6 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import News, Categories
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.views.generic import TemplateView
 import random
 
 def home(request):
@@ -91,80 +92,6 @@ def load_categories(request, button_id):
     sub_pre_news = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:3]
     return render(request, 'main/sub-preload.html',
                   {'sub_pre_news': sub_pre_news, 'view_category': button_id})
-
-#
-# def load_content_1(request, button_id):
-#     if button_id == 'last':
-#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[:7]
-#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[7:12]
-#     else:
-#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:7]
-#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[7:12]
-#     return render(request, 'main/template-cat-news.html',
-#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
-#
-#
-# def load_content_2(request, button_id):
-#     if button_id == 'last':
-#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[12:19]
-#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[19:24]
-#     else:
-#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[12:19]
-#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[19:24]
-#     return render(request, 'main/template-cat-news.html',
-#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
-#
-#
-# def load_content_3(request, button_id):
-#     if button_id == 'last':
-#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[24:31]
-#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[31:36]
-#     else:
-#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[24:31]
-#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[31:36]
-#     return render(request, 'main/template-cat-news.html',
-#                   {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2})
-
-# def load_content(request, button_id):
-#     # cat_news_list = []
-#     # cat_news_dict = {}
-#     cat_news_list_1 = []
-#     cat_news_list_2 = []
-#     cat_news_list_3 = []
-#     if button_id == 'last':
-#         cat_news_list_1 = News.objects.filter(active=1).order_by('-post_id')[:12]
-#         cat_news_list_2 = News.objects.filter(active=1).order_by('-post_id')[12:24]
-#         cat_news_list_3 = News.objects.filter(active=1).order_by('-post_id')[24:36]
-#
-#         # for i in range(3):
-#
-#             # queryset = News.objects.filter(active=1).order_by('-post_id')[i *12:(i + 1) * 12]
-#             # news_json = serializers.serialize('json', list(queryset))
-#             # cat_news_list.append(news_json)
-#             # cat_news_dict[f'cat_news_list_{i+1}'] = (News.objects.filter(active=1).order_by('-post_id')[i * 12:(i + 1) * 12])
-#
-#     else:
-#         cat_news_list_1 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[:12]
-#         cat_news_list_2 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[12:24]
-#         cat_news_list_3 = News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[24:36]
-#         # for i in range(3):
-#             # queryset = News.objects.filter(active=1).order_by('-post_id')[i * 12:(i + 1) * 12]
-#             # news_json = serializers.serialize('json', list(queryset))
-#             # cat_news_list.append(news_json)
-#             # cat_news_dict[f'cat_news_list_{i+1}'] = (News.objects.filter(active=1, category_en=button_id).order_by('-post_id')[i * 12:(i + 1) * 12])
-#
-#     # context = {'cat_news_list': cat_news_list}
-#     # template = get_template('main/template-cat-news.html')
-#     # response = HttpResponse(template.render(cat_news_dict))
-#     # return response
-#     # return render(request, 'main/template-cat-news.html', cat_news_dict)
-#
-#     # print(type(cat_news_list), type(cat_news_list[0]), type(cat_news_list[0][0]))
-#
-#     # json.dump(cat_news_list)
-#     # return HttpResponse(cat_news_list, content_type='application/json')
-#
-#     return render(request, 'main/template-cat-news.html', {'cat_news_list_1': cat_news_list_1, 'cat_news_list_2': cat_news_list_2, 'cat_news_list_3': cat_news_list_3,})
 
 
 def show_category(request, cat_slug: str):
@@ -370,12 +297,36 @@ def search_results(request, filter_mode: str, filter_time: str):
 
 
 def rss_feed(request):
-    items = News.objects.order_by('-post_id')[:1]
+    items = News.objects.order_by('-post_id')[:10]
+    domain = request.scheme + '://' + request.get_host()
     for item in items:
         time = datetime.datetime.strptime(str(item.pubdate), '%Y-%m-%d %H:%M:%S.%f%z')
         item.pubdate = time.strftime('%a, %d %b %Y %H:%M:%S %z')
-    domain = request.scheme + '://' + request.get_host()
+        item.ptext = item.ptext.replace('src="../media', f'src="{domain}/media')
 
     return render(request, 'main/rss.xml', {'items': items, 'domain': domain}, content_type='application/rss+xml')
 
+
+def rss_turbo_feed(request):
+    domain = request.scheme + '://' + request.get_host()
+    items = News.objects.order_by('-post_id')[:90]
+    for item in items:
+        time = datetime.datetime.strptime(str(item.pubdate), '%Y-%m-%d %H:%M:%S.%f%z')
+        item.pubdate = time.strftime('%a, %d %b %Y %H:%M:%S %z')
+        item.ptext = item.ptext.replace('src="../media', f'src="{domain}/media')
+    return render(request, 'main/rss-turbo.xml', {'items': items, 'domain': domain}, content_type='application/rss+xml')
+
+
+def sitemap_load(request):
+    cats = Categories.objects.filter(active=1)
+    items = []
+    for cat in cats:
+        try:
+            item = News.objects.filter(active=1, category_en=cat.cat_en).latest('pubdate')
+            time = item.pubdate.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+            items.append({'cat_en': item.category_en, 'pubdate': time})
+        except:
+            continue
+    domain = request.scheme + '://' + request.get_host()
+    return render(request, 'main/sitemap.xml', {'items': items, 'domain': domain}, content_type='application/rss+xml')
 
