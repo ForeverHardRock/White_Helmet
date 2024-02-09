@@ -22,7 +22,7 @@ class NewsAdmin(admin.ModelAdmin):
     list_per_page = 20
     search_fields = ['title']
     exclude = ['pubdate']
-    prepopulated_fields = {'url': ("title",), 'category_en': ("category",)}
+    # prepopulated_fields = {'url': ("title",), 'category_en': ("category",)}
     inlines = [ImageInline]
     actions = ['set_active', 'unset_active', 'set_car_active', 'unset_car_active', 'reset_views']
 

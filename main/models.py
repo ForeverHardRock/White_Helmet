@@ -3,6 +3,7 @@ import pytz
 from datetime import datetime, timedelta
 from django.core.exceptions import ValidationError
 from django.core.files.storage import default_storage
+from slugify import slugify
 
 
 class Categories(models.Model):
@@ -60,6 +61,8 @@ class News(models.Model):
             raise ValidationError("Такая новость уже существует")
 
     def save(self, *args, **kwargs):
+        self.url = slugify(str(self.title))
+        self.category_en = Categories.objects.filter(cat_ru=self.category)[0].cat_en
         if not self.pubdate:
             self.pubdate = datetime.utcnow().replace(tzinfo=pytz.utc)+timedelta(hours=3)
         super().save(*args, **kwargs)

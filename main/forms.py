@@ -42,13 +42,13 @@ class MultipleFileField(forms.FileField):
 class NewsForm(forms.ModelForm):
     class Meta:
         model = News
-        fields = ['title', 'url', 'creator',  'pictures', 'category', 'category_en', 'description', 'active', 'car_active', 'post_views']
+        fields = ['title', 'creator',  'pictures', 'category', 'description', 'active', 'car_active', 'post_views']
         labels = {
             'title': 'Название',
-            'url': 'Ссылка',
+            # 'url': 'Ссылка',
             'creator': 'Автор',
             'category': 'Категория',
-            'category_en': 'Транслитерация',
+            # 'category_en': 'Транслитерация',
             'description': 'Описание',
             'pictures': 'Обложка',
             'active': 'Активно',
@@ -56,8 +56,8 @@ class NewsForm(forms.ModelForm):
             'post_views': 'Просмотры',
         }
         widgets = {
-            'category_en': forms.TextInput(attrs={'readonly': 'readonly', }),
-            'url': forms.TextInput(attrs={'readonly': 'readonly', }),
+            # 'category_en': forms.TextInput(attrs={'readonly': 'readonly', }),
+            # 'url': forms.TextInput(attrs={'readonly': 'readonly', }),
         }
 
 
